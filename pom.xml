@@ -16,6 +16,14 @@
         <module>rabbitmq</module>
     </modules>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Horizont-Europe-Interstore Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/Horizont-Europe-Interstore/interoperability-common</url>
+        </repository>
+    </distributionManagement>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
