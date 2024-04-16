@@ -55,8 +55,6 @@ public abstract class AbstractModbusRequestHandler extends AbstractRequestHandle
 
             callback.onNext(this.client.processRequest(request));
         } catch (Exception e) {
-            log.error("Error processing Modbus request", e);
-
             throw new HandlerException("Error processing Modbus request", e);
         }
     }

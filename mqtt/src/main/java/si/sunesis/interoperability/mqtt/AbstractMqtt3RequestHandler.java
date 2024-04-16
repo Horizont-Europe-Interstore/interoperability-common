@@ -87,8 +87,6 @@ public abstract class AbstractMqtt3RequestHandler extends AbstractRequestHandler
                 .callback(message -> {
                     MqttMessage mqttMessage = MqttMessage.fromJson(message.getPayloadAsBytes());
 
-                    log.info("Received message: {}", mqttMessage);
-
                     if (mqttMessage.getReplyTo() != null) {
                         if (mqttMessage.getDuration() != null) {
                             handleStream(subject, message);

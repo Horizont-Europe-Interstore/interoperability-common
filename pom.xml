@@ -16,14 +16,6 @@
         <module>rabbitmq</module>
     </modules>
 
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>GitHub Horizont-Europe-Interstore Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/Horizont-Europe-Interstore/interoperability-common</url>
-        </repository>
-    </distributionManagement>
-
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -38,7 +30,7 @@
 
         <mqtt.version>1.3.3</mqtt.version>
 
-        <jlibodbus.version>1.2.9.9</jlibodbus.version>
+        <jlibodbus.version>1.2.9.11</jlibodbus.version>
 
         <rabbitmq.version>5.20.0</rabbitmq.version>
     </properties>
