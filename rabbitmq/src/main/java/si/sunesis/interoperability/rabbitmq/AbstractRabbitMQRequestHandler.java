@@ -28,9 +28,11 @@ import si.sunesis.interoperability.common.exceptions.HandlerException;
 import si.sunesis.interoperability.common.interfaces.RequestHandler;
 import si.sunesis.interoperability.common.models.MqttMessage;
 
+import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 /**
  * @author David Trafela, Sunesis
@@ -176,5 +178,17 @@ public abstract class AbstractRabbitMQRequestHandler extends AbstractRequestHand
         }
 
         log.debug("Finished sending {} messages", numOfMessages);
+    }
+
+    @Override
+    public void disconnect() {
+        if (client != null) {
+            try {
+                client.getChannel().close();
+                client.getConnection().close();
+            } catch (IOException | TimeoutException e) {
+                log.error("Error while closing MQ connection", e);
+            }
+        }
     }
 }

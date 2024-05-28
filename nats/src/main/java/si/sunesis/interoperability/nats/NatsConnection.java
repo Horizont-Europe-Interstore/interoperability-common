@@ -49,8 +49,7 @@ public class NatsConnection implements ConnectionListener, MessageHandler {
 
     private Dispatcher dispatcher;
 
-    @PreDestroy
-    private void destroy() {
+    public void disconnect() {
         log.debug("Destroying NATS connection");
 
         if (getConnection().isPresent()) {

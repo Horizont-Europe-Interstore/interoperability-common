@@ -37,6 +37,8 @@ import java.io.IOException;
 @Getter
 public class ChannelHandler {
 
+    private final Connection connection;
+
     private final String exchangeName;
     private final String exchangeType;
     private final String routingKey;
@@ -44,6 +46,7 @@ public class ChannelHandler {
     private final Channel channel;
 
     private ChannelHandler(Connection connection, String exchangeName, String exchangeType, String routingKey) throws IOException {
+        this.connection = connection;
         this.channel = connection.createChannel();
         this.exchangeName = exchangeName;
         this.exchangeType = exchangeType;

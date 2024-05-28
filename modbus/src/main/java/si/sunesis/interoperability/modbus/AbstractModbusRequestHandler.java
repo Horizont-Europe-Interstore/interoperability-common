@@ -20,6 +20,7 @@
  */
 package si.sunesis.interoperability.modbus;
 
+import com.intelligt.modbus.jlibmodbus.exception.ModbusIOException;
 import com.intelligt.modbus.jlibmodbus.master.ModbusMaster;
 import com.intelligt.modbus.jlibmodbus.msg.base.ModbusRequest;
 import com.intelligt.modbus.jlibmodbus.msg.base.ModbusResponse;
@@ -56,6 +57,17 @@ public abstract class AbstractModbusRequestHandler extends AbstractRequestHandle
             callback.onNext(this.client.processRequest(request));
         } catch (Exception e) {
             throw new HandlerException("Error processing Modbus request", e);
+        }
+    }
+
+    @Override
+    public void disconnect() {
+        if (this.client != null && this.client.isConnected()) {
+            try {
+                this.client.disconnect();
+            } catch (ModbusIOException e) {
+                log.error("Error disconnecting Modbus client", e);
+            }
         }
     }
 }

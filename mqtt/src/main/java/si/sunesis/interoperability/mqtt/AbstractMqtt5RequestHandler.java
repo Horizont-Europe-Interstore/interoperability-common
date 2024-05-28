@@ -56,7 +56,7 @@ public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler
         return client.connect();
     }
 
-    @PreDestroy
+    @Override
     public void disconnect() {
         if (client.getState().isConnected()) {
             log.debug("Disconnecting MQTT client");

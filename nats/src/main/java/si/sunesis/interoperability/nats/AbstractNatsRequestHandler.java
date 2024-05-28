@@ -158,5 +158,12 @@ public abstract class AbstractNatsRequestHandler extends AbstractRequestHandler<
             log.error("Error while publishing stream", e);
         }
     }
+
+    @Override
+    public void disconnect() {
+        if (client != null) {
+            client.disconnect();
+        }
+    }
 }
 

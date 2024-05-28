@@ -53,7 +53,7 @@ public abstract class AbstractMqtt3RequestHandler extends AbstractRequestHandler
         return this.client;
     }
 
-    @PreDestroy
+    @Override
     public void disconnect() {
         if (client.getState().isConnected()) {
             log.debug("Disconnecting MQTT client");

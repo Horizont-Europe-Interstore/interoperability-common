@@ -51,6 +51,8 @@ public interface RequestHandler<T, R> {
         // Modbus does not support this pattern
     }
 
+    void disconnect();
+
     // Interface for callback
     interface Callback<R> {
         void onNext(R response);
