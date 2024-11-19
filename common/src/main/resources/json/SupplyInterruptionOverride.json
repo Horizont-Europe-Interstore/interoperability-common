@@ -1,0 +1,8 @@
+{
+  "description": "string",
+  "interval": {
+    "duration": 7,
+    "start": 10
+  },
+  "href": "http://www.sample.org/et/feta"
+}

@@ -1,0 +1,58 @@
+{
+  "mrid": {
+    "value": [
+      115,
+      99,
+      101,
+      112,
+      116,
+      114,
+      97
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "subscribable": 0,
+  "customerAccountListLink": {
+    "all": 5,
+    "href": "http://www.test.com/murmure/illum"
+  },
+  "demandResponseProgramListLink": {
+    "all": 5,
+    "href": "http://www.sample.com/corripuit/una"
+  },
+  "derProgramListLink": {
+    "all": 5,
+    "href": "http://www.your.gov/circum/nubibus"
+  },
+  "fileListLink": {
+    "all": 5,
+    "href": "http://www.company.gov/carcere/evertitque"
+  },
+  "messagingProgramListLink": {
+    "all": 5,
+    "href": "http://www.test.com/montis/premere"
+  },
+  "prepaymentListLink": {
+    "all": 5,
+    "href": "http://www.my.edu/evertitque/premit"
+  },
+  "responseSetListLink": {
+    "all": 5,
+    "href": "http://www.your.org/atris/cum"
+  },
+  "tariffProfileListLink": {
+    "all": 5,
+    "href": "http://www.sample.com/aequora/temperat"
+  },
+  "timeLink": {
+    "href": "http://www.corp.org/dedit/celsa"
+  },
+  "usagePointListLink": {
+    "all": 5,
+    "href": "http://www.company.org/insuper/in"
+  },
+  "href": "http://www.company.edu/rex/imposuit"
+}

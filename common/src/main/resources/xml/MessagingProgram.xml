@@ -1,0 +1,13 @@
+<MessagingProgram href="http://www.sample.edu/in/pater" subscribable="0" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>707261657465726561</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <!--Optional:-->
+  <ActiveTextMessageListLink href="http://www.your.org/montis/sed" all="5"/>
+  <locale>string</locale>
+  <primacy>6</primacy>
+  <!--Optional:-->
+  <TextMessageListLink href="http://www.sample.gov/luctantis/disiecitque" all="5"/>
+</MessagingProgram>

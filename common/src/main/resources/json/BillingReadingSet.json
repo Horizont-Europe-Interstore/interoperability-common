@@ -1,0 +1,24 @@
+{
+  "billingReadingListLink": {
+    "all": 5,
+    "href": "http://www.company.com/e/certo"
+  },
+  "timePeriod": {
+    "duration": 7,
+    "start": 10
+  },
+  "mrid": {
+    "value": [
+      99,
+      101,
+      114,
+      116,
+      111
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.test.com/feta/et"
+}

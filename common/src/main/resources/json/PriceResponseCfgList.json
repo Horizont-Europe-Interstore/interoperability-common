@@ -1,0 +1,15 @@
+{
+  "priceResponseCfg": [
+    {
+      "consumeThreshold": 3,
+      "maxReductionThreshold": 3,
+      "rateComponentLink": {
+        "href": "http://www.any.org/premit/e"
+      },
+      "href": "http://www.my.com/et/altos"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "href": "http://www.company.org/arce/iussus"
+}

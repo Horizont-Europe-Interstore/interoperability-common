@@ -1,0 +1,5 @@
+<Temperature xmlns="urn:ieee:std:2030.5:ns">
+  <multiplier>2</multiplier>
+  <subject>6</subject>
+  <value>1</value>
+</Temperature>

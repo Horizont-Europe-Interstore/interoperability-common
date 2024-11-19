@@ -1,0 +1,27 @@
+<AccountBalance href="http://www.my.org/regina/furentibus" xmlns="urn:ieee:std:2030.5:ns">
+  <availableCredit>
+    <!--Optional:-->
+    <energyUnit>
+      <multiplier>2</multiplier>
+      <value>11</value>
+    </energyUnit>
+    <monetaryUnit>5</monetaryUnit>
+    <multiplier>2</multiplier>
+    <value>3</value>
+  </availableCredit>
+  <!--Optional:-->
+  <creditStatus>6</creditStatus>
+  <!--Optional:-->
+  <emergencyCredit>
+    <!--Optional:-->
+    <energyUnit>
+      <multiplier>2</multiplier>
+      <value>11</value>
+    </energyUnit>
+    <monetaryUnit>5</monetaryUnit>
+    <multiplier>2</multiplier>
+    <value>3</value>
+  </emergencyCredit>
+  <!--Optional:-->
+  <emergencyCreditStatus>6</emergencyCreditStatus>
+</AccountBalance>

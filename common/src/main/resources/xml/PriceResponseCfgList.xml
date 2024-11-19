@@ -1,0 +1,8 @@
+<PriceResponseCfgList href="http://www.company.org/arce/iussus" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <PriceResponseCfg href="http://www.my.com/et/altos">
+    <consumeThreshold>3</consumeThreshold>
+    <maxReductionThreshold>3</maxReductionThreshold>
+    <RateComponentLink href="http://www.any.org/premit/e"/>
+  </PriceResponseCfg>
+</PriceResponseCfgList>

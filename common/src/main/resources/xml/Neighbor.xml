@@ -1,0 +1,5 @@
+<Neighbor href="http://www.any.com/austris/et" xmlns="urn:ieee:std:2030.5:ns">
+  <isChild>true</isChild>
+  <linkQuality>6</linkQuality>
+  <shortAddress>5</shortAddress>
+</Neighbor>

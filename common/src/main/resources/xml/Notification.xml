@@ -1,0 +1,9 @@
+<Notification href="http://www.test.com/honorem/iovis" xmlns="urn:ieee:std:2030.5:ns">
+  <subscribedResource>http://www.company.com/ignem/quae</subscribedResource>
+  <!--Optional:-->
+  <newResourceURI>http://www.company.com/transfixo/soror</newResourceURI>
+  <!--Optional:-->
+  <Resource href="http://www.your.org/disiecitque/dedit"/>
+  <status>6</status>
+  <subscriptionURI>http://www.my.com/cum/secum</subscriptionURI>
+</Notification>

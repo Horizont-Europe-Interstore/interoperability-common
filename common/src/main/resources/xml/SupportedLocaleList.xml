@@ -1,0 +1,6 @@
+<SupportedLocaleList href="http://www.company.org/tot/et" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <SupportedLocale href="http://www.test.edu/maria/montis">
+    <locale>string</locale>
+  </SupportedLocale>
+</SupportedLocaleList>

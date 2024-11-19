@@ -1,0 +1,20 @@
+<TariffProfileList href="http://www.any.gov/cum/hic" subscribable="0" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <TariffProfile href="http://www.your.com/auras/verrantque">
+    <mRID>61726365</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <!--Optional:-->
+    <currency>5</currency>
+    <!--Optional:-->
+    <pricePowerOfTenMultiplier>2</pricePowerOfTenMultiplier>
+    <primacy>6</primacy>
+    <!--Optional:-->
+    <rateCode>string</rateCode>
+    <!--Optional:-->
+    <RateComponentListLink href="http://www.test.org/regina/volutans" all="5"/>
+    <serviceCategoryKind>6</serviceCategoryKind>
+  </TariffProfile>
+</TariffProfileList>

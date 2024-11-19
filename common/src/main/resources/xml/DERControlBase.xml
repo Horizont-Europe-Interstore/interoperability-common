@@ -1,0 +1,62 @@
+<DERControlBase xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <opModConnect>false</opModConnect>
+  <!--Optional:-->
+  <opModEnergize>false</opModEnergize>
+  <!--Optional:-->
+  <opModFixedPF>
+    <displacement>1</displacement>
+    <multiplier>2</multiplier>
+  </opModFixedPF>
+  <!--Optional:-->
+  <opModFixedVar>
+    <refType>6</refType>
+    <value>1</value>
+  </opModFixedVar>
+  <!--Optional:-->
+  <opModFixedW>1</opModFixedW>
+  <!--Optional:-->
+  <opModFreqDroop>
+    <dBOF>7</dBOF>
+    <dBUF>7</dBUF>
+    <kOF>5</kOF>
+    <kUF>5</kUF>
+    <openLoopTms>5</openLoopTms>
+  </opModFreqDroop>
+  <!--Optional:-->
+  <opModFreqWatt href="http://www.company.edu/acuto/qui"/>
+  <!--Optional:-->
+  <opModHFRTMustTrip href="http://www.test.edu/cum/foedere"/>
+  <!--Optional:-->
+  <opModHVRTMomentaryCessation href="http://www.test.edu/maria/cum"/>
+  <!--Optional:-->
+  <opModHVRTMustTrip href="http://www.my.com/ego/austris"/>
+  <!--Optional:-->
+  <opModLFRTMustTrip href="http://www.my.com/regemque/ferant"/>
+  <!--Optional:-->
+  <opModLVRTMomentaryCessation href="http://www.your.org/quippe/illum"/>
+  <!--Optional:-->
+  <opModLVRTMustTrip href="http://www.my.com/vinclis/claustra"/>
+  <!--Optional:-->
+  <opModMaxLimW>5</opModMaxLimW>
+  <!--Optional:-->
+  <opModTargetVar>
+    <multiplier>2</multiplier>
+    <value>1</value>
+  </opModTargetVar>
+  <!--Optional:-->
+  <opModTargetW>
+    <multiplier>2</multiplier>
+    <value>1</value>
+  </opModTargetW>
+  <!--Optional:-->
+  <opModVoltVar href="http://www.corp.com/talia/imposuit"/>
+  <!--Optional:-->
+  <opModVoltWatt href="http://www.test.gov/turbine/et"/>
+  <!--Optional:-->
+  <opModWattPF href="http://www.sample.com/ni/et"/>
+  <!--Optional:-->
+  <opModWattVar href="http://www.test.com/tot/exspirantem"/>
+  <!--Optional:-->
+  <rampTms>5</rampTms>
+</DERControlBase>

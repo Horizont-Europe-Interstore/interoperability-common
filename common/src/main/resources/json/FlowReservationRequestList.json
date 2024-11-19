@@ -1,0 +1,48 @@
+{
+  "flowReservationRequest": [
+    {
+      "creationTime": 10,
+      "durationRequested": 5,
+      "energyRequested": {
+        "multiplier": {
+          "value": 2
+        },
+        "value": 10
+      },
+      "intervalRequested": {
+        "duration": 7,
+        "start": 10
+      },
+      "powerRequested": {
+        "multiplier": {
+          "value": 2
+        },
+        "value": 1
+      },
+      "requestStatus": {
+        "dateTime": 10,
+        "requestStatus": 6
+      },
+      "mrid": {
+        "value": [
+          109,
+          101,
+          116,
+          117,
+          101,
+          110,
+          115
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.test.org/iras/bella"
+    }
+  ],
+  "pollRate": 900,
+  "all": 5,
+  "results": 6,
+  "href": "http://www.company.com/dea/aut"
+}

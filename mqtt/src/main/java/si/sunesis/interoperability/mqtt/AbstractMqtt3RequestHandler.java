@@ -30,7 +30,6 @@ import si.sunesis.interoperability.common.constants.Constants;
 import si.sunesis.interoperability.common.interfaces.RequestHandler;
 import si.sunesis.interoperability.common.models.MqttMessage;
 
-import javax.annotation.PreDestroy;
 import javax.json.Json;
 import javax.json.JsonObject;
 import java.nio.charset.StandardCharsets;
@@ -100,7 +99,7 @@ public abstract class AbstractMqtt3RequestHandler extends AbstractRequestHandler
                     }
                 }).send().join();
 
-        log.debug("Published message: {}", ack);
+        log.debug("Subscribed to topic: {}", ack);
     }
 
     @Override

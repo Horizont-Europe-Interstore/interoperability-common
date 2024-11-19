@@ -1,0 +1,32 @@
+{
+  "projectionReading": [
+    {
+      "billingReadingSetListLink": {
+        "all": 5,
+        "href": "http://www.sample.edu/et/aeolus"
+      },
+      "readingTypeLink": {
+        "href": "http://www.corp.com/molemque/iaculata"
+      },
+      "mrid": {
+        "value": [
+          114,
+          97,
+          112,
+          105,
+          100,
+          117,
+          109
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.your.com/regemque/gero"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "href": "http://www.sample.gov/evertitque/qui"
+}

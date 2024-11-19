@@ -1,0 +1,121 @@
+{
+  "derControl": [
+    {
+      "derControlBase": {
+        "opModConnect": true,
+        "opModEnergize": true,
+        "opModFixedPF": {
+          "displacement": 1,
+          "multiplier": {
+            "value": 2
+          }
+        },
+        "opModFixedVar": {
+          "refType": {
+            "value": 6
+          },
+          "value": {
+            "value": 1
+          }
+        },
+        "opModFixedW": {
+          "value": 1
+        },
+        "opModFreqDroop": {
+          "dbof": 7,
+          "dbuf": 7,
+          "kof": 5,
+          "kuf": 5,
+          "openLoopTms": 5
+        },
+        "opModFreqWatt": {
+          "href": "http://www.test.com/montis/bella"
+        },
+        "opModHFRTMustTrip": {
+          "href": "http://www.sample.org/ignem/per"
+        },
+        "opModHVRTMomentaryCessation": {
+          "href": "http://www.your.com/sonoras/ac"
+        },
+        "opModHVRTMustTrip": {
+          "href": "http://www.company.gov/auras/praeterea"
+        },
+        "opModLFRTMustTrip": {
+          "href": "http://www.company.com/transfixo/tot"
+        },
+        "opModLVRTMomentaryCessation": {
+          "href": "http://www.company.com/aeolus/vasto"
+        },
+        "opModLVRTMustTrip": {
+          "href": "http://www.your.org/imposuit/ac"
+        },
+        "opModMaxLimW": {
+          "value": 5
+        },
+        "opModTargetVar": {
+          "multiplier": {
+            "value": 2
+          },
+          "value": 1
+        },
+        "opModTargetW": {
+          "multiplier": {
+            "value": 2
+          },
+          "value": 1
+        },
+        "opModVoltVar": {
+          "href": "http://www.my.com/faciat/scopuloque"
+        },
+        "opModVoltWatt": {
+          "href": "http://www.any.com/regina/et"
+        },
+        "opModWattPF": {
+          "href": "http://www.test.com/rapidi/laxas"
+        },
+        "opModWattVar": {
+          "href": "http://www.any.com/aris/abdidit"
+        },
+        "rampTms": 5
+      },
+      "randomizeDuration": {
+        "value": 1
+      },
+      "randomizeStart": {
+        "value": 1
+      },
+      "creationTime": 10,
+      "eventStatus": {
+        "currentStatus": 6,
+        "dateTime": 10,
+        "potentiallySuperseded": true,
+        "potentiallySupersededTime": 10,
+        "reason": "string"
+      },
+      "interval": {
+        "duration": 7,
+        "start": 10
+      },
+      "mrid": {
+        "value": [
+          97,
+          99
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "subscribable": 0,
+      "replyTo": "http://www.any.edu/soror/transfixo",
+      "responseRequired": [
+        0
+      ],
+      "href": "http://www.test.com/profundum/volutans"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "subscribable": 0,
+  "href": "http://www.my.org/illi/animos"
+}

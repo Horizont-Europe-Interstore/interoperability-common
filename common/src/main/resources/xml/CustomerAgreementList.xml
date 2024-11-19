@@ -1,0 +1,34 @@
+<CustomerAgreementList href="http://www.your.com/omnipotens/omnipotens" subscribable="0" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <CustomerAgreement href="http://www.corp.com/animos/nubibus">
+    <mRID>6574</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <!--Optional:-->
+    <ActiveBillingPeriodListLink href="http://www.your.com/omnipotens/e" all="5"/>
+    <!--Optional:-->
+    <ActiveProjectionReadingListLink href="http://www.your.org/quae/praeterea" all="5"/>
+    <!--Optional:-->
+    <ActiveTargetReadingListLink href="http://www.your.com/temperat/tempestatesque" all="5"/>
+    <!--Optional:-->
+    <BillingPeriodListLink href="http://www.any.com/indignantes/rates" all="5"/>
+    <!--Optional:-->
+    <HistoricalReadingListLink href="http://www.sample.org/disiecitque/rates" all="5"/>
+    <!--Optional:-->
+    <PrepaymentLink href="http://www.corp.com/gente/illum"/>
+    <!--Optional:-->
+    <ProjectionReadingListLink href="http://www.sample.edu/nubibus/quisquam" all="5"/>
+    <!--Optional:-->
+    <serviceAccount>string</serviceAccount>
+    <!--Optional:-->
+    <serviceLocation>string</serviceLocation>
+    <!--Optional:-->
+    <TargetReadingListLink href="http://www.test.gov/indignantes/et" all="5"/>
+    <!--Optional:-->
+    <TariffProfileLink href="http://www.corp.org/ni/aequora"/>
+    <!--Optional:-->
+    <UsagePointLink href="http://www.any.com/magno/divum"/>
+  </CustomerAgreement>
+</CustomerAgreementList>

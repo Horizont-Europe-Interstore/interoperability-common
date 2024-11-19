@@ -1,0 +1,11 @@
+<ReadingSetBase href="http://www.sample.org/in/infixit" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>706572</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <timePeriod>
+    <duration>7</duration>
+    <start>10</start>
+  </timePeriod>
+</ReadingSetBase>

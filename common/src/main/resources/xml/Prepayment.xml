@@ -1,0 +1,66 @@
+<Prepayment href="http://www.my.edu/in/animos" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>63697263756D</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <AccountBalanceLink href="http://www.test.com/aeolus/patriam"/>
+  <!--Optional:-->
+  <ActiveCreditRegisterListLink href="http://www.my.org/furentibus/aut" all="5"/>
+  <!--Optional:-->
+  <ActiveSupplyInterruptionOverrideListLink href="http://www.company.edu/luctantis/sciret" all="5"/>
+  <!--Optional:-->
+  <creditExpiryLevel>
+    <!--Optional:-->
+    <energyUnit>
+      <multiplier>2</multiplier>
+      <value>11</value>
+    </energyUnit>
+    <monetaryUnit>5</monetaryUnit>
+    <multiplier>2</multiplier>
+    <value>3</value>
+  </creditExpiryLevel>
+  <CreditRegisterListLink href="http://www.sample.gov/cum/ignem" all="5"/>
+  <!--Optional:-->
+  <lowCreditWarningLevel>
+    <!--Optional:-->
+    <energyUnit>
+      <multiplier>2</multiplier>
+      <value>11</value>
+    </energyUnit>
+    <monetaryUnit>5</monetaryUnit>
+    <multiplier>2</multiplier>
+    <value>3</value>
+  </lowCreditWarningLevel>
+  <!--Optional:-->
+  <lowEmergencyCreditWarningLevel>
+    <!--Optional:-->
+    <energyUnit>
+      <multiplier>2</multiplier>
+      <value>11</value>
+    </energyUnit>
+    <monetaryUnit>5</monetaryUnit>
+    <multiplier>2</multiplier>
+    <value>3</value>
+  </lowEmergencyCreditWarningLevel>
+  <prepayMode>6</prepayMode>
+  <PrepayOperationStatusLink href="http://www.company.org/patriam/montis"/>
+  <SupplyInterruptionOverrideListLink href="http://www.test.org/rapidi/rex" all="5"/>
+  <!--Zero or more repetitio-->
+  <UsagePoint href="http://www.company.com/animos/disiecitque">
+    <mRID>707261657465726561</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <roleFlags>6C6F</roleFlags>
+    <serviceCategoryKind>6</serviceCategoryKind>
+    <status>6</status>
+    <!--Optional:-->
+    <deviceLFDI>6574</deviceLFDI>
+    <!--Optional:-->
+    <MeterReadingListLink href="http://www.your.org/turbine/tempestatesque" all="5"/>
+  </UsagePoint>
+  <!--Optional:-->
+  <UsagePointLink href="http://www.my.com/dea/auras"/>
+</Prepayment>

@@ -1,0 +1,33 @@
+<FlowReservationResponseList href="http://www.any.com/volutans/iovisque" subscribable="0" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <FlowReservationResponse href="http://www.test.com/iras/ventis" replyTo="http://www.sample.org/feta/mollitque" responseRequired="00" subscribable="0">
+    <mRID>696E6365646F</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <creationTime>10</creationTime>
+    <EventStatus>
+      <currentStatus>6</currentStatus>
+      <dateTime>10</dateTime>
+      <potentiallySuperseded>false</potentiallySuperseded>
+      <!--Optional:-->
+      <potentiallySupersededTime>10</potentiallySupersededTime>
+      <!--Optional:-->
+      <reason>string</reason>
+    </EventStatus>
+    <interval>
+      <duration>7</duration>
+      <start>10</start>
+    </interval>
+    <energyAvailable>
+      <multiplier>2</multiplier>
+      <value>10</value>
+    </energyAvailable>
+    <powerAvailable>
+      <multiplier>2</multiplier>
+      <value>1</value>
+    </powerAvailable>
+    <subject>6D61726961</subject>
+  </FlowReservationResponse>
+</FlowReservationResponseList>

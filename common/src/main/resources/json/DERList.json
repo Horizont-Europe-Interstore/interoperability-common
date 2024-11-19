@@ -1,0 +1,34 @@
+{
+  "der": [
+    {
+      "associatedDERProgramListLink": {
+        "all": 5,
+        "href": "http://www.test.org/rex/ac"
+      },
+      "associatedUsagePointLink": {
+        "href": "http://www.any.com/per/fremunt"
+      },
+      "currentDERProgramLink": {
+        "href": "http://www.corp.org/luctantis/aut"
+      },
+      "derAvailabilityLink": {
+        "href": "http://www.my.com/qui/speluncis"
+      },
+      "derCapabilityLink": {
+        "href": "http://www.your.com/ego/supplex"
+      },
+      "derSettingsLink": {
+        "href": "http://www.any.org/cum/ventos"
+      },
+      "derStatusLink": {
+        "href": "http://www.your.edu/ventos/cum"
+      },
+      "subscribable": 0,
+      "href": "http://www.any.org/dedit/celsa"
+    }
+  ],
+  "pollRate": 900,
+  "all": 5,
+  "results": 6,
+  "href": "http://www.my.com/altos/dea"
+}

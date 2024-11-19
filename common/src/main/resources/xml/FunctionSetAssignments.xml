@@ -1,0 +1,27 @@
+<FunctionSetAssignments href="http://www.company.edu/rex/imposuit" subscribable="0" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <CustomerAccountListLink href="http://www.test.com/murmure/illum" all="5"/>
+  <!--Optional:-->
+  <DemandResponseProgramListLink href="http://www.sample.com/corripuit/una" all="5"/>
+  <!--Optional:-->
+  <DERProgramListLink href="http://www.your.gov/circum/nubibus" all="5"/>
+  <!--Optional:-->
+  <FileListLink href="http://www.company.gov/carcere/evertitque" all="5"/>
+  <!--Optional:-->
+  <MessagingProgramListLink href="http://www.test.com/montis/premere" all="5"/>
+  <!--Optional:-->
+  <PrepaymentListLink href="http://www.my.edu/evertitque/premit" all="5"/>
+  <!--Optional:-->
+  <ResponseSetListLink href="http://www.your.org/atris/cum" all="5"/>
+  <!--Optional:-->
+  <TariffProfileListLink href="http://www.sample.com/aequora/temperat" all="5"/>
+  <!--Optional:-->
+  <TimeLink href="http://www.corp.org/dedit/celsa"/>
+  <!--Optional:-->
+  <UsagePointListLink href="http://www.company.org/insuper/in" all="5"/>
+  <mRID>73636570747261</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+</FunctionSetAssignments>

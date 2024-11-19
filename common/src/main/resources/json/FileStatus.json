@@ -1,0 +1,14 @@
+{
+  "activateTime": 10,
+  "fileLink": {
+    "href": "http://www.my.com/profundum/omnipotens"
+  },
+  "loadPercent": 6,
+  "nextRequestAttempt": 10,
+  "request503Count": 5,
+  "requestFailCount": 5,
+  "status": 6,
+  "statusTime": 10,
+  "pollRate": 900,
+  "href": "http://www.company.com/flammas/ipsa"
+}

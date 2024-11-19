@@ -1,0 +1,23 @@
+<BillingReading href="http://www.any.org/hic/supplex" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <consumptionBlock>6</consumptionBlock>
+  <!--Optional:-->
+  <qualityFlags>6175</qualityFlags>
+  <!--Optional:-->
+  <timePeriod>
+    <duration>7</duration>
+    <start>10</start>
+  </timePeriod>
+  <!--Optional:-->
+  <touTier>6</touTier>
+  <!--Optional:-->
+  <value>10</value>
+  <!--Zero or more repetitio-->
+  <Charge>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <kind>6</kind>
+    <value>3</value>
+  </Charge>
+</BillingReading>

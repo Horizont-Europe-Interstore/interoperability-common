@@ -1,0 +1,7 @@
+<SubscribableIdentifiedObject href="http://www.company.com/divum/una" subscribable="0" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>6D61726961</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+</SubscribableIdentifiedObject>

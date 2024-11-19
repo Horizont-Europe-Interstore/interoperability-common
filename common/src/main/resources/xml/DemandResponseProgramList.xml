@@ -1,0 +1,22 @@
+<DemandResponseProgramList href="http://www.sample.org/supplex/habenas" subscribable="0" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <DemandResponseProgram href="http://www.your.com/celsa/ac">
+    <mRID>65</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <!--Optional:-->
+    <ActiveEndDeviceControlListLink href="http://www.sample.org/secum/magno" all="5"/>
+    <!--Optional:-->
+    <availabilityUpdatePercentChangeThreshold>5</availabilityUpdatePercentChangeThreshold>
+    <!--Optional:-->
+    <availabilityUpdatePowerChangeThreshold>
+      <multiplier>2</multiplier>
+      <value>1</value>
+    </availabilityUpdatePowerChangeThreshold>
+    <!--Optional:-->
+    <EndDeviceControlListLink href="http://www.corp.com/habenas/quippe" all="5"/>
+    <primacy>6</primacy>
+  </DemandResponseProgram>
+</DemandResponseProgramList>

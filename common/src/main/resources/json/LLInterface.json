@@ -1,0 +1,42 @@
+{
+  "crCerrors": 7,
+  "eui64": [
+    102,
+    114,
+    101,
+    109,
+    117,
+    110,
+    116
+  ],
+  "ieee802154": {
+    "capabilityInfo": [
+      115
+    ],
+    "neighborListLink": {
+      "all": 5,
+      "href": "http://www.my.edu/tenens/et"
+    },
+    "shortAddress": 5
+  },
+  "linkLayerType": 6,
+  "llAckNotRx": 7,
+  "llcsmaFail": 7,
+  "llFramesDropRx": 7,
+  "llFramesDropTx": 7,
+  "llFramesRx": 7,
+  "llFramesTx": 7,
+  "llMediaAccessFail": 7,
+  "llOctetsRx": 7,
+  "llOctetsTx": 7,
+  "llRetryCount": 7,
+  "llSecurityErrorRx": 7,
+  "loWPAN": {
+    "octetsRx": 7,
+    "octetsTx": 7,
+    "packetsRx": 7,
+    "packetsTx": 7,
+    "rxFragError": 7
+  },
+  "href": "http://www.your.com/terras/acuto"
+}

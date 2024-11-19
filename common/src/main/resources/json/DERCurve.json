@@ -1,0 +1,39 @@
+{
+  "creationTime": 10,
+  "curveData": [
+    {
+      "xvalue": 3,
+      "yvalue": 3
+    }
+  ],
+  "curveType": {
+    "value": 6
+  },
+  "openLoopTms": 5,
+  "rampDecTms": 5,
+  "rampIncTms": 5,
+  "rampPT1Tms": 5,
+  "xMultiplier": {
+    "value": 2
+  },
+  "yMultiplier": {
+    "value": 2
+  },
+  "yRefType": {
+    "value": 6
+  },
+  "mrid": {
+    "value": [
+      99,
+      101,
+      114,
+      116,
+      111
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.test.org/nubibus/adorat"
+}

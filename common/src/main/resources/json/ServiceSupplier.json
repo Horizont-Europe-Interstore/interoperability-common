@@ -1,0 +1,23 @@
+{
+  "email": "string",
+  "phone": "string",
+  "providerID": 7,
+  "web": "string",
+  "mrid": {
+    "value": [
+      116,
+      101,
+      109,
+      112,
+      101,
+      114,
+      97,
+      116
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.sample.com/tenens/verrantque"
+}

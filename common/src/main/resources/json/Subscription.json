@@ -1,0 +1,13 @@
+{
+  "condition": {
+    "attributeIdentifier": 6,
+    "lowerThreshold": 10,
+    "upperThreshold": 10
+  },
+  "encoding": 6,
+  "level": "string",
+  "limit": 5,
+  "notificationURI": "http://www.company.com/premere/iras",
+  "subscribedResource": "http://www.my.org/turbine/loca",
+  "href": "http://www.sample.com/gero/pater"
+}

@@ -1,0 +1,14 @@
+<MeterReading href="http://www.your.com/infixit/numen" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>616375746F</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <!--Optional:-->
+  <RateComponentListLink href="http://www.your.org/premere/coniunx" all="5"/>
+  <!--Optional:-->
+  <ReadingLink href="http://www.any.org/rex/aeoliam"/>
+  <!--Optional:-->
+  <ReadingSetListLink href="http://www.sample.org/antro/pater" all="5"/>
+  <ReadingTypeLink href="http://www.company.com/foedere/pater"/>
+</MeterReading>

@@ -1,0 +1,25 @@
+{
+  "createdDateTime": 10,
+  "endDeviceLFDI": [
+    109,
+    97,
+    103,
+    110,
+    111
+  ],
+  "status": 6,
+  "subject": {
+    "value": [
+      115,
+      112,
+      101,
+      108,
+      117,
+      110,
+      99,
+      105,
+      115
+    ]
+  },
+  "href": "http://www.corp.com/carcere/coniunx"
+}

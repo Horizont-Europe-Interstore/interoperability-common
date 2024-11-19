@@ -1,0 +1,30 @@
+{
+  "currency": 5,
+  "customerAccount": "string",
+  "customerAgreementListLink": {
+    "all": 5,
+    "href": "http://www.sample.org/premit/bella"
+  },
+  "customerName": "string",
+  "pricePowerOfTenMultiplier": {
+    "value": 2
+  },
+  "serviceSupplierLink": {
+    "href": "http://www.my.com/et/iovis"
+  },
+  "mrid": {
+    "value": [
+      97,
+      101,
+      111,
+      108,
+      117,
+      115
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.test.org/rapidum/flammato"
+}

@@ -1,0 +1,22 @@
+{
+  "mrid": {
+    "value": [
+      112,
+      101,
+      99,
+      116,
+      111,
+      114,
+      101
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "replyTo": "http://www.any.com/aeolus/loca",
+  "responseRequired": [
+    0
+  ],
+  "href": "http://www.company.org/metuens/terras"
+}

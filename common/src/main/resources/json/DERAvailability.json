@@ -1,0 +1,25 @@
+{
+  "availabilityDuration": 7,
+  "maxChargeDuration": 7,
+  "readingTime": 10,
+  "reserveChargePercent": {
+    "value": 5
+  },
+  "reservePercent": {
+    "value": 5
+  },
+  "statVarAvail": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "statWAvail": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "subscribable": 0,
+  "href": "http://www.company.com/nubibus/acuto"
+}

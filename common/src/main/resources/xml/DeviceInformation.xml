@@ -1,0 +1,30 @@
+<DeviceInformation href="http://www.company.org/bella/vinclis" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <DRLCCapabilities>
+    <averageEnergy>
+      <multiplier>2</multiplier>
+      <value>11</value>
+    </averageEnergy>
+    <maxDemand>
+      <multiplier>2</multiplier>
+      <value>1</value>
+    </maxDemand>
+    <optionsImplemented>636F6E69</optionsImplemented>
+  </DRLCCapabilities>
+  <!--Optional:-->
+  <functionsImplemented>696C6C69</functionsImplemented>
+  <lFDI>646976756D</lFDI>
+  <mfDate>10</mfDate>
+  <mfHwVer>string</mfHwVer>
+  <mfID>7</mfID>
+  <!--Optional:-->
+  <mfInfo>string</mfInfo>
+  <mfModel>string</mfModel>
+  <mfSerNum>string</mfSerNum>
+  <primaryPower>6</primaryPower>
+  <secondaryPower>6</secondaryPower>
+  <!--Optional:-->
+  <SupportedLocaleListLink href="http://www.sample.com/sciret/exspirantem" all="5"/>
+  <swActTime>10</swActTime>
+  <swVer>string</swVer>
+</DeviceInformation>

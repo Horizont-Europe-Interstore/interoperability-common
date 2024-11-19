@@ -1,0 +1,22 @@
+<FunctionSetAssignmentsBase href="http://www.sample.org/altos/annos" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <CustomerAccountListLink href="http://www.any.com/volutans/montis" all="5"/>
+  <!--Optional:-->
+  <DemandResponseProgramListLink href="http://www.test.com/profundum/supplex" all="5"/>
+  <!--Optional:-->
+  <DERProgramListLink href="http://www.corp.com/atris/austris" all="5"/>
+  <!--Optional:-->
+  <FileListLink href="http://www.any.org/ast/omnipotens" all="5"/>
+  <!--Optional:-->
+  <MessagingProgramListLink href="http://www.company.com/nimborum/et" all="5"/>
+  <!--Optional:-->
+  <PrepaymentListLink href="http://www.sample.com/soror/adorat" all="5"/>
+  <!--Optional:-->
+  <ResponseSetListLink href="http://www.your.com/quisquam/rex" all="5"/>
+  <!--Optional:-->
+  <TariffProfileListLink href="http://www.your.com/ferant/feta" all="5"/>
+  <!--Optional:-->
+  <TimeLink href="http://www.my.edu/furentibus/imposuit"/>
+  <!--Optional:-->
+  <UsagePointListLink href="http://www.my.com/sedet/antro" all="5"/>
+</FunctionSetAssignmentsBase>

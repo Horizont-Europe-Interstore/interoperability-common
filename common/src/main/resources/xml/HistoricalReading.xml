@@ -1,0 +1,11 @@
+<HistoricalReading href="http://www.corp.com/quisquam/nubibus" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>69707361</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <!--Optional:-->
+  <BillingReadingSetListLink href="http://www.any.com/dea/atris" all="5"/>
+  <!--Optional:-->
+  <ReadingTypeLink href="http://www.any.com/numen/iovis"/>
+</HistoricalReading>

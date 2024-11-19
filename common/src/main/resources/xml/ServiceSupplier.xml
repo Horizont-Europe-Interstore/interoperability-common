@@ -1,0 +1,15 @@
+<ServiceSupplier href="http://www.sample.com/tenens/verrantque" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>74656D7065726174</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <!--Optional:-->
+  <email>string</email>
+  <!--Optional:-->
+  <phone>string</phone>
+  <!--Optional:-->
+  <providerID>7</providerID>
+  <!--Optional:-->
+  <web>string</web>
+</ServiceSupplier>

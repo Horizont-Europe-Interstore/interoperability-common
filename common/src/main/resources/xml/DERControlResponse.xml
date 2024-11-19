@@ -1,0 +1,8 @@
+<DERControlResponse href="http://www.corp.com/carcere/coniunx" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <createdDateTime>10</createdDateTime>
+  <endDeviceLFDI>6D61676E6F</endDeviceLFDI>
+  <!--Optional:-->
+  <status>6</status>
+  <subject>7370656C756E636973</subject>
+</DERControlResponse>

@@ -1,0 +1,16 @@
+<DERProgram href="http://www.my.org/sedet/arce" subscribable="0" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>717569</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <!--Optional:-->
+  <ActiveDERControlListLink href="http://www.my.edu/honorem/qui" all="5"/>
+  <!--Optional:-->
+  <DefaultDERControlLink href="http://www.any.com/regemque/talia"/>
+  <!--Optional:-->
+  <DERControlListLink href="http://www.corp.com/faciat/adorat" all="5"/>
+  <!--Optional:-->
+  <DERCurveListLink href="http://www.any.com/premit/scopuloque" all="5"/>
+  <primacy>6</primacy>
+</DERProgram>

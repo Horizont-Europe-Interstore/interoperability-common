@@ -1,0 +1,33 @@
+{
+  "activeDERControlListLink": {
+    "all": 5,
+    "href": "http://www.my.edu/honorem/qui"
+  },
+  "defaultDERControlLink": {
+    "href": "http://www.any.com/regemque/talia"
+  },
+  "derControlListLink": {
+    "all": 5,
+    "href": "http://www.corp.com/faciat/adorat"
+  },
+  "derCurveListLink": {
+    "all": 5,
+    "href": "http://www.any.com/premit/scopuloque"
+  },
+  "primacy": {
+    "value": 6
+  },
+  "mrid": {
+    "value": [
+      113,
+      117,
+      105
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "subscribable": 0,
+  "href": "http://www.my.org/sedet/arce"
+}

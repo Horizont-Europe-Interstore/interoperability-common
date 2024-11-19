@@ -1,0 +1,7 @@
+<MeterReadingBase href="http://www.test.com/incedo/molemque" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>717569737175616D</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+</MeterReadingBase>

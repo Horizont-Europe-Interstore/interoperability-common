@@ -1,0 +1,19 @@
+<DERList href="http://www.my.com/altos/dea" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <DER href="http://www.any.org/dedit/celsa" subscribable="0">
+    <!--Optional:-->
+    <AssociatedDERProgramListLink href="http://www.test.org/rex/ac" all="5"/>
+    <!--Optional:-->
+    <AssociatedUsagePointLink href="http://www.any.com/per/fremunt"/>
+    <!--Optional:-->
+    <CurrentDERProgramLink href="http://www.corp.org/luctantis/aut"/>
+    <!--Optional:-->
+    <DERAvailabilityLink href="http://www.my.com/qui/speluncis"/>
+    <!--Optional:-->
+    <DERCapabilityLink href="http://www.your.com/ego/supplex"/>
+    <!--Optional:-->
+    <DERSettingsLink href="http://www.any.org/cum/ventos"/>
+    <!--Optional:-->
+    <DERStatusLink href="http://www.your.edu/ventos/cum"/>
+  </DER>
+</DERList>

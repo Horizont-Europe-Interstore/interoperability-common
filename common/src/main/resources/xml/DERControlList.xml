@@ -1,0 +1,90 @@
+<DERControlList href="http://www.my.org/illi/animos" subscribable="0" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <DERControl href="http://www.test.com/profundum/volutans" replyTo="http://www.any.edu/soror/transfixo" responseRequired="00" subscribable="0">
+    <mRID>6163</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <creationTime>10</creationTime>
+    <EventStatus>
+      <currentStatus>6</currentStatus>
+      <dateTime>10</dateTime>
+      <potentiallySuperseded>true</potentiallySuperseded>
+      <!--Optional:-->
+      <potentiallySupersededTime>10</potentiallySupersededTime>
+      <!--Optional:-->
+      <reason>string</reason>
+    </EventStatus>
+    <interval>
+      <duration>7</duration>
+      <start>10</start>
+    </interval>
+    <!--Optional:-->
+    <randomizeDuration>1</randomizeDuration>
+    <!--Optional:-->
+    <randomizeStart>1</randomizeStart>
+    <DERControlBase>
+      <!--Optional:-->
+      <opModConnect>true</opModConnect>
+      <!--Optional:-->
+      <opModEnergize>true</opModEnergize>
+      <!--Optional:-->
+      <opModFixedPF>
+        <displacement>1</displacement>
+        <multiplier>2</multiplier>
+      </opModFixedPF>
+      <!--Optional:-->
+      <opModFixedVar>
+        <refType>6</refType>
+        <value>1</value>
+      </opModFixedVar>
+      <!--Optional:-->
+      <opModFixedW>1</opModFixedW>
+      <!--Optional:-->
+      <opModFreqDroop>
+        <dBOF>7</dBOF>
+        <dBUF>7</dBUF>
+        <kOF>5</kOF>
+        <kUF>5</kUF>
+        <openLoopTms>5</openLoopTms>
+      </opModFreqDroop>
+      <!--Optional:-->
+      <opModFreqWatt href="http://www.test.com/montis/bella"/>
+      <!--Optional:-->
+      <opModHFRTMustTrip href="http://www.sample.org/ignem/per"/>
+      <!--Optional:-->
+      <opModHVRTMomentaryCessation href="http://www.your.com/sonoras/ac"/>
+      <!--Optional:-->
+      <opModHVRTMustTrip href="http://www.company.gov/auras/praeterea"/>
+      <!--Optional:-->
+      <opModLFRTMustTrip href="http://www.company.com/transfixo/tot"/>
+      <!--Optional:-->
+      <opModLVRTMomentaryCessation href="http://www.company.com/aeolus/vasto"/>
+      <!--Optional:-->
+      <opModLVRTMustTrip href="http://www.your.org/imposuit/ac"/>
+      <!--Optional:-->
+      <opModMaxLimW>5</opModMaxLimW>
+      <!--Optional:-->
+      <opModTargetVar>
+        <multiplier>2</multiplier>
+        <value>1</value>
+      </opModTargetVar>
+      <!--Optional:-->
+      <opModTargetW>
+        <multiplier>2</multiplier>
+        <value>1</value>
+      </opModTargetW>
+      <!--Optional:-->
+      <opModVoltVar href="http://www.my.com/faciat/scopuloque"/>
+      <!--Optional:-->
+      <opModVoltWatt href="http://www.any.com/regina/et"/>
+      <!--Optional:-->
+      <opModWattPF href="http://www.test.com/rapidi/laxas"/>
+      <!--Optional:-->
+      <opModWattVar href="http://www.any.com/aris/abdidit"/>
+      <!--Optional:-->
+      <rampTms>5</rampTms>
+    </DERControlBase>
+  </DERControl>
+</DERControlList>

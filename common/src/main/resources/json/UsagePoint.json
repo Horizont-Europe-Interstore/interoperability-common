@@ -1,0 +1,41 @@
+{
+  "deviceLFDI": [
+    116,
+    97,
+    108,
+    105,
+    97
+  ],
+  "meterReadingListLink": {
+    "all": 5,
+    "href": "http://www.company.org/iaculata/rapidum"
+  },
+  "roleFlags": {
+    "value": [
+      113,
+      117
+    ]
+  },
+  "serviceCategoryKind": {
+    "value": 6
+  },
+  "status": 6,
+  "mrid": {
+    "value": [
+      109,
+      111,
+      108,
+      108,
+      105,
+      116,
+      113,
+      117,
+      101
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.company.com/aeolus/flammas"
+}

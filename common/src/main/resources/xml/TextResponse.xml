@@ -1,0 +1,8 @@
+<TextResponse href="http://www.test.gov/rex/corripuit" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <createdDateTime>10</createdDateTime>
+  <endDeviceLFDI>6174726973</endDeviceLFDI>
+  <!--Optional:-->
+  <status>6</status>
+  <subject>717569</subject>
+</TextResponse>

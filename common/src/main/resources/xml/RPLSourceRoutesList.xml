@@ -1,0 +1,7 @@
+<RPLSourceRoutesList href="http://www.corp.org/coniunx/illum" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <RPLSourceRoutes href="http://www.company.org/rex/et">
+    <DestAddress>6D6F6E746973</DestAddress>
+    <SourceRoute>65</SourceRoute>
+  </RPLSourceRoutes>
+</RPLSourceRoutesList>

@@ -1,0 +1,13 @@
+<BillingReadingSet href="http://www.test.com/feta/et" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>636572746F</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <timePeriod>
+    <duration>7</duration>
+    <start>10</start>
+  </timePeriod>
+  <!--Optional:-->
+  <BillingReadingListLink href="http://www.company.com/e/certo" all="5"/>
+</BillingReadingSet>

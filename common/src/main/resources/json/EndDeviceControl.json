@@ -1,0 +1,75 @@
+{
+  "applianceLoadReduction": {
+    "type": {
+      "value": 6
+    }
+  },
+  "deviceCategory": {
+    "value": [
+      108,
+      117,
+      99,
+      116
+    ]
+  },
+  "drProgramMandatory": false,
+  "dutyCycle": {
+    "normalValue": 6
+  },
+  "loadShiftForward": false,
+  "offset": {
+    "coolingOffset": 6,
+    "heatingOffset": 6,
+    "loadAdjustmentPercentageOffset": {
+      "value": 5
+    }
+  },
+  "overrideDuration": 5,
+  "setPoint": {
+    "coolingSetpoint": 1,
+    "heatingSetpoint": 1
+  },
+  "targetReduction": {
+    "type": {
+      "value": 6
+    },
+    "value": 5
+  },
+  "randomizeDuration": {
+    "value": 1
+  },
+  "randomizeStart": {
+    "value": 1
+  },
+  "creationTime": 10,
+  "eventStatus": {
+    "currentStatus": 6,
+    "dateTime": 10,
+    "potentiallySuperseded": true,
+    "potentiallySupersededTime": 10,
+    "reason": "string"
+  },
+  "interval": {
+    "duration": 7,
+    "start": 10
+  },
+  "mrid": {
+    "value": [
+      98,
+      101,
+      108,
+      108,
+      97
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "subscribable": 0,
+  "replyTo": "http://www.company.com/premit/secum",
+  "responseRequired": [
+    0
+  ],
+  "href": "http://www.my.org/vinclis/insuper"
+}

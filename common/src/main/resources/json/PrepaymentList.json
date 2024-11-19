@@ -1,0 +1,138 @@
+{
+  "prepayment": [
+    {
+      "accountBalanceLink": {
+        "href": "http://www.any.com/dare/murmure"
+      },
+      "activeCreditRegisterListLink": {
+        "all": 5,
+        "href": "http://www.company.com/sed/celsa"
+      },
+      "activeSupplyInterruptionOverrideListLink": {
+        "all": 5,
+        "href": "http://www.any.com/dea/iussus"
+      },
+      "creditExpiryLevel": {
+        "energyUnit": {
+          "multiplier": {
+            "value": 2
+          },
+          "value": 11
+        },
+        "monetaryUnit": {
+          "value": 5
+        },
+        "multiplier": {
+          "value": 2
+        },
+        "value": 3
+      },
+      "creditRegisterListLink": {
+        "all": 5,
+        "href": "http://www.test.org/in/metuens"
+      },
+      "lowCreditWarningLevel": {
+        "energyUnit": {
+          "multiplier": {
+            "value": 2
+          },
+          "value": 11
+        },
+        "monetaryUnit": {
+          "value": 5
+        },
+        "multiplier": {
+          "value": 2
+        },
+        "value": 3
+      },
+      "lowEmergencyCreditWarningLevel": {
+        "energyUnit": {
+          "multiplier": {
+            "value": 2
+          },
+          "value": 11
+        },
+        "monetaryUnit": {
+          "value": 5
+        },
+        "multiplier": {
+          "value": 2
+        },
+        "value": 3
+      },
+      "prepayMode": {
+        "value": 6
+      },
+      "prepayOperationStatusLink": {
+        "href": "http://www.test.com/rates/frenat"
+      },
+      "supplyInterruptionOverrideListLink": {
+        "all": 5,
+        "href": "http://www.corp.com/dare/omnipotens"
+      },
+      "usagePoint": [
+        {
+          "deviceLFDI": [
+            112,
+            101,
+            114
+          ],
+          "meterReadingListLink": {
+            "all": 5,
+            "href": "http://www.test.org/speluncis/regemque"
+          },
+          "roleFlags": {
+            "value": [
+              97,
+              114
+            ]
+          },
+          "serviceCategoryKind": {
+            "value": 6
+          },
+          "status": 6,
+          "mrid": {
+            "value": [
+              97,
+              110,
+              110,
+              111,
+              115
+            ]
+          },
+          "description": "string",
+          "version": {
+            "value": 5
+          },
+          "href": "http://www.company.com/in/aeolus"
+        }
+      ],
+      "usagePointLink": {
+        "href": "http://www.sample.com/profundum/rex"
+      },
+      "mrid": {
+        "value": [
+          105,
+          97,
+          99,
+          117,
+          108,
+          97,
+          116,
+          97
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.test.gov/adorat/cum"
+    }
+  ],
+  "pollRate": 900,
+  "all": 5,
+  "results": 6,
+  "subscribable": 0,
+  "href": "http://www.company.com/vasto/imposuit"
+}

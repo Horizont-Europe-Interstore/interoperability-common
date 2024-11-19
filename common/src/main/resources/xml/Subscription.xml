@@ -1,0 +1,13 @@
+<Subscription href="http://www.sample.com/gero/pater" xmlns="urn:ieee:std:2030.5:ns">
+  <subscribedResource>http://www.my.org/turbine/loca</subscribedResource>
+  <!--Optional:-->
+  <Condition>
+    <attributeIdentifier>6</attributeIdentifier>
+    <lowerThreshold>10</lowerThreshold>
+    <upperThreshold>10</upperThreshold>
+  </Condition>
+  <encoding>6</encoding>
+  <level>string</level>
+  <limit>5</limit>
+  <notificationURI>http://www.company.com/premere/iras</notificationURI>
+</Subscription>

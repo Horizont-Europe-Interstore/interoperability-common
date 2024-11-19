@@ -1,0 +1,118 @@
+{
+  "modesSupported": {
+    "value": [
+      115,
+      111,
+      110,
+      111
+    ]
+  },
+  "rtgA": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 5
+  },
+  "rtgAbnormalCategory": 6,
+  "rtgAh": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 5
+  },
+  "rtgMaxChargeRateVA": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 5
+  },
+  "rtgMaxChargeRateW": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "rtgMaxDischargeRateVA": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 5
+  },
+  "rtgMaxDischargeRateW": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "rtgMinPF": {
+    "displacement": 1,
+    "multiplier": {
+      "value": 2
+    }
+  },
+  "rtgMinPFNeg": {
+    "displacement": 1,
+    "multiplier": {
+      "value": 2
+    }
+  },
+  "rtgNormalCategory": 6,
+  "rtgOverExcitedPF": {
+    "displacement": 1,
+    "multiplier": {
+      "value": 2
+    }
+  },
+  "rtgOverExcitedW": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "rtgUnderExcitedPF": {
+    "displacement": 1,
+    "multiplier": {
+      "value": 2
+    }
+  },
+  "rtgUnderExcitedW": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "rtgVA": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 5
+  },
+  "rtgVar": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "rtgVarNeg": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "rtgW": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "rtgWh": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 5
+  },
+  "type": {
+    "value": 6
+  },
+  "href": "http://www.test.com/honorem/montis"
+}

@@ -1,0 +1,25 @@
+<TextMessage href="http://www.your.org/per/celsa" replyTo="http://www.sample.edu/loca/divum" responseRequired="00" subscribable="0" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>6469736965636974717565</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <creationTime>10</creationTime>
+  <EventStatus>
+    <currentStatus>6</currentStatus>
+    <dateTime>10</dateTime>
+    <potentiallySuperseded>false</potentiallySuperseded>
+    <!--Optional:-->
+    <potentiallySupersededTime>10</potentiallySupersededTime>
+    <!--Optional:-->
+    <reason>string</reason>
+  </EventStatus>
+  <interval>
+    <duration>7</duration>
+    <start>10</start>
+  </interval>
+  <!--Optional:-->
+  <originator>string</originator>
+  <priority>6</priority>
+  <textMessage>string</textMessage>
+</TextMessage>

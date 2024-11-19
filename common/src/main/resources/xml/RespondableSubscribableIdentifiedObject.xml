@@ -1,0 +1,7 @@
+<RespondableSubscribableIdentifiedObject href="http://www.my.org/magno/ipsa" replyTo="http://www.test.com/ventis/carcere" responseRequired="00" subscribable="0" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>706563746F7265</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+</RespondableSubscribableIdentifiedObject>

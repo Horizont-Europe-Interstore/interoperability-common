@@ -1,0 +1,15 @@
+{
+  "currentTime": 10,
+  "dstEndTime": 10,
+  "dstOffset": {
+    "value": 3
+  },
+  "dstStartTime": 10,
+  "localTime": 10,
+  "quality": 6,
+  "tzOffset": {
+    "value": 3
+  },
+  "pollRate": 900,
+  "href": "http://www.sample.com/fremunt/speluncis"
+}

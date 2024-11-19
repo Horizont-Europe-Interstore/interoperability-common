@@ -1,0 +1,29 @@
+{
+  "serviceSupplier": [
+    {
+      "email": "string",
+      "phone": "string",
+      "providerID": 7,
+      "web": "string",
+      "mrid": {
+        "value": [
+          105,
+          109,
+          112,
+          111,
+          110,
+          101,
+          116
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.test.com/iunonis/disiecitque"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "href": "http://www.my.com/feta/flammas"
+}

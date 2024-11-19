@@ -1,0 +1,15 @@
+<ReadingBase href="http://www.your.org/talia/pectore" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <consumptionBlock>6</consumptionBlock>
+  <!--Optional:-->
+  <qualityFlags>696F</qualityFlags>
+  <!--Optional:-->
+  <timePeriod>
+    <duration>7</duration>
+    <start>10</start>
+  </timePeriod>
+  <!--Optional:-->
+  <touTier>6</touTier>
+  <!--Optional:-->
+  <value>10</value>
+</ReadingBase>

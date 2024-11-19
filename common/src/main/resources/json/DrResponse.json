@@ -1,0 +1,47 @@
+{
+  "applianceLoadReduction": {
+    "type": {
+      "value": 6
+    }
+  },
+  "appliedTargetReduction": {
+    "type": {
+      "value": 6
+    },
+    "value": 5
+  },
+  "dutyCycle": {
+    "normalValue": 6
+  },
+  "offset": {
+    "coolingOffset": 6,
+    "heatingOffset": 6,
+    "loadAdjustmentPercentageOffset": {
+      "value": 5
+    }
+  },
+  "overrideDuration": 5,
+  "setPoint": {
+    "coolingSetpoint": 1,
+    "heatingSetpoint": 1
+  },
+  "createdDateTime": 10,
+  "endDeviceLFDI": [
+    109,
+    97,
+    103,
+    110,
+    111
+  ],
+  "status": 6,
+  "subject": {
+    "value": [
+      114,
+      97,
+      116,
+      101,
+      115
+    ]
+  },
+  "href": "http://www.any.gov/austris/evertitque"
+}

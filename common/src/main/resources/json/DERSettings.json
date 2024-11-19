@@ -1,0 +1,111 @@
+{
+  "modesEnabled": {
+    "value": [
+      118,
+      101,
+      110,
+      116
+    ]
+  },
+  "setESDelay": 5,
+  "setESHighFreq": 5,
+  "setESHighVolt": 1,
+  "setESLowFreq": 5,
+  "setESLowVolt": 1,
+  "setESRandomDelay": 5,
+  "setGradW": 5,
+  "setMaxA": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 5
+  },
+  "setMaxAh": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 5
+  },
+  "setMaxChargeRateVA": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 5
+  },
+  "setMaxChargeRateW": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "setMaxDischargeRateVA": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 5
+  },
+  "setMaxDischargeRateW": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "setMaxVA": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 5
+  },
+  "setMaxVar": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "setMaxVarNeg": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "setMaxW": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "setMaxWh": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 5
+  },
+  "setMinPF": {
+    "displacement": 1,
+    "multiplier": {
+      "value": 2
+    }
+  },
+  "setMinPFNeg": {
+    "displacement": 1,
+    "multiplier": {
+      "value": 2
+    }
+  },
+  "setSoftGradW": 5,
+  "setVRef": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 5
+  },
+  "setVRefOfs": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 5
+  },
+  "updatedTime": 10,
+  "subscribable": 0,
+  "href": "http://www.any.org/austris/tenens"
+}

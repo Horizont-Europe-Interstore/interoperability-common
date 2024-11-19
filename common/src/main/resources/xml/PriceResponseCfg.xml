@@ -1,0 +1,5 @@
+<PriceResponseCfg href="http://www.your.org/adorat/profundum" xmlns="urn:ieee:std:2030.5:ns">
+  <consumeThreshold>3</consumeThreshold>
+  <maxReductionThreshold>3</maxReductionThreshold>
+  <RateComponentLink href="http://www.company.org/scopuloque/corde"/>
+</PriceResponseCfg>

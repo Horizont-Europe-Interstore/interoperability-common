@@ -1,0 +1,24 @@
+<RateComponent href="http://www.test.org/ventis/illum" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>61726365</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <!--Optional:-->
+  <ActiveTimeTariffIntervalListLink href="http://www.corp.com/per/insuper" all="5"/>
+  <!--Optional:-->
+  <flowRateEndLimit>
+    <multiplier>2</multiplier>
+    <unit>6</unit>
+    <value>3</value>
+  </flowRateEndLimit>
+  <!--Optional:-->
+  <flowRateStartLimit>
+    <multiplier>2</multiplier>
+    <unit>6</unit>
+    <value>3</value>
+  </flowRateStartLimit>
+  <ReadingTypeLink href="http://www.company.com/rapidi/nimborum"/>
+  <roleFlags>746F</roleFlags>
+  <TimeTariffIntervalListLink href="http://www.sample.com/hic/austris" all="5"/>
+</RateComponent>

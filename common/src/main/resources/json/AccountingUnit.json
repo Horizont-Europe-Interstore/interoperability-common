@@ -1,0 +1,15 @@
+{
+  "energyUnit": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 11
+  },
+  "monetaryUnit": {
+    "value": 5
+  },
+  "multiplier": {
+    "value": 2
+  },
+  "value": 3
+}

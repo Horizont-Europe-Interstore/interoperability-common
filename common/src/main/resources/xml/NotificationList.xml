@@ -1,0 +1,12 @@
+<NotificationList href="http://www.your.org/murmure/illi" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <Notification href="http://www.any.com/cum/et">
+    <subscribedResource>http://www.sample.org/furentibus/patriam</subscribedResource>
+    <!--Optional:-->
+    <newResourceURI>http://www.corp.org/maria/foedere</newResourceURI>
+    <!--Optional:-->
+    <Resource href="http://www.any.gov/scopuloque/terras"/>
+    <status>6</status>
+    <subscriptionURI>http://www.any.edu/altos/fremunt</subscriptionURI>
+  </Notification>
+</NotificationList>

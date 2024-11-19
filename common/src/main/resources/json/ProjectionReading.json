@@ -1,0 +1,26 @@
+{
+  "billingReadingSetListLink": {
+    "all": 5,
+    "href": "http://www.any.org/in/qui"
+  },
+  "readingTypeLink": {
+    "href": "http://www.any.gov/profundum/speluncis"
+  },
+  "mrid": {
+    "value": [
+      116,
+      101,
+      109,
+      112,
+      101,
+      114,
+      97,
+      116
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.my.org/laxas/rex"
+}

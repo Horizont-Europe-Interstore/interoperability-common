@@ -50,6 +50,8 @@ public abstract class AbstractModbusRequestHandler extends AbstractRequestHandle
     @Override
     public void requestReply(ModbusRequest request, String device, Callback<ModbusResponse> callback) throws HandlerException {
         try {
+            log.debug("Sending Modbus request to device: {}", device);
+
             if (!this.client.isConnected()) {
                 this.client.connect();
             }

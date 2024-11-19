@@ -1,0 +1,17 @@
+<MeterReadingList href="http://www.your.gov/quippe/transfixo" subscribable="0" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <MeterReading href="http://www.sample.com/claustra/foedere">
+    <mRID>76696E636C6973</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <!--Optional:-->
+    <RateComponentListLink href="http://www.company.com/quae/honorem" all="5"/>
+    <!--Optional:-->
+    <ReadingLink href="http://www.your.edu/ac/murmure"/>
+    <!--Optional:-->
+    <ReadingSetListLink href="http://www.corp.com/speluncis/quippe" all="5"/>
+    <ReadingTypeLink href="http://www.corp.com/ni/adorat"/>
+  </MeterReading>
+</MeterReadingList>

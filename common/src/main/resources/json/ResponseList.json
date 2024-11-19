@@ -1,0 +1,23 @@
+{
+  "response": [
+    {
+      "createdDateTime": 10,
+      "endDeviceLFDI": [
+        101,
+        116
+      ],
+      "status": 6,
+      "subject": {
+        "value": [
+          115,
+          101,
+          100
+        ]
+      },
+      "href": "http://www.corp.edu/in/certo"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "href": "http://www.corp.com/illi/foedere"
+}

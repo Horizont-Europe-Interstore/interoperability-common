@@ -1,0 +1,27 @@
+<RateComponentList href="http://www.sample.org/praeterea/habenas" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <RateComponent href="http://www.corp.edu/praeterea/volutans">
+    <mRID>7261706964756D</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <!--Optional:-->
+    <ActiveTimeTariffIntervalListLink href="http://www.my.edu/fremunt/sceptra" all="5"/>
+    <!--Optional:-->
+    <flowRateEndLimit>
+      <multiplier>2</multiplier>
+      <unit>6</unit>
+      <value>3</value>
+    </flowRateEndLimit>
+    <!--Optional:-->
+    <flowRateStartLimit>
+      <multiplier>2</multiplier>
+      <unit>6</unit>
+      <value>3</value>
+    </flowRateStartLimit>
+    <ReadingTypeLink href="http://www.corp.com/bella/pater"/>
+    <roleFlags>7375</roleFlags>
+    <TimeTariffIntervalListLink href="http://www.company.com/corripuit/omnipotens" all="5"/>
+  </RateComponent>
+</RateComponentList>

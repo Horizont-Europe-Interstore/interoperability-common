@@ -1,0 +1,21 @@
+<Event href="http://www.any.com/indignantes/et" replyTo="http://www.any.org/circum/terras" responseRequired="00" subscribable="0" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>63756D</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <creationTime>10</creationTime>
+  <EventStatus>
+    <currentStatus>6</currentStatus>
+    <dateTime>10</dateTime>
+    <potentiallySuperseded>true</potentiallySuperseded>
+    <!--Optional:-->
+    <potentiallySupersededTime>10</potentiallySupersededTime>
+    <!--Optional:-->
+    <reason>string</reason>
+  </EventStatus>
+  <interval>
+    <duration>7</duration>
+    <start>10</start>
+  </interval>
+</Event>

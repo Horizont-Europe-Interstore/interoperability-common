@@ -1,0 +1,18 @@
+{
+  "billingPeriod": [
+    {
+      "billLastPeriod": 10,
+      "billToDate": 10,
+      "interval": {
+        "duration": 7,
+        "start": 10
+      },
+      "statusTimeStamp": 10,
+      "href": "http://www.my.org/feta/sceptra"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "subscribable": 0,
+  "href": "http://www.test.com/ventos/celsa"
+}

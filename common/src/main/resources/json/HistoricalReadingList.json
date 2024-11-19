@@ -1,0 +1,30 @@
+{
+  "historicalReading": [
+    {
+      "billingReadingSetListLink": {
+        "all": 5,
+        "href": "http://www.test.com/ignem/tot"
+      },
+      "readingTypeLink": {
+        "href": "http://www.any.edu/caelumque/quisquam"
+      },
+      "mrid": {
+        "value": [
+          105,
+          108,
+          108,
+          117,
+          109
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.test.org/ac/aeolus"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "href": "http://www.your.org/nubibus/claustra"
+}

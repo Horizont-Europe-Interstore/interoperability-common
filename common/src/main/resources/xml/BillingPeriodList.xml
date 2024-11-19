@@ -1,0 +1,15 @@
+<BillingPeriodList href="http://www.test.com/ventos/celsa" subscribable="0" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <BillingPeriod href="http://www.my.org/feta/sceptra">
+    <!--Optional:-->
+    <billLastPeriod>10</billLastPeriod>
+    <!--Optional:-->
+    <billToDate>10</billToDate>
+    <interval>
+      <duration>7</duration>
+      <start>10</start>
+    </interval>
+    <!--Optional:-->
+    <statusTimeStamp>10</statusTimeStamp>
+  </BillingPeriod>
+</BillingPeriodList>

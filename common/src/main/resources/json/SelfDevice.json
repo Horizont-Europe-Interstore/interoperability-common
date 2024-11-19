@@ -1,0 +1,53 @@
+{
+  "pollRate": 900,
+  "configurationLink": {
+    "href": "http://www.test.org/gente/secum"
+  },
+  "derListLink": {
+    "all": 5,
+    "href": "http://www.company.org/et/carcere"
+  },
+  "deviceInformationLink": {
+    "href": "http://www.your.com/auras/sedet"
+  },
+  "deviceStatusLink": {
+    "href": "http://www.my.com/ventos/claustra"
+  },
+  "fileStatusLink": {
+    "href": "http://www.corp.gov/murmure/honorem"
+  },
+  "ipInterfaceListLink": {
+    "all": 5,
+    "href": "http://www.my.edu/exspirantem/imponet"
+  },
+  "lfdi": [
+    102,
+    101,
+    116,
+    97
+  ],
+  "loadShedAvailabilityListLink": {
+    "all": 5,
+    "href": "http://www.test.com/una/iovis"
+  },
+  "loadShedDeviceCategory": {
+    "value": [
+      115,
+      101,
+      99,
+      117
+    ]
+  },
+  "logEventListLink": {
+    "all": 5,
+    "href": "http://www.any.com/omnipotens/sed"
+  },
+  "powerStatusLink": {
+    "href": "http://www.corp.com/imposuit/exspirantem"
+  },
+  "sfdi": {
+    "value": 11
+  },
+  "subscribable": 0,
+  "href": "http://www.company.org/divum/rates"
+}

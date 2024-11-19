@@ -1,0 +1,28 @@
+<DeviceCapability href="http://www.corp.com/maria/cum" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <CustomerAccountListLink href="http://www.sample.org/regemque/numen" all="5"/>
+  <!--Optional:-->
+  <DemandResponseProgramListLink href="http://www.any.com/talia/tot" all="5"/>
+  <!--Optional:-->
+  <DERProgramListLink href="http://www.my.edu/patriam/auras" all="5"/>
+  <!--Optional:-->
+  <FileListLink href="http://www.corp.com/iovis/soror" all="5"/>
+  <!--Optional:-->
+  <MessagingProgramListLink href="http://www.sample.edu/tempestatesque/flammato" all="5"/>
+  <!--Optional:-->
+  <PrepaymentListLink href="http://www.test.org/regina/flammas" all="5"/>
+  <!--Optional:-->
+  <ResponseSetListLink href="http://www.my.com/magno/quae" all="5"/>
+  <!--Optional:-->
+  <TariffProfileListLink href="http://www.your.org/auras/tempestatesque" all="5"/>
+  <!--Optional:-->
+  <TimeLink href="http://www.my.com/talia/iovis"/>
+  <!--Optional:-->
+  <UsagePointListLink href="http://www.my.com/indignantes/infixit" all="5"/>
+  <!--Optional:-->
+  <EndDeviceListLink href="http://www.my.com/habenas/aut" all="5"/>
+  <!--Optional:-->
+  <MirrorUsagePointListLink href="http://www.corp.com/cum/temperat" all="5"/>
+  <!--Optional:-->
+  <SelfDeviceLink href="http://www.your.org/insuper/et"/>
+</DeviceCapability>

@@ -1,0 +1,69 @@
+<PrepaymentList href="http://www.company.com/vasto/imposuit" subscribable="0" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <Prepayment href="http://www.test.gov/adorat/cum">
+    <mRID>696163756C617461</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <AccountBalanceLink href="http://www.any.com/dare/murmure"/>
+    <!--Optional:-->
+    <ActiveCreditRegisterListLink href="http://www.company.com/sed/celsa" all="5"/>
+    <!--Optional:-->
+    <ActiveSupplyInterruptionOverrideListLink href="http://www.any.com/dea/iussus" all="5"/>
+    <!--Optional:-->
+    <creditExpiryLevel>
+      <!--Optional:-->
+      <energyUnit>
+        <multiplier>2</multiplier>
+        <value>11</value>
+      </energyUnit>
+      <monetaryUnit>5</monetaryUnit>
+      <multiplier>2</multiplier>
+      <value>3</value>
+    </creditExpiryLevel>
+    <CreditRegisterListLink href="http://www.test.org/in/metuens" all="5"/>
+    <!--Optional:-->
+    <lowCreditWarningLevel>
+      <!--Optional:-->
+      <energyUnit>
+        <multiplier>2</multiplier>
+        <value>11</value>
+      </energyUnit>
+      <monetaryUnit>5</monetaryUnit>
+      <multiplier>2</multiplier>
+      <value>3</value>
+    </lowCreditWarningLevel>
+    <!--Optional:-->
+    <lowEmergencyCreditWarningLevel>
+      <!--Optional:-->
+      <energyUnit>
+        <multiplier>2</multiplier>
+        <value>11</value>
+      </energyUnit>
+      <monetaryUnit>5</monetaryUnit>
+      <multiplier>2</multiplier>
+      <value>3</value>
+    </lowEmergencyCreditWarningLevel>
+    <prepayMode>6</prepayMode>
+    <PrepayOperationStatusLink href="http://www.test.com/rates/frenat"/>
+    <SupplyInterruptionOverrideListLink href="http://www.corp.com/dare/omnipotens" all="5"/>
+    <!--Zero or more repetitio-->
+    <UsagePoint href="http://www.company.com/in/aeolus">
+      <mRID>616E6E6F73</mRID>
+      <!--Optional:-->
+      <description>string</description>
+      <!--Optional:-->
+      <version>5</version>
+      <roleFlags>6172</roleFlags>
+      <serviceCategoryKind>6</serviceCategoryKind>
+      <status>6</status>
+      <!--Optional:-->
+      <deviceLFDI>706572</deviceLFDI>
+      <!--Optional:-->
+      <MeterReadingListLink href="http://www.test.org/speluncis/regemque" all="5"/>
+    </UsagePoint>
+    <!--Optional:-->
+    <UsagePointLink href="http://www.sample.com/profundum/rex"/>
+  </Prepayment>
+</PrepaymentList>

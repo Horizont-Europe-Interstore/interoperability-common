@@ -1,0 +1,12 @@
+<LogEvent href="http://www.sample.org/profundum/et" xmlns="urn:ieee:std:2030.5:ns">
+  <createdDateTime>10</createdDateTime>
+  <!--Optional:-->
+  <details>string</details>
+  <!--Optional:-->
+  <extendedData>7</extendedData>
+  <functionSet>6</functionSet>
+  <logEventCode>6</logEventCode>
+  <logEventID>5</logEventID>
+  <logEventPEN>7</logEventPEN>
+  <profileID>6</profileID>
+</LogEvent>

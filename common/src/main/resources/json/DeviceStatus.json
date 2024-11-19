@@ -1,0 +1,20 @@
+{
+  "changedTime": 10,
+  "onCount": 5,
+  "opState": 6,
+  "opTime": 7,
+  "temperature": [
+    {
+      "multiplier": {
+        "value": 2
+      },
+      "subject": 6,
+      "value": 1
+    }
+  ],
+  "timeLink": {
+    "href": "http://www.my.org/et/terras"
+  },
+  "pollRate": 900,
+  "href": "http://www.corp.gov/atris/molemque"
+}

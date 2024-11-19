@@ -52,11 +52,15 @@ public abstract class AbstractRabbitMQRequestHandler extends AbstractRequestHand
 
     @Override
     public void publish(String data, String queueName) throws HandlerException {
+        log.debug("Publishing message: {} to queue: {}", data, queueName);
+
         client.publish(data, queueName);
     }
 
     @Override
     public void subscribe(String queueName, Callback<byte[]> callback) {
+        log.debug("Subscribing to queue: {}", queueName);
+
         DeliverCallback deliverCallback = (consumerTag, delivery) -> {
             MqttMessage mqttMessage = MqttMessage.fromJson(delivery.getBody());
 
@@ -75,7 +79,8 @@ public abstract class AbstractRabbitMQRequestHandler extends AbstractRequestHand
 
         try {
             client.subscribe(queueName, deliverCallback);
-        } catch (HandlerException ignored) {
+        } catch (HandlerException e) {
+            log.error("Error while subscribing to queue", e);
         }
     }
 

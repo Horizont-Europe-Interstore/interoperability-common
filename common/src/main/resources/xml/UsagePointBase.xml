@@ -1,0 +1,10 @@
+<UsagePointBase href="http://www.any.gov/rates/annos" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>736F6E6F726173</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <roleFlags>756E</roleFlags>
+  <serviceCategoryKind>6</serviceCategoryKind>
+  <status>6</status>
+</UsagePointBase>

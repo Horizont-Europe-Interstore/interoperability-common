@@ -1,0 +1,57 @@
+{
+  "drlcCapabilities": {
+    "averageEnergy": {
+      "multiplier": {
+        "value": 2
+      },
+      "value": 11
+    },
+    "maxDemand": {
+      "multiplier": {
+        "value": 2
+      },
+      "value": 1
+    },
+    "optionsImplemented": [
+      99,
+      111,
+      110,
+      105
+    ]
+  },
+  "functionsImplemented": [
+    105,
+    108,
+    108,
+    105
+  ],
+  "lfdi": [
+    100,
+    105,
+    118,
+    117,
+    109
+  ],
+  "mfDate": 10,
+  "mfHwVer": "string",
+  "mfID": {
+    "value": 7
+  },
+  "mfInfo": "string",
+  "mfModel": "string",
+  "mfSerNum": "string",
+  "primaryPower": {
+    "value": 6
+  },
+  "secondaryPower": {
+    "value": 6
+  },
+  "supportedLocaleListLink": {
+    "all": 5,
+    "href": "http://www.sample.com/sciret/exspirantem"
+  },
+  "swActTime": 10,
+  "swVer": "string",
+  "pollRate": 900,
+  "href": "http://www.company.org/bella/vinclis"
+}

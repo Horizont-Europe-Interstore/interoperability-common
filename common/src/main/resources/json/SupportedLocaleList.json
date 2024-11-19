@@ -1,0 +1,13 @@
+{
+  "supportedLocale": [
+    {
+      "locale": {
+        "value": "string"
+      },
+      "href": "http://www.test.edu/maria/montis"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "href": "http://www.company.org/tot/et"
+}

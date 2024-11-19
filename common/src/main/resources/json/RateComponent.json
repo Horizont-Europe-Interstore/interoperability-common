@@ -1,0 +1,50 @@
+{
+  "activeTimeTariffIntervalListLink": {
+    "all": 5,
+    "href": "http://www.corp.com/per/insuper"
+  },
+  "flowRateEndLimit": {
+    "multiplier": {
+      "value": 2
+    },
+    "unit": {
+      "value": 6
+    },
+    "value": 3
+  },
+  "flowRateStartLimit": {
+    "multiplier": {
+      "value": 2
+    },
+    "unit": {
+      "value": 6
+    },
+    "value": 3
+  },
+  "readingTypeLink": {
+    "href": "http://www.company.com/rapidi/nimborum"
+  },
+  "roleFlags": {
+    "value": [
+      116,
+      111
+    ]
+  },
+  "timeTariffIntervalListLink": {
+    "all": 5,
+    "href": "http://www.sample.com/hic/austris"
+  },
+  "mrid": {
+    "value": [
+      97,
+      114,
+      99,
+      101
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.test.org/ventis/illum"
+}

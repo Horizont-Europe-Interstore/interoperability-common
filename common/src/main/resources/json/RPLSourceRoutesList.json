@@ -1,0 +1,21 @@
+{
+  "rplSourceRoutes": [
+    {
+      "destAddress": [
+        109,
+        111,
+        110,
+        116,
+        105,
+        115
+      ],
+      "sourceRoute": [
+        101
+      ],
+      "href": "http://www.company.org/rex/et"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "href": "http://www.corp.org/coniunx/illum"
+}

@@ -1,0 +1,44 @@
+{
+  "originator": "string",
+  "priority": {
+    "value": 6
+  },
+  "textMessage": "string",
+  "creationTime": 10,
+  "eventStatus": {
+    "currentStatus": 6,
+    "dateTime": 10,
+    "potentiallySuperseded": false,
+    "potentiallySupersededTime": 10,
+    "reason": "string"
+  },
+  "interval": {
+    "duration": 7,
+    "start": 10
+  },
+  "mrid": {
+    "value": [
+      100,
+      105,
+      115,
+      105,
+      101,
+      99,
+      105,
+      116,
+      113,
+      117,
+      101
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "subscribable": 0,
+  "replyTo": "http://www.sample.edu/loca/divum",
+  "responseRequired": [
+    0
+  ],
+  "href": "http://www.your.org/per/celsa"
+}

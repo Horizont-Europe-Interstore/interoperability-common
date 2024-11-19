@@ -1,0 +1,30 @@
+<FunctionSetAssignmentsList href="http://www.my.org/animos/rapidi" subscribable="0" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <FunctionSetAssignments href="http://www.sample.com/aut/et" subscribable="0">
+    <!--Optional:-->
+    <CustomerAccountListLink href="http://www.sample.com/et/sciret" all="5"/>
+    <!--Optional:-->
+    <DemandResponseProgramListLink href="http://www.your.org/et/nubibus" all="5"/>
+    <!--Optional:-->
+    <DERProgramListLink href="http://www.test.edu/bella/animos" all="5"/>
+    <!--Optional:-->
+    <FileListLink href="http://www.sample.gov/dedit/tot" all="5"/>
+    <!--Optional:-->
+    <MessagingProgramListLink href="http://www.sample.com/in/et" all="5"/>
+    <!--Optional:-->
+    <PrepaymentListLink href="http://www.your.com/hoc/supplex" all="5"/>
+    <!--Optional:-->
+    <ResponseSetListLink href="http://www.test.gov/magno/illum" all="5"/>
+    <!--Optional:-->
+    <TariffProfileListLink href="http://www.any.edu/aeolus/dare" all="5"/>
+    <!--Optional:-->
+    <TimeLink href="http://www.test.com/pater/dare"/>
+    <!--Optional:-->
+    <UsagePointListLink href="http://www.test.com/tenens/aeoliam" all="5"/>
+    <mRID>71756165</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+  </FunctionSetAssignments>
+</FunctionSetAssignmentsList>

@@ -1,0 +1,22 @@
+{
+  "logEvent": [
+    {
+      "createdDateTime": 10,
+      "details": "string",
+      "extendedData": 7,
+      "functionSet": 6,
+      "logEventCode": 6,
+      "logEventID": 5,
+      "logEventPEN": {
+        "value": 7
+      },
+      "profileID": 6,
+      "href": "http://www.corp.com/austris/e"
+    }
+  ],
+  "pollRate": 900,
+  "all": 5,
+  "results": 6,
+  "subscribable": 0,
+  "href": "http://www.sample.com/pectore/flammas"
+}

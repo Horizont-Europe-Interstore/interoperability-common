@@ -1,0 +1,7 @@
+<RespondableIdentifiedObject href="http://www.company.org/metuens/terras" replyTo="http://www.any.com/aeolus/loca" responseRequired="00" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>706563746F7265</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+</RespondableIdentifiedObject>

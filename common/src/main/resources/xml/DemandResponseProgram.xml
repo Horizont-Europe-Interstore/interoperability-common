@@ -1,0 +1,19 @@
+<DemandResponseProgram href="http://www.test.com/ni/adorat" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>686F63</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <!--Optional:-->
+  <ActiveEndDeviceControlListLink href="http://www.my.org/fremunt/e" all="5"/>
+  <!--Optional:-->
+  <availabilityUpdatePercentChangeThreshold>5</availabilityUpdatePercentChangeThreshold>
+  <!--Optional:-->
+  <availabilityUpdatePowerChangeThreshold>
+    <multiplier>2</multiplier>
+    <value>1</value>
+  </availabilityUpdatePowerChangeThreshold>
+  <!--Optional:-->
+  <EndDeviceControlListLink href="http://www.test.com/ferant/certo" all="5"/>
+  <primacy>6</primacy>
+</DemandResponseProgram>

@@ -50,10 +50,17 @@ public abstract class AbstractNatsRequestHandler extends AbstractRequestHandler<
     }
 
     @Override
-    public void publish(String request, String subject) throws HandlerException {
+    public void publish(String data, String subject) throws HandlerException {
+        log.debug("Publishing message: {} to topic: {}", data, subject);
+
+        if (data == null || data.isEmpty()) {
+            log.error("Data is empty, topic: {}", subject);
+            return;
+        }
+
         Message msg = NatsMessage.builder()
                 .subject(subject)
-                .data(request)
+                .data(data)
                 .build();
 
         client.publish(msg);
@@ -61,6 +68,8 @@ public abstract class AbstractNatsRequestHandler extends AbstractRequestHandler<
 
     @Override
     public void subscribe(String subject, Callback<byte[]> callback) {
+        log.debug("Subscribing to subject: {}", subject);
+
         client.subscribe(subject, message -> {
             if (message.getReplyTo() != null) {
                 if (message.hasHeaders() && message.getHeaders().containsKey(Constants.DURATION)) {

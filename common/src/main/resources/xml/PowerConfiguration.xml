@@ -1,0 +1,6 @@
+<PowerConfiguration xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <batteryInstallTime>10</batteryInstallTime>
+  <!--Optional:-->
+  <lowChargeThreshold>7</lowChargeThreshold>
+</PowerConfiguration>

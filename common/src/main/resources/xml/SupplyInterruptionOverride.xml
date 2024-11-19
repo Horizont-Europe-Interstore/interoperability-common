@@ -1,0 +1,8 @@
+<SupplyInterruptionOverride href="http://www.sample.org/et/feta" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <description>string</description>
+  <interval>
+    <duration>7</duration>
+    <start>10</start>
+  </interval>
+</SupplyInterruptionOverride>

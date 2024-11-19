@@ -1,0 +1,15 @@
+{
+  "supplyInterruptionOverride": [
+    {
+      "description": "string",
+      "interval": {
+        "duration": 7,
+        "start": 10
+      },
+      "href": "http://www.any.gov/et/hic"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "href": "http://www.company.edu/ignem/iovis"
+}

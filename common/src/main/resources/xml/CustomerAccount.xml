@@ -1,0 +1,17 @@
+<CustomerAccount href="http://www.test.org/rapidum/flammato" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>61656F6C7573</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <currency>5</currency>
+  <!--Optional:-->
+  <customerAccount>string</customerAccount>
+  <!--Optional:-->
+  <CustomerAgreementListLink href="http://www.sample.org/premit/bella" all="5"/>
+  <!--Optional:-->
+  <customerName>string</customerName>
+  <pricePowerOfTenMultiplier>2</pricePowerOfTenMultiplier>
+  <!--Optional:-->
+  <ServiceSupplierLink href="http://www.my.com/et/iovis"/>
+</CustomerAccount>

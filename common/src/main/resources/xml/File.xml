@@ -1,0 +1,16 @@
+<File href="http://www.your.gov/divum/feta" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <activateTime>10</activateTime>
+  <fileURI>http://www.sample.edu/rapidi/et</fileURI>
+  <!--Optional:-->
+  <lFDI>69676E656D</lFDI>
+  <!--Optional:-->
+  <mfHwVer>string</mfHwVer>
+  <mfID>7</mfID>
+  <mfModel>string</mfModel>
+  <!--Optional:-->
+  <mfSerNum>string</mfSerNum>
+  <mfVer>string</mfVer>
+  <size>7</size>
+  <type>696F</type>
+</File>

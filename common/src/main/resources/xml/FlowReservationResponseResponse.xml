@@ -1,0 +1,8 @@
+<FlowReservationResponseResponse href="http://www.sample.org/ipsa/tenens" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <createdDateTime>10</createdDateTime>
+  <endDeviceLFDI>7061747269616D</endDeviceLFDI>
+  <!--Optional:-->
+  <status>6</status>
+  <subject>63756D</subject>
+</FlowReservationResponseResponse>

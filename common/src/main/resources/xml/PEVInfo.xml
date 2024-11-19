@@ -1,0 +1,18 @@
+<PEVInfo xmlns="urn:ieee:std:2030.5:ns">
+  <chargingPowerNow>
+    <multiplier>2</multiplier>
+    <value>1</value>
+  </chargingPowerNow>
+  <energyRequestNow>
+    <multiplier>2</multiplier>
+    <value>11</value>
+  </energyRequestNow>
+  <maxForwardPower>
+    <multiplier>2</multiplier>
+    <value>1</value>
+  </maxForwardPower>
+  <minimumChargingDuration>7</minimumChargingDuration>
+  <targetStateOfCharge>5</targetStateOfCharge>
+  <timeChargeIsNeeded>10</timeChargeIsNeeded>
+  <timeChargingStatusPEV>10</timeChargingStatusPEV>
+</PEVInfo>

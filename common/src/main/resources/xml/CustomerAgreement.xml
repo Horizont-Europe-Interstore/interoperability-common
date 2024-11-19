@@ -1,0 +1,31 @@
+<CustomerAgreement href="http://www.sample.org/altos/omnipotens" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>6D6F6C6C6974717565</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <!--Optional:-->
+  <ActiveBillingPeriodListLink href="http://www.corp.com/quisquam/montis" all="5"/>
+  <!--Optional:-->
+  <ActiveProjectionReadingListLink href="http://www.your.org/divum/aeolus" all="5"/>
+  <!--Optional:-->
+  <ActiveTargetReadingListLink href="http://www.any.org/vinclis/scopuloque" all="5"/>
+  <!--Optional:-->
+  <BillingPeriodListLink href="http://www.sample.gov/corripuit/per" all="5"/>
+  <!--Optional:-->
+  <HistoricalReadingListLink href="http://www.company.org/ventos/ventos" all="5"/>
+  <!--Optional:-->
+  <PrepaymentLink href="http://www.company.edu/patriam/auras"/>
+  <!--Optional:-->
+  <ProjectionReadingListLink href="http://www.sample.org/murmure/hoc" all="5"/>
+  <!--Optional:-->
+  <serviceAccount>string</serviceAccount>
+  <!--Optional:-->
+  <serviceLocation>string</serviceLocation>
+  <!--Optional:-->
+  <TargetReadingListLink href="http://www.your.com/imposuit/altos" all="5"/>
+  <!--Optional:-->
+  <TariffProfileLink href="http://www.my.edu/ast/caelumque"/>
+  <!--Optional:-->
+  <UsagePointLink href="http://www.your.gov/sedet/habenas"/>
+</CustomerAgreement>

@@ -1,0 +1,36 @@
+{
+  "creationTime": 10,
+  "durationRequested": 5,
+  "energyRequested": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 10
+  },
+  "intervalRequested": {
+    "duration": 7,
+    "start": 10
+  },
+  "powerRequested": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "requestStatus": {
+    "dateTime": 10,
+    "requestStatus": 6
+  },
+  "mrid": {
+    "value": [
+      104,
+      111,
+      99
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.any.com/feta/disiecitque"
+}

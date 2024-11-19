@@ -1,0 +1,188 @@
+{
+  "mirrorUsagePoint": [
+    {
+      "deviceLFDI": [
+        115,
+        111,
+        110,
+        111,
+        114,
+        97,
+        115
+      ],
+      "mirrorMeterReading": [
+        {
+          "lastUpdateTime": 10,
+          "mirrorReadingSet": [
+            {
+              "reading": [
+                {
+                  "localID": [
+                    99,
+                    97
+                  ],
+                  "subscribable": 0,
+                  "consumptionBlock": {
+                    "value": 6
+                  },
+                  "qualityFlags": [
+                    115,
+                    101
+                  ],
+                  "timePeriod": {
+                    "duration": 7,
+                    "start": 10
+                  },
+                  "touTier": {
+                    "value": 6
+                  },
+                  "value": 10,
+                  "href": "http://www.test.com/premit/austris"
+                }
+              ],
+              "timePeriod": {
+                "duration": 7,
+                "start": 10
+              },
+              "mrid": {
+                "value": [
+                  97,
+                  110,
+                  110,
+                  111,
+                  115
+                ]
+              },
+              "description": "string",
+              "version": {
+                "value": 5
+              },
+              "href": "http://www.my.gov/supplex/temperat"
+            }
+          ],
+          "nextUpdateTime": 10,
+          "reading": {
+            "localID": [
+              118,
+              105
+            ],
+            "subscribable": 0,
+            "consumptionBlock": {
+              "value": 6
+            },
+            "qualityFlags": [
+              97,
+              115
+            ],
+            "timePeriod": {
+              "duration": 7,
+              "start": 10
+            },
+            "touTier": {
+              "value": 6
+            },
+            "value": 10,
+            "href": "http://www.any.org/ni/divum"
+          },
+          "readingType": {
+            "accumulationBehaviour": {
+              "value": 6
+            },
+            "calorificValue": {
+              "multiplier": {
+                "value": 2
+              },
+              "unit": {
+                "value": 6
+              },
+              "value": 3
+            },
+            "commodity": {
+              "value": 6
+            },
+            "conversionFactor": {
+              "multiplier": {
+                "value": 2
+              },
+              "unit": {
+                "value": 6
+              },
+              "value": 3
+            },
+            "dataQualifier": {
+              "value": 6
+            },
+            "flowDirection": {
+              "value": 6
+            },
+            "intervalLength": 7,
+            "kind": {
+              "value": 6
+            },
+            "maxNumberOfIntervals": 6,
+            "numberOfConsumptionBlocks": 6,
+            "numberOfTouTiers": 6,
+            "phase": {
+              "value": 6
+            },
+            "powerOfTenMultiplier": {
+              "value": 2
+            },
+            "subIntervalLength": 7,
+            "supplyLimit": 11,
+            "tieredConsumptionBlocks": false,
+            "uom": {
+              "value": 6
+            },
+            "href": "http://www.my.org/claustra/sceptra"
+          },
+          "mrid": {
+            "value": [
+              112,
+              114,
+              101,
+              109,
+              101,
+              114,
+              101
+            ]
+          },
+          "description": "string",
+          "version": {
+            "value": 5
+          },
+          "href": "http://www.my.org/habenas/iunonis"
+        }
+      ],
+      "postRate": 7,
+      "roleFlags": {
+        "value": [
+          104,
+          111
+        ]
+      },
+      "serviceCategoryKind": {
+        "value": 6
+      },
+      "status": 6,
+      "mrid": {
+        "value": [
+          105,
+          103,
+          110,
+          101,
+          109
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.corp.com/premere/disiecitque"
+    }
+  ],
+  "pollRate": 900,
+  "all": 5,
+  "results": 6,
+  "href": "http://www.corp.com/ni/sed"
+}

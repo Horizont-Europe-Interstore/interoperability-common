@@ -1,0 +1,41 @@
+{
+  "batteryStatus": 6,
+  "changedTime": 10,
+  "currentPowerSource": {
+    "value": 6
+  },
+  "estimatedChargeRemaining": {
+    "value": 5
+  },
+  "estimatedTimeRemaining": 7,
+  "pevInfo": {
+    "chargingPowerNow": {
+      "multiplier": {
+        "value": 2
+      },
+      "value": 1
+    },
+    "energyRequestNow": {
+      "multiplier": {
+        "value": 2
+      },
+      "value": 11
+    },
+    "maxForwardPower": {
+      "multiplier": {
+        "value": 2
+      },
+      "value": 1
+    },
+    "minimumChargingDuration": 7,
+    "targetStateOfCharge": {
+      "value": 5
+    },
+    "timeChargeIsNeeded": 10,
+    "timeChargingStatusPEV": 10
+  },
+  "sessionTimeOnBattery": 7,
+  "totalTimeOnBattery": 7,
+  "pollRate": 900,
+  "href": "http://www.corp.org/aeoliam/altos"
+}

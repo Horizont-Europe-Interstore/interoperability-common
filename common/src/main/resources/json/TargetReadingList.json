@@ -1,0 +1,33 @@
+{
+  "targetReading": [
+    {
+      "billingReadingSetListLink": {
+        "all": 5,
+        "href": "http://www.your.com/indignantes/infixit"
+      },
+      "readingTypeLink": {
+        "href": "http://www.company.org/mollitque/aeolus"
+      },
+      "mrid": {
+        "value": [
+          105,
+          111,
+          118,
+          105,
+          115,
+          113,
+          117,
+          101
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.your.org/talia/celsa"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "href": "http://www.test.org/disiecitque/auras"
+}

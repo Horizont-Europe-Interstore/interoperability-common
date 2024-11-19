@@ -1,0 +1,43 @@
+{
+  "genConnectStatus": {
+    "dateTime": 10,
+    "value": [
+      98
+    ]
+  },
+  "inverterStatus": {
+    "dateTime": 10,
+    "value": 6
+  },
+  "localControlModeStatus": {
+    "dateTime": 10,
+    "value": 6
+  },
+  "manufacturerStatus": {
+    "dateTime": 10,
+    "value": "string"
+  },
+  "operationalModeStatus": {
+    "dateTime": 10,
+    "value": 6
+  },
+  "readingTime": 10,
+  "stateOfChargeStatus": {
+    "dateTime": 10,
+    "value": {
+      "value": 5
+    }
+  },
+  "storageModeStatus": {
+    "dateTime": 10,
+    "value": 6
+  },
+  "storConnectStatus": {
+    "dateTime": 10,
+    "value": [
+      97
+    ]
+  },
+  "subscribable": 0,
+  "href": "http://www.corp.gov/ac/patriam"
+}

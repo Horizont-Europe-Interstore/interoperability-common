@@ -1,0 +1,40 @@
+{
+  "creditRegister": [
+    {
+      "creditAmount": {
+        "energyUnit": {
+          "multiplier": {
+            "value": 2
+          },
+          "value": 11
+        },
+        "monetaryUnit": {
+          "value": 5
+        },
+        "multiplier": {
+          "value": 2
+        },
+        "value": 3
+      },
+      "creditType": {
+        "value": 6
+      },
+      "effectiveTime": 10,
+      "token": "string",
+      "mrid": {
+        "value": [
+          97,
+          99
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.sample.com/mollitque/claustra"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "href": "http://www.your.org/ignem/fremunt"
+}

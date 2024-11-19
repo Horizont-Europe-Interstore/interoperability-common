@@ -1,0 +1,40 @@
+{
+  "currentLocale": {
+    "value": "string"
+  },
+  "powerConfiguration": {
+    "batteryInstallTime": 10,
+    "lowChargeThreshold": 7
+  },
+  "priceResponseCfgListLink": {
+    "all": 5,
+    "href": "http://www.corp.org/sonoras/ferant"
+  },
+  "timeConfiguration": {
+    "dstEndRule": {
+      "value": [
+        97,
+        101,
+        111,
+        108
+      ]
+    },
+    "dstOffset": {
+      "value": 3
+    },
+    "dstStartRule": {
+      "value": [
+        114,
+        101,
+        120
+      ]
+    },
+    "tzOffset": {
+      "value": 3
+    }
+  },
+  "userDeviceName": "string",
+  "pollRate": 900,
+  "subscribable": 0,
+  "href": "http://www.your.org/dare/ac"
+}

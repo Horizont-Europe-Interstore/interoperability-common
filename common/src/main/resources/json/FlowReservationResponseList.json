@@ -1,0 +1,64 @@
+{
+  "flowReservationResponse": [
+    {
+      "energyAvailable": {
+        "multiplier": {
+          "value": 2
+        },
+        "value": 10
+      },
+      "powerAvailable": {
+        "multiplier": {
+          "value": 2
+        },
+        "value": 1
+      },
+      "subject": {
+        "value": [
+          109,
+          97,
+          114,
+          105,
+          97
+        ]
+      },
+      "creationTime": 10,
+      "eventStatus": {
+        "currentStatus": 6,
+        "dateTime": 10,
+        "potentiallySuperseded": false,
+        "potentiallySupersededTime": 10,
+        "reason": "string"
+      },
+      "interval": {
+        "duration": 7,
+        "start": 10
+      },
+      "mrid": {
+        "value": [
+          105,
+          110,
+          99,
+          101,
+          100,
+          111
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "subscribable": 0,
+      "replyTo": "http://www.sample.org/feta/mollitque",
+      "responseRequired": [
+        0
+      ],
+      "href": "http://www.test.com/iras/ventis"
+    }
+  ],
+  "pollRate": 900,
+  "all": 5,
+  "results": 6,
+  "subscribable": 0,
+  "href": "http://www.any.com/volutans/iovisque"
+}

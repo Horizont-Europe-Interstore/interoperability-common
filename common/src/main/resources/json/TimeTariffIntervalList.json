@@ -1,0 +1,54 @@
+{
+  "timeTariffInterval": [
+    {
+      "consumptionTariffIntervalListLink": {
+        "all": 5,
+        "href": "http://www.test.org/sedet/quisquam"
+      },
+      "touTier": {
+        "value": 6
+      },
+      "randomizeDuration": {
+        "value": 1
+      },
+      "randomizeStart": {
+        "value": 1
+      },
+      "creationTime": 10,
+      "eventStatus": {
+        "currentStatus": 6,
+        "dateTime": 10,
+        "potentiallySuperseded": false,
+        "potentiallySupersededTime": 10,
+        "reason": "string"
+      },
+      "interval": {
+        "duration": 7,
+        "start": 10
+      },
+      "mrid": {
+        "value": [
+          115,
+          101,
+          99,
+          117,
+          109
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "subscribable": 0,
+      "replyTo": "http://www.corp.org/claustra/numen",
+      "responseRequired": [
+        0
+      ],
+      "href": "http://www.your.edu/secum/imposuit"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "subscribable": 0,
+  "href": "http://www.your.com/animos/et"
+}

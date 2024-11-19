@@ -1,0 +1,16 @@
+<ReadingSetList href="http://www.your.com/corripuit/corripuit" subscribable="0" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <ReadingSet href="http://www.corp.com/murmure/aequora">
+    <mRID>69707361</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <timePeriod>
+      <duration>7</duration>
+      <start>10</start>
+    </timePeriod>
+    <!--Optional:-->
+    <ReadingListLink href="http://www.test.org/soror/aeoliam" all="5"/>
+  </ReadingSet>
+</ReadingSetList>

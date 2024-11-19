@@ -1,0 +1,7 @@
+{
+  "currentStatus": 6,
+  "dateTime": 10,
+  "potentiallySuperseded": true,
+  "potentiallySupersededTime": 10,
+  "reason": "string"
+}

@@ -1,0 +1,10 @@
+<Time href="http://www.sample.com/fremunt/speluncis" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <currentTime>10</currentTime>
+  <dstEndTime>10</dstEndTime>
+  <dstOffset>3</dstOffset>
+  <dstStartTime>10</dstStartTime>
+  <!--Optional:-->
+  <localTime>10</localTime>
+  <quality>6</quality>
+  <tzOffset>3</tzOffset>
+</Time>

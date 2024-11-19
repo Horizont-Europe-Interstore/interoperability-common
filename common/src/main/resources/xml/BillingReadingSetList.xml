@@ -1,0 +1,16 @@
+<BillingReadingSetList href="http://www.test.org/caelumque/iras" subscribable="0" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <BillingReadingSet href="http://www.corp.com/temperat/ni">
+    <mRID>6D6F6C656D717565</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <timePeriod>
+      <duration>7</duration>
+      <start>10</start>
+    </timePeriod>
+    <!--Optional:-->
+    <BillingReadingListLink href="http://www.your.com/laxas/supplex" all="5"/>
+  </BillingReadingSet>
+</BillingReadingSetList>

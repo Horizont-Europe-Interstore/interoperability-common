@@ -1,0 +1,6 @@
+<TimeConfiguration xmlns="urn:ieee:std:2030.5:ns">
+  <dstEndRule>6672656D</dstEndRule>
+  <dstOffset>3</dstOffset>
+  <dstStartRule>7472616E</dstStartRule>
+  <tzOffset>3</tzOffset>
+</TimeConfiguration>

@@ -1,0 +1,8 @@
+<NeighborList href="http://www.your.edu/circum/montis" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <Neighbor href="http://www.corp.com/rex/aeolus">
+    <isChild>true</isChild>
+    <linkQuality>6</linkQuality>
+    <shortAddress>5</shortAddress>
+  </Neighbor>
+</NeighborList>

@@ -1,0 +1,4 @@
+<StateOfChargeStatusType xmlns="urn:ieee:std:2030.5:ns">
+  <dateTime>10</dateTime>
+  <value>5</value>
+</StateOfChargeStatusType>

@@ -1,0 +1,11 @@
+<BillingMeterReadingBase href="http://www.your.com/divum/gero" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>6D61676E6F</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <!--Optional:-->
+  <BillingReadingSetListLink href="http://www.corp.org/verrantque/hoc" all="5"/>
+  <!--Optional:-->
+  <ReadingTypeLink href="http://www.test.com/austris/et"/>
+</BillingMeterReadingBase>

@@ -1,0 +1,20 @@
+<ReadingList href="http://www.corp.com/molemque/rates" subscribable="0" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <Reading href="http://www.my.com/tempestatesque/rex" subscribable="0">
+    <!--Optional:-->
+    <consumptionBlock>6</consumptionBlock>
+    <!--Optional:-->
+    <qualityFlags>7465</qualityFlags>
+    <!--Optional:-->
+    <timePeriod>
+      <duration>7</duration>
+      <start>10</start>
+    </timePeriod>
+    <!--Optional:-->
+    <touTier>6</touTier>
+    <!--Optional:-->
+    <value>10</value>
+    <!--Optional:-->
+    <localID>7265</localID>
+  </Reading>
+</ReadingList>

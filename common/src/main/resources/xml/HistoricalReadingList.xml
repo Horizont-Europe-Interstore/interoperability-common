@@ -1,0 +1,14 @@
+<HistoricalReadingList href="http://www.your.org/nubibus/claustra" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <HistoricalReading href="http://www.test.org/ac/aeolus">
+    <mRID>696C6C756D</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <!--Optional:-->
+    <BillingReadingSetListLink href="http://www.test.com/ignem/tot" all="5"/>
+    <!--Optional:-->
+    <ReadingTypeLink href="http://www.any.edu/caelumque/quisquam"/>
+  </HistoricalReading>
+</HistoricalReadingList>

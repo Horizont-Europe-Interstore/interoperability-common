@@ -1,0 +1,21 @@
+{
+  "readingListLink": {
+    "all": 5,
+    "href": "http://www.sample.org/dea/imposuit"
+  },
+  "timePeriod": {
+    "duration": 7,
+    "start": 10
+  },
+  "mrid": {
+    "value": [
+      110,
+      105
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.my.com/scopuloque/quae"
+}

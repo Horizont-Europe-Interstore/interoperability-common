@@ -1,0 +1,54 @@
+<IPInterface href="http://www.test.com/soror/iovis" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <ifDescr>string</ifDescr>
+  <!--Optional:-->
+  <ifHighSpeed>7</ifHighSpeed>
+  <!--Optional:-->
+  <ifInBroadcastPkts>7</ifInBroadcastPkts>
+  <!--Optional:-->
+  <ifIndex>7</ifIndex>
+  <!--Optional:-->
+  <ifInDiscards>7</ifInDiscards>
+  <!--Optional:-->
+  <ifInErrors>7</ifInErrors>
+  <!--Optional:-->
+  <ifInMulticastPkts>7</ifInMulticastPkts>
+  <!--Optional:-->
+  <ifInOctets>7</ifInOctets>
+  <!--Optional:-->
+  <ifInUcastPkts>7</ifInUcastPkts>
+  <!--Optional:-->
+  <ifInUnknownProtos>7</ifInUnknownProtos>
+  <!--Optional:-->
+  <ifMtu>7</ifMtu>
+  <!--Optional:-->
+  <ifName>string</ifName>
+  <!--Optional:-->
+  <ifOperStatus>6</ifOperStatus>
+  <!--Optional:-->
+  <ifOutBroadcastPkts>7</ifOutBroadcastPkts>
+  <!--Optional:-->
+  <ifOutDiscards>7</ifOutDiscards>
+  <!--Optional:-->
+  <ifOutErrors>7</ifOutErrors>
+  <!--Optional:-->
+  <ifOutMulticastPkts>7</ifOutMulticastPkts>
+  <!--Optional:-->
+  <ifOutOctets>7</ifOutOctets>
+  <!--Optional:-->
+  <ifOutUcastPkts>7</ifOutUcastPkts>
+  <!--Optional:-->
+  <ifPromiscuousMode>true</ifPromiscuousMode>
+  <!--Optional:-->
+  <ifSpeed>7</ifSpeed>
+  <!--Optional:-->
+  <ifType>5</ifType>
+  <!--Optional:-->
+  <IPAddrListLink href="http://www.any.com/et/turbine" all="5"/>
+  <!--Optional:-->
+  <lastResetTime>10</lastResetTime>
+  <!--Optional:-->
+  <lastUpdatedTime>10</lastUpdatedTime>
+  <!--Optional:-->
+  <LLInterfaceListLink href="http://www.my.com/illum/qui" all="5"/>
+</IPInterface>

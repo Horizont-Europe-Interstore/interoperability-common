@@ -1,0 +1,28 @@
+{
+  "roleFlags": {
+    "value": [
+      117,
+      110
+    ]
+  },
+  "serviceCategoryKind": {
+    "value": 6
+  },
+  "status": 6,
+  "mrid": {
+    "value": [
+      115,
+      111,
+      110,
+      111,
+      114,
+      97,
+      115
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.any.gov/rates/annos"
+}

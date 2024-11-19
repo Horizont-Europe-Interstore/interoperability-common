@@ -1,0 +1,41 @@
+<EndDeviceList href="http://www.sample.com/iovisque/rates" subscribable="0" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <EndDevice href="http://www.sample.com/ac/verrantque" subscribable="0">
+    <!--Optional:-->
+    <ConfigurationLink href="http://www.corp.gov/ast/premit"/>
+    <!--Optional:-->
+    <DERListLink href="http://www.company.org/soror/frenat" all="5"/>
+    <!--Optional:-->
+    <DeviceInformationLink href="http://www.sample.com/auras/secum"/>
+    <!--Optional:-->
+    <DeviceStatusLink href="http://www.my.com/atris/celsa"/>
+    <!--Optional:-->
+    <FileStatusLink href="http://www.test.com/verrantque/metuens"/>
+    <!--Optional:-->
+    <IPInterfaceListLink href="http://www.my.com/austris/sciret" all="5"/>
+    <!--Optional:-->
+    <lFDI>6F6D6E69706F74656E73</lFDI>
+    <!--Optional:-->
+    <LoadShedAvailabilityListLink href="http://www.my.com/rex/molemque" all="5"/>
+    <!--Optional:-->
+    <loadShedDeviceCategory>73636F70</loadShedDeviceCategory>
+    <!--Optional:-->
+    <LogEventListLink href="http://www.corp.com/et/temperat" all="5"/>
+    <!--Optional:-->
+    <PowerStatusLink href="http://www.corp.com/sceptra/montis"/>
+    <sFDI>11</sFDI>
+    <changedTime>10</changedTime>
+    <!--Optional:-->
+    <enabled>true</enabled>
+    <!--Optional:-->
+    <FlowReservationRequestListLink href="http://www.test.com/quippe/acuto" all="5"/>
+    <!--Optional:-->
+    <FlowReservationResponseListLink href="http://www.sample.org/ego/et" all="5"/>
+    <!--Optional:-->
+    <FunctionSetAssignmentsListLink href="http://www.company.org/sonoras/soror" all="5"/>
+    <!--Optional:-->
+    <RegistrationLink href="http://www.any.org/aequora/acuto"/>
+    <!--Optional:-->
+    <SubscriptionListLink href="http://www.any.gov/pectore/altos" all="5"/>
+  </EndDevice>
+</EndDeviceList>

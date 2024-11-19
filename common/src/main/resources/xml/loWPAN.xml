@@ -1,0 +1,9 @@
+<loWPAN xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <octetsRx>7</octetsRx>
+  <!--Optional:-->
+  <octetsTx>7</octetsTx>
+  <packetsRx>7</packetsRx>
+  <packetsTx>7</packetsTx>
+  <rxFragError>7</rxFragError>
+</loWPAN>

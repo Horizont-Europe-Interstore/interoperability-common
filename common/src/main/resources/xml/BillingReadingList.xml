@@ -1,0 +1,26 @@
+<BillingReadingList href="http://www.any.com/supplex/loca" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <BillingReading href="http://www.any.gov/et/rapidum">
+    <!--Optional:-->
+    <consumptionBlock>6</consumptionBlock>
+    <!--Optional:-->
+    <qualityFlags>6465</qualityFlags>
+    <!--Optional:-->
+    <timePeriod>
+      <duration>7</duration>
+      <start>10</start>
+    </timePeriod>
+    <!--Optional:-->
+    <touTier>6</touTier>
+    <!--Optional:-->
+    <value>10</value>
+    <!--Zero or more repetitio-->
+    <Charge>
+      <!--Optional:-->
+      <description>string</description>
+      <!--Optional:-->
+      <kind>6</kind>
+      <value>3</value>
+    </Charge>
+  </BillingReading>
+</BillingReadingList>

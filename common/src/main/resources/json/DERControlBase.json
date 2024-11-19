@@ -1,0 +1,77 @@
+{
+  "opModConnect": false,
+  "opModEnergize": false,
+  "opModFixedPF": {
+    "displacement": 1,
+    "multiplier": {
+      "value": 2
+    }
+  },
+  "opModFixedVar": {
+    "refType": {
+      "value": 6
+    },
+    "value": {
+      "value": 1
+    }
+  },
+  "opModFixedW": {
+    "value": 1
+  },
+  "opModFreqDroop": {
+    "dbof": 7,
+    "dbuf": 7,
+    "kof": 5,
+    "kuf": 5,
+    "openLoopTms": 5
+  },
+  "opModFreqWatt": {
+    "href": "http://www.company.edu/acuto/qui"
+  },
+  "opModHFRTMustTrip": {
+    "href": "http://www.test.edu/cum/foedere"
+  },
+  "opModHVRTMomentaryCessation": {
+    "href": "http://www.test.edu/maria/cum"
+  },
+  "opModHVRTMustTrip": {
+    "href": "http://www.my.com/ego/austris"
+  },
+  "opModLFRTMustTrip": {
+    "href": "http://www.my.com/regemque/ferant"
+  },
+  "opModLVRTMomentaryCessation": {
+    "href": "http://www.your.org/quippe/illum"
+  },
+  "opModLVRTMustTrip": {
+    "href": "http://www.my.com/vinclis/claustra"
+  },
+  "opModMaxLimW": {
+    "value": 5
+  },
+  "opModTargetVar": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "opModTargetW": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "opModVoltVar": {
+    "href": "http://www.corp.com/talia/imposuit"
+  },
+  "opModVoltWatt": {
+    "href": "http://www.test.gov/turbine/et"
+  },
+  "opModWattPF": {
+    "href": "http://www.sample.com/ni/et"
+  },
+  "opModWattVar": {
+    "href": "http://www.test.com/tot/exspirantem"
+  },
+  "rampTms": 5
+}

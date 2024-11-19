@@ -1,0 +1,19 @@
+<FileList href="http://www.your.edu/terras/iovis" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <File href="http://www.my.com/ac/illi">
+    <!--Optional:-->
+    <activateTime>10</activateTime>
+    <fileURI>http://www.test.org/gero/atris</fileURI>
+    <!--Optional:-->
+    <lFDI>6D6F6E746973</lFDI>
+    <!--Optional:-->
+    <mfHwVer>string</mfHwVer>
+    <mfID>7</mfID>
+    <mfModel>string</mfModel>
+    <!--Optional:-->
+    <mfSerNum>string</mfSerNum>
+    <mfVer>string</mfVer>
+    <size>7</size>
+    <type>696E</type>
+  </File>
+</FileList>

@@ -1,0 +1,16 @@
+<MessagingProgramList href="http://www.my.org/ego/regemque" subscribable="0" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <MessagingProgram href="http://www.company.com/aeoliam/arce" subscribable="0">
+    <mRID>6F6D6E69706F74656E73</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <!--Optional:-->
+    <ActiveTextMessageListLink href="http://www.test.org/per/infixit" all="5"/>
+    <locale>string</locale>
+    <primacy>6</primacy>
+    <!--Optional:-->
+    <TextMessageListLink href="http://www.test.org/aris/cum" all="5"/>
+  </MessagingProgram>
+</MessagingProgramList>

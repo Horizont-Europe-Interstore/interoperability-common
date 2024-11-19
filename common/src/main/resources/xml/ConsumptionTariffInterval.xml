@@ -1,0 +1,13 @@
+<ConsumptionTariffInterval href="http://www.any.org/imposuit/abdidit" xmlns="urn:ieee:std:2030.5:ns">
+  <consumptionBlock>6</consumptionBlock>
+  <!--Zero or more repetitio-->
+  <EnvironmentalCost>
+    <amount>7</amount>
+    <costKind>6</costKind>
+    <costLevel>6</costLevel>
+    <numCostLevels>6</numCostLevels>
+  </EnvironmentalCost>
+  <!--Optional:-->
+  <price>3</price>
+  <startValue>11</startValue>
+</ConsumptionTariffInterval>

@@ -1,0 +1,40 @@
+{
+  "meterReading": [
+    {
+      "rateComponentListLink": {
+        "all": 5,
+        "href": "http://www.company.com/quae/honorem"
+      },
+      "readingLink": {
+        "href": "http://www.your.edu/ac/murmure"
+      },
+      "readingSetListLink": {
+        "all": 5,
+        "href": "http://www.corp.com/speluncis/quippe"
+      },
+      "readingTypeLink": {
+        "href": "http://www.corp.com/ni/adorat"
+      },
+      "mrid": {
+        "value": [
+          118,
+          105,
+          110,
+          99,
+          108,
+          105,
+          115
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.sample.com/claustra/foedere"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "subscribable": 0,
+  "href": "http://www.your.gov/quippe/transfixo"
+}

@@ -1,0 +1,154 @@
+{
+  "mirrorMeterReading": [
+    {
+      "lastUpdateTime": 10,
+      "mirrorReadingSet": [
+        {
+          "reading": [
+            {
+              "localID": [
+                97,
+                117
+              ],
+              "subscribable": 0,
+              "consumptionBlock": {
+                "value": 6
+              },
+              "qualityFlags": [
+                97,
+                117
+              ],
+              "timePeriod": {
+                "duration": 7,
+                "start": 10
+              },
+              "touTier": {
+                "value": 6
+              },
+              "value": 10,
+              "href": "http://www.any.com/et/scopuloque"
+            }
+          ],
+          "timePeriod": {
+            "duration": 7,
+            "start": 10
+          },
+          "mrid": {
+            "value": [
+              118,
+              105,
+              110,
+              99,
+              108,
+              105,
+              115
+            ]
+          },
+          "description": "string",
+          "version": {
+            "value": 5
+          },
+          "href": "http://www.test.com/profundum/terras"
+        }
+      ],
+      "nextUpdateTime": 10,
+      "reading": {
+        "localID": [
+          102,
+          108
+        ],
+        "subscribable": 0,
+        "consumptionBlock": {
+          "value": 6
+        },
+        "qualityFlags": [
+          115,
+          112
+        ],
+        "timePeriod": {
+          "duration": 7,
+          "start": 10
+        },
+        "touTier": {
+          "value": 6
+        },
+        "value": 10,
+        "href": "http://www.test.com/magno/cum"
+      },
+      "readingType": {
+        "accumulationBehaviour": {
+          "value": 6
+        },
+        "calorificValue": {
+          "multiplier": {
+            "value": 2
+          },
+          "unit": {
+            "value": 6
+          },
+          "value": 3
+        },
+        "commodity": {
+          "value": 6
+        },
+        "conversionFactor": {
+          "multiplier": {
+            "value": 2
+          },
+          "unit": {
+            "value": 6
+          },
+          "value": 3
+        },
+        "dataQualifier": {
+          "value": 6
+        },
+        "flowDirection": {
+          "value": 6
+        },
+        "intervalLength": 7,
+        "kind": {
+          "value": 6
+        },
+        "maxNumberOfIntervals": 6,
+        "numberOfConsumptionBlocks": 6,
+        "numberOfTouTiers": 6,
+        "phase": {
+          "value": 6
+        },
+        "powerOfTenMultiplier": {
+          "value": 2
+        },
+        "subIntervalLength": 7,
+        "supplyLimit": 11,
+        "tieredConsumptionBlocks": true,
+        "uom": {
+          "value": 6
+        },
+        "href": "http://www.sample.edu/ast/tenens"
+      },
+      "mrid": {
+        "value": [
+          102,
+          117,
+          114,
+          101,
+          110,
+          116,
+          105,
+          98,
+          117,
+          115
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.test.com/murmure/qui"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "href": "http://www.company.com/et/rapidi"
+}

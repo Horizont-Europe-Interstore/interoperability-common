@@ -1,0 +1,22 @@
+{
+  "billingReadingSetListLink": {
+    "all": 5,
+    "href": "http://www.any.com/dea/atris"
+  },
+  "readingTypeLink": {
+    "href": "http://www.any.com/numen/iovis"
+  },
+  "mrid": {
+    "value": [
+      105,
+      112,
+      115,
+      97
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.corp.com/quisquam/nubibus"
+}

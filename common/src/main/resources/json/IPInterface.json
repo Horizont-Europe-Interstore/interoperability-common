@@ -1,0 +1,35 @@
+{
+  "ifDescr": "string",
+  "ifHighSpeed": 7,
+  "ifInBroadcastPkts": 7,
+  "ifIndex": 7,
+  "ifInDiscards": 7,
+  "ifInErrors": 7,
+  "ifInMulticastPkts": 7,
+  "ifInOctets": 7,
+  "ifInUcastPkts": 7,
+  "ifInUnknownProtos": 7,
+  "ifMtu": 7,
+  "ifName": "string",
+  "ifOperStatus": 6,
+  "ifOutBroadcastPkts": 7,
+  "ifOutDiscards": 7,
+  "ifOutErrors": 7,
+  "ifOutMulticastPkts": 7,
+  "ifOutOctets": 7,
+  "ifOutUcastPkts": 7,
+  "ifPromiscuousMode": true,
+  "ifSpeed": 7,
+  "ifType": 5,
+  "ipAddrListLink": {
+    "all": 5,
+    "href": "http://www.any.com/et/turbine"
+  },
+  "lastResetTime": 10,
+  "lastUpdatedTime": 10,
+  "llInterfaceListLink": {
+    "all": 5,
+    "href": "http://www.my.com/illum/qui"
+  },
+  "href": "http://www.test.com/soror/iovis"
+}

@@ -1,0 +1,28 @@
+<DERCurveList href="http://www.sample.gov/faciat/feta" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <DERCurve href="http://www.my.gov/scopuloque/atris">
+    <mRID>726567696E61</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <creationTime>10</creationTime>
+    <!--1 to 10 repetitio-->
+    <CurveData>
+      <xvalue>3</xvalue>
+      <yvalue>3</yvalue>
+    </CurveData>
+    <curveType>6</curveType>
+    <!--Optional:-->
+    <openLoopTms>5</openLoopTms>
+    <!--Optional:-->
+    <rampDecTms>5</rampDecTms>
+    <!--Optional:-->
+    <rampIncTms>5</rampIncTms>
+    <!--Optional:-->
+    <rampPT1Tms>5</rampPT1Tms>
+    <xMultiplier>2</xMultiplier>
+    <yMultiplier>2</yMultiplier>
+    <yRefType>6</yRefType>
+  </DERCurve>
+</DERCurveList>

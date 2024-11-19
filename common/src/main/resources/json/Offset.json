@@ -1,0 +1,7 @@
+{
+  "coolingOffset": 6,
+  "heatingOffset": 6,
+  "loadAdjustmentPercentageOffset": {
+    "value": 5
+  }
+}

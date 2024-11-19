@@ -1,0 +1,88 @@
+{
+  "endDevice": [
+    {
+      "changedTime": 10,
+      "enabled": true,
+      "flowReservationRequestListLink": {
+        "all": 5,
+        "href": "http://www.test.com/quippe/acuto"
+      },
+      "flowReservationResponseListLink": {
+        "all": 5,
+        "href": "http://www.sample.org/ego/et"
+      },
+      "functionSetAssignmentsListLink": {
+        "all": 5,
+        "href": "http://www.company.org/sonoras/soror"
+      },
+      "registrationLink": {
+        "href": "http://www.any.org/aequora/acuto"
+      },
+      "subscriptionListLink": {
+        "all": 5,
+        "href": "http://www.any.gov/pectore/altos"
+      },
+      "configurationLink": {
+        "href": "http://www.corp.gov/ast/premit"
+      },
+      "derListLink": {
+        "all": 5,
+        "href": "http://www.company.org/soror/frenat"
+      },
+      "deviceInformationLink": {
+        "href": "http://www.sample.com/auras/secum"
+      },
+      "deviceStatusLink": {
+        "href": "http://www.my.com/atris/celsa"
+      },
+      "fileStatusLink": {
+        "href": "http://www.test.com/verrantque/metuens"
+      },
+      "ipInterfaceListLink": {
+        "all": 5,
+        "href": "http://www.my.com/austris/sciret"
+      },
+      "lfdi": [
+        111,
+        109,
+        110,
+        105,
+        112,
+        111,
+        116,
+        101,
+        110,
+        115
+      ],
+      "loadShedAvailabilityListLink": {
+        "all": 5,
+        "href": "http://www.my.com/rex/molemque"
+      },
+      "loadShedDeviceCategory": {
+        "value": [
+          115,
+          99,
+          111,
+          112
+        ]
+      },
+      "logEventListLink": {
+        "all": 5,
+        "href": "http://www.corp.com/et/temperat"
+      },
+      "powerStatusLink": {
+        "href": "http://www.corp.com/sceptra/montis"
+      },
+      "sfdi": {
+        "value": 11
+      },
+      "subscribable": 0,
+      "href": "http://www.sample.com/ac/verrantque"
+    }
+  ],
+  "pollRate": 900,
+  "all": 5,
+  "results": 6,
+  "subscribable": 0,
+  "href": "http://www.sample.com/iovisque/rates"
+}

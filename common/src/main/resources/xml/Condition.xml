@@ -1,0 +1,5 @@
+<Condition xmlns="urn:ieee:std:2030.5:ns">
+  <attributeIdentifier>6</attributeIdentifier>
+  <lowerThreshold>10</lowerThreshold>
+  <upperThreshold>10</upperThreshold>
+</Condition>

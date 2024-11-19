@@ -1,0 +1,47 @@
+{
+  "derProgram": [
+    {
+      "activeDERControlListLink": {
+        "all": 5,
+        "href": "http://www.sample.com/coniunx/flammato"
+      },
+      "defaultDERControlLink": {
+        "href": "http://www.corp.com/patriam/aequora"
+      },
+      "derControlListLink": {
+        "all": 5,
+        "href": "http://www.your.com/et/annos"
+      },
+      "derCurveListLink": {
+        "all": 5,
+        "href": "http://www.sample.com/regina/aequora"
+      },
+      "primacy": {
+        "value": 6
+      },
+      "mrid": {
+        "value": [
+          99,
+          108,
+          97,
+          117,
+          115,
+          116,
+          114,
+          97
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "subscribable": 0,
+      "href": "http://www.test.com/infixit/illum"
+    }
+  ],
+  "pollRate": 900,
+  "all": 5,
+  "results": 6,
+  "subscribable": 0,
+  "href": "http://www.test.org/et/cum"
+}

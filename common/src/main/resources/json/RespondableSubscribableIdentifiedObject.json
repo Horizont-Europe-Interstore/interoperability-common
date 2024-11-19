@@ -1,0 +1,23 @@
+{
+  "mrid": {
+    "value": [
+      112,
+      101,
+      99,
+      116,
+      111,
+      114,
+      101
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "subscribable": 0,
+  "replyTo": "http://www.test.com/ventis/carcere",
+  "responseRequired": [
+    0
+  ],
+  "href": "http://www.my.org/magno/ipsa"
+}

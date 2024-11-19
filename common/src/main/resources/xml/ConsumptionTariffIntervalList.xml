@@ -1,0 +1,16 @@
+<ConsumptionTariffIntervalList href="http://www.test.org/vinclis/corde" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <ConsumptionTariffInterval href="http://www.test.com/regemque/exspirantem">
+    <consumptionBlock>6</consumptionBlock>
+    <!--Zero or more repetitio-->
+    <EnvironmentalCost>
+      <amount>7</amount>
+      <costKind>6</costKind>
+      <costLevel>6</costLevel>
+      <numCostLevels>6</numCostLevels>
+    </EnvironmentalCost>
+    <!--Optional:-->
+    <price>3</price>
+    <startValue>11</startValue>
+  </ConsumptionTariffInterval>
+</ConsumptionTariffIntervalList>

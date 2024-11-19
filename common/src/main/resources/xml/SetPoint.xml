@@ -1,0 +1,6 @@
+<SetPoint xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <coolingSetpoint>1</coolingSetpoint>
+  <!--Optional:-->
+  <heatingSetpoint>1</heatingSetpoint>
+</SetPoint>

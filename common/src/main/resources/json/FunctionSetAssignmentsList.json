@@ -1,0 +1,64 @@
+{
+  "functionSetAssignments": [
+    {
+      "mrid": {
+        "value": [
+          113,
+          117,
+          97,
+          101
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "subscribable": 0,
+      "customerAccountListLink": {
+        "all": 5,
+        "href": "http://www.sample.com/et/sciret"
+      },
+      "demandResponseProgramListLink": {
+        "all": 5,
+        "href": "http://www.your.org/et/nubibus"
+      },
+      "derProgramListLink": {
+        "all": 5,
+        "href": "http://www.test.edu/bella/animos"
+      },
+      "fileListLink": {
+        "all": 5,
+        "href": "http://www.sample.gov/dedit/tot"
+      },
+      "messagingProgramListLink": {
+        "all": 5,
+        "href": "http://www.sample.com/in/et"
+      },
+      "prepaymentListLink": {
+        "all": 5,
+        "href": "http://www.your.com/hoc/supplex"
+      },
+      "responseSetListLink": {
+        "all": 5,
+        "href": "http://www.test.gov/magno/illum"
+      },
+      "tariffProfileListLink": {
+        "all": 5,
+        "href": "http://www.any.edu/aeolus/dare"
+      },
+      "timeLink": {
+        "href": "http://www.test.com/pater/dare"
+      },
+      "usagePointListLink": {
+        "all": 5,
+        "href": "http://www.test.com/tenens/aeoliam"
+      },
+      "href": "http://www.sample.com/aut/et"
+    }
+  ],
+  "pollRate": 900,
+  "all": 5,
+  "results": 6,
+  "subscribable": 0,
+  "href": "http://www.my.org/animos/rapidi"
+}

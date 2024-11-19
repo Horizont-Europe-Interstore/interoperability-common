@@ -1,0 +1,5 @@
+<IPAddr href="http://www.any.org/atris/vasto" xmlns="urn:ieee:std:2030.5:ns">
+  <address>6E756269627573</address>
+  <!--Optional:-->
+  <RPLInstanceListLink href="http://www.your.com/et/sedet" all="5"/>
+</IPAddr>

@@ -1,0 +1,24 @@
+{
+  "responseListLink": {
+    "all": 5,
+    "href": "http://www.corp.com/laxas/tot"
+  },
+  "mrid": {
+    "value": [
+      112,
+      114,
+      97,
+      101,
+      116,
+      101,
+      114,
+      101,
+      97
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.company.org/austris/aut"
+}

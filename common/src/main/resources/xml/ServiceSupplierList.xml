@@ -1,0 +1,18 @@
+<ServiceSupplierList href="http://www.my.com/feta/flammas" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <ServiceSupplier href="http://www.test.com/iunonis/disiecitque">
+    <mRID>696D706F6E6574</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <!--Optional:-->
+    <email>string</email>
+    <!--Optional:-->
+    <phone>string</phone>
+    <!--Optional:-->
+    <providerID>7</providerID>
+    <!--Optional:-->
+    <web>string</web>
+  </ServiceSupplier>
+</ServiceSupplierList>

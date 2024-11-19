@@ -1,0 +1,9 @@
+<ResponseSet href="http://www.company.org/austris/aut" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>707261657465726561</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <!--Optional:-->
+  <ResponseListLink href="http://www.corp.com/laxas/tot" all="5"/>
+</ResponseSet>

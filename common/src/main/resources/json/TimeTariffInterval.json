@@ -1,0 +1,47 @@
+{
+  "consumptionTariffIntervalListLink": {
+    "all": 5,
+    "href": "http://www.sample.edu/sciret/aeolus"
+  },
+  "touTier": {
+    "value": 6
+  },
+  "randomizeDuration": {
+    "value": 1
+  },
+  "randomizeStart": {
+    "value": 1
+  },
+  "creationTime": 10,
+  "eventStatus": {
+    "currentStatus": 6,
+    "dateTime": 10,
+    "potentiallySuperseded": true,
+    "potentiallySupersededTime": 10,
+    "reason": "string"
+  },
+  "interval": {
+    "duration": 7,
+    "start": 10
+  },
+  "mrid": {
+    "value": [
+      102,
+      114,
+      101,
+      110,
+      97,
+      116
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "subscribable": 0,
+  "replyTo": "http://www.my.org/iussus/soror",
+  "responseRequired": [
+    0
+  ],
+  "href": "http://www.your.com/rates/ac"
+}

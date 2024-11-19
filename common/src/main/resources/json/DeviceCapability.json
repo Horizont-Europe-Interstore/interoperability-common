@@ -1,0 +1,54 @@
+{
+  "endDeviceListLink": {
+    "all": 5,
+    "href": "http://www.my.com/habenas/aut"
+  },
+  "mirrorUsagePointListLink": {
+    "all": 5,
+    "href": "http://www.corp.com/cum/temperat"
+  },
+  "selfDeviceLink": {
+    "href": "http://www.your.org/insuper/et"
+  },
+  "pollRate": 900,
+  "customerAccountListLink": {
+    "all": 5,
+    "href": "http://www.sample.org/regemque/numen"
+  },
+  "demandResponseProgramListLink": {
+    "all": 5,
+    "href": "http://www.any.com/talia/tot"
+  },
+  "derProgramListLink": {
+    "all": 5,
+    "href": "http://www.my.edu/patriam/auras"
+  },
+  "fileListLink": {
+    "all": 5,
+    "href": "http://www.corp.com/iovis/soror"
+  },
+  "messagingProgramListLink": {
+    "all": 5,
+    "href": "http://www.sample.edu/tempestatesque/flammato"
+  },
+  "prepaymentListLink": {
+    "all": 5,
+    "href": "http://www.test.org/regina/flammas"
+  },
+  "responseSetListLink": {
+    "all": 5,
+    "href": "http://www.my.com/magno/quae"
+  },
+  "tariffProfileListLink": {
+    "all": 5,
+    "href": "http://www.your.org/auras/tempestatesque"
+  },
+  "timeLink": {
+    "href": "http://www.my.com/talia/iovis"
+  },
+  "usagePointListLink": {
+    "all": 5,
+    "href": "http://www.my.com/indignantes/infixit"
+  },
+  "href": "http://www.corp.com/maria/cum"
+}

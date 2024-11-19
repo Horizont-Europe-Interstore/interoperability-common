@@ -1,0 +1,8 @@
+<PriceResponse href="http://www.sample.org/imposuit/habenas" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <createdDateTime>10</createdDateTime>
+  <endDeviceLFDI>69726173</endDeviceLFDI>
+  <!--Optional:-->
+  <status>6</status>
+  <subject>6175726173</subject>
+</PriceResponse>

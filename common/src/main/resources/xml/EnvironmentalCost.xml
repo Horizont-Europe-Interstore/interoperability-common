@@ -1,0 +1,6 @@
+<EnvironmentalCost xmlns="urn:ieee:std:2030.5:ns">
+  <amount>7</amount>
+  <costKind>6</costKind>
+  <costLevel>6</costLevel>
+  <numCostLevels>6</numCostLevels>
+</EnvironmentalCost>

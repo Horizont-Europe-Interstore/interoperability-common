@@ -1,0 +1,26 @@
+{
+  "chargingPowerNow": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "energyRequestNow": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 11
+  },
+  "maxForwardPower": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "minimumChargingDuration": 7,
+  "targetStateOfCharge": {
+    "value": 5
+  },
+  "timeChargeIsNeeded": 10,
+  "timeChargingStatusPEV": 10
+}

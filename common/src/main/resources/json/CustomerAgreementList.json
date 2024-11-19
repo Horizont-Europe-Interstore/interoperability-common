@@ -1,0 +1,60 @@
+{
+  "customerAgreement": [
+    {
+      "activeBillingPeriodListLink": {
+        "all": 5,
+        "href": "http://www.your.com/omnipotens/e"
+      },
+      "activeProjectionReadingListLink": {
+        "all": 5,
+        "href": "http://www.your.org/quae/praeterea"
+      },
+      "activeTargetReadingListLink": {
+        "all": 5,
+        "href": "http://www.your.com/temperat/tempestatesque"
+      },
+      "billingPeriodListLink": {
+        "all": 5,
+        "href": "http://www.any.com/indignantes/rates"
+      },
+      "historicalReadingListLink": {
+        "all": 5,
+        "href": "http://www.sample.org/disiecitque/rates"
+      },
+      "prepaymentLink": {
+        "href": "http://www.corp.com/gente/illum"
+      },
+      "projectionReadingListLink": {
+        "all": 5,
+        "href": "http://www.sample.edu/nubibus/quisquam"
+      },
+      "serviceAccount": "string",
+      "serviceLocation": "string",
+      "targetReadingListLink": {
+        "all": 5,
+        "href": "http://www.test.gov/indignantes/et"
+      },
+      "tariffProfileLink": {
+        "href": "http://www.corp.org/ni/aequora"
+      },
+      "usagePointLink": {
+        "href": "http://www.any.com/magno/divum"
+      },
+      "mrid": {
+        "value": [
+          101,
+          116
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.corp.com/animos/nubibus"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "subscribable": 0,
+  "href": "http://www.your.com/omnipotens/omnipotens"
+}

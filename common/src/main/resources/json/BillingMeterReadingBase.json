@@ -1,0 +1,23 @@
+{
+  "billingReadingSetListLink": {
+    "all": 5,
+    "href": "http://www.corp.org/verrantque/hoc"
+  },
+  "readingTypeLink": {
+    "href": "http://www.test.com/austris/et"
+  },
+  "mrid": {
+    "value": [
+      109,
+      97,
+      103,
+      110,
+      111
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.your.com/divum/gero"
+}

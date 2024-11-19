@@ -1,0 +1,47 @@
+<LLInterfaceList href="http://www.sample.gov/turbine/e" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <LLInterface href="http://www.sample.org/nimborum/ac">
+    <CRCerrors>7</CRCerrors>
+    <EUI64>646976756D</EUI64>
+    <!--Optional:-->
+    <IEEE_802_15_4>
+      <capabilityInfo>72</capabilityInfo>
+      <!--Optional:-->
+      <NeighborListLink href="http://www.your.edu/imperio/terras" all="5"/>
+      <shortAddress>5</shortAddress>
+    </IEEE_802_15_4>
+    <linkLayerType>6</linkLayerType>
+    <!--Optional:-->
+    <LLAckNotRx>7</LLAckNotRx>
+    <!--Optional:-->
+    <LLCSMAFail>7</LLCSMAFail>
+    <!--Optional:-->
+    <LLFramesDropRx>7</LLFramesDropRx>
+    <!--Optional:-->
+    <LLFramesDropTx>7</LLFramesDropTx>
+    <!--Optional:-->
+    <LLFramesRx>7</LLFramesRx>
+    <!--Optional:-->
+    <LLFramesTx>7</LLFramesTx>
+    <!--Optional:-->
+    <LLMediaAccessFail>7</LLMediaAccessFail>
+    <!--Optional:-->
+    <LLOctetsRx>7</LLOctetsRx>
+    <!--Optional:-->
+    <LLOctetsTx>7</LLOctetsTx>
+    <!--Optional:-->
+    <LLRetryCount>7</LLRetryCount>
+    <!--Optional:-->
+    <LLSecurityErrorRx>7</LLSecurityErrorRx>
+    <!--Optional:-->
+    <loWPAN>
+      <!--Optional:-->
+      <octetsRx>7</octetsRx>
+      <!--Optional:-->
+      <octetsTx>7</octetsTx>
+      <packetsRx>7</packetsRx>
+      <packetsTx>7</packetsTx>
+      <rxFragError>7</rxFragError>
+    </loWPAN>
+  </LLInterface>
+</LLInterfaceList>

@@ -1,0 +1,17 @@
+<UsagePointList href="http://www.any.com/hic/aeolus" subscribable="0" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <UsagePoint href="http://www.sample.org/frenat/et">
+    <mRID>76696E636C6973</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <roleFlags>65</roleFlags>
+    <serviceCategoryKind>6</serviceCategoryKind>
+    <status>6</status>
+    <!--Optional:-->
+    <deviceLFDI>616C746F73</deviceLFDI>
+    <!--Optional:-->
+    <MeterReadingListLink href="http://www.your.gov/rates/volutans" all="5"/>
+  </UsagePoint>
+</UsagePointList>

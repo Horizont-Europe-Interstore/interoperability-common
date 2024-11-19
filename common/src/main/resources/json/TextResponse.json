@@ -1,0 +1,19 @@
+{
+  "createdDateTime": 10,
+  "endDeviceLFDI": [
+    97,
+    116,
+    114,
+    105,
+    115
+  ],
+  "status": 6,
+  "subject": {
+    "value": [
+      113,
+      117,
+      105
+    ]
+  },
+  "href": "http://www.test.gov/rex/corripuit"
+}

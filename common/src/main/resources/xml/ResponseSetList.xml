@@ -1,0 +1,12 @@
+<ResponseSetList href="http://www.company.com/e/aeolus" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <ResponseSet href="http://www.your.com/venit/regemque">
+    <mRID>70726F66756E64756D</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <!--Optional:-->
+    <ResponseListLink href="http://www.sample.org/nimborum/furentibus" all="5"/>
+  </ResponseSet>
+</ResponseSetList>

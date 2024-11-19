@@ -1,0 +1,24 @@
+<CreditRegisterList href="http://www.your.org/ignem/fremunt" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <CreditRegister href="http://www.sample.com/mollitque/claustra">
+    <mRID>6163</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <creditAmount>
+      <!--Optional:-->
+      <energyUnit>
+        <multiplier>2</multiplier>
+        <value>11</value>
+      </energyUnit>
+      <monetaryUnit>5</monetaryUnit>
+      <multiplier>2</multiplier>
+      <value>3</value>
+    </creditAmount>
+    <!--Optional:-->
+    <creditType>6</creditType>
+    <effectiveTime>10</effectiveTime>
+    <token>string</token>
+  </CreditRegister>
+</CreditRegisterList>

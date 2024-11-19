@@ -1,0 +1,24 @@
+{
+  "billingReadingSetListLink": {
+    "all": 5,
+    "href": "http://www.any.com/speluncis/ferant"
+  },
+  "readingTypeLink": {
+    "href": "http://www.any.com/imperio/rates"
+  },
+  "mrid": {
+    "value": [
+      114,
+      101,
+      103,
+      105,
+      110,
+      97
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.company.com/volutans/exspirantem"
+}

@@ -1,0 +1,15 @@
+<LogEventList href="http://www.sample.com/pectore/flammas" subscribable="0" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <LogEvent href="http://www.corp.com/austris/e">
+    <createdDateTime>10</createdDateTime>
+    <!--Optional:-->
+    <details>string</details>
+    <!--Optional:-->
+    <extendedData>7</extendedData>
+    <functionSet>6</functionSet>
+    <logEventCode>6</logEventCode>
+    <logEventID>5</logEventID>
+    <logEventPEN>7</logEventPEN>
+    <profileID>6</profileID>
+  </LogEvent>
+</LogEventList>

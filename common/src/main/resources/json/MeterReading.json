@@ -1,0 +1,30 @@
+{
+  "rateComponentListLink": {
+    "all": 5,
+    "href": "http://www.your.org/premere/coniunx"
+  },
+  "readingLink": {
+    "href": "http://www.any.org/rex/aeoliam"
+  },
+  "readingSetListLink": {
+    "all": 5,
+    "href": "http://www.sample.org/antro/pater"
+  },
+  "readingTypeLink": {
+    "href": "http://www.company.com/foedere/pater"
+  },
+  "mrid": {
+    "value": [
+      97,
+      99,
+      117,
+      116,
+      111
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.your.com/infixit/numen"
+}

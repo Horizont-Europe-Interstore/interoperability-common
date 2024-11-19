@@ -1,0 +1,17 @@
+<TariffProfile href="http://www.corp.org/tenens/gente" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>706563746F7265</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <!--Optional:-->
+  <currency>5</currency>
+  <!--Optional:-->
+  <pricePowerOfTenMultiplier>2</pricePowerOfTenMultiplier>
+  <primacy>6</primacy>
+  <!--Optional:-->
+  <rateCode>string</rateCode>
+  <!--Optional:-->
+  <RateComponentListLink href="http://www.your.org/sedet/praeterea" all="5"/>
+  <serviceCategoryKind>6</serviceCategoryKind>
+</TariffProfile>

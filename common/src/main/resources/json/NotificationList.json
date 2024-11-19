@@ -1,0 +1,17 @@
+{
+  "notification": [
+    {
+      "newResourceURI": "http://www.corp.org/maria/foedere",
+      "resource": {
+        "href": "http://www.any.gov/scopuloque/terras"
+      },
+      "status": 6,
+      "subscriptionURI": "http://www.any.edu/altos/fremunt",
+      "subscribedResource": "http://www.sample.org/furentibus/patriam",
+      "href": "http://www.any.com/cum/et"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "href": "http://www.your.org/murmure/illi"
+}

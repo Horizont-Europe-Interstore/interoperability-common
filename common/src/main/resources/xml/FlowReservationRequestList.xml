@@ -1,0 +1,29 @@
+<FlowReservationRequestList href="http://www.company.com/dea/aut" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <FlowReservationRequest href="http://www.test.org/iras/bella">
+    <mRID>6D657475656E73</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <creationTime>10</creationTime>
+    <!--Optional:-->
+    <durationRequested>5</durationRequested>
+    <energyRequested>
+      <multiplier>2</multiplier>
+      <value>10</value>
+    </energyRequested>
+    <intervalRequested>
+      <duration>7</duration>
+      <start>10</start>
+    </intervalRequested>
+    <powerRequested>
+      <multiplier>2</multiplier>
+      <value>1</value>
+    </powerRequested>
+    <RequestStatus>
+      <dateTime>10</dateTime>
+      <requestStatus>6</requestStatus>
+    </RequestStatus>
+  </FlowReservationRequest>
+</FlowReservationRequestList>

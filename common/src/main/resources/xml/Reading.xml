@@ -1,0 +1,17 @@
+<Reading href="http://www.any.org/regina/montis" subscribable="0" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <consumptionBlock>6</consumptionBlock>
+  <!--Optional:-->
+  <qualityFlags>7465</qualityFlags>
+  <!--Optional:-->
+  <timePeriod>
+    <duration>7</duration>
+    <start>10</start>
+  </timePeriod>
+  <!--Optional:-->
+  <touTier>6</touTier>
+  <!--Optional:-->
+  <value>10</value>
+  <!--Optional:-->
+  <localID>6665</localID>
+</Reading>

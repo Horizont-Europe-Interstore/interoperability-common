@@ -1,0 +1,8 @@
+<Response href="http://www.test.org/ast/tenens" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <createdDateTime>10</createdDateTime>
+  <endDeviceLFDI>63756D</endDeviceLFDI>
+  <!--Optional:-->
+  <status>6</status>
+  <subject>74656D7065726174</subject>
+</Response>

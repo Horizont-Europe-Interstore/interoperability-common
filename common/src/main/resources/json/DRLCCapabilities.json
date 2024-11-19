@@ -1,0 +1,20 @@
+{
+  "averageEnergy": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 11
+  },
+  "maxDemand": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "optionsImplemented": [
+    116,
+    114,
+    97,
+    110
+  ]
+}

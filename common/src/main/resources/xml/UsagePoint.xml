@@ -1,0 +1,14 @@
+<UsagePoint href="http://www.company.com/aeolus/flammas" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>6D6F6C6C6974717565</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <roleFlags>7175</roleFlags>
+  <serviceCategoryKind>6</serviceCategoryKind>
+  <status>6</status>
+  <!--Optional:-->
+  <deviceLFDI>74616C6961</deviceLFDI>
+  <!--Optional:-->
+  <MeterReadingListLink href="http://www.company.org/iaculata/rapidum" all="5"/>
+</UsagePoint>

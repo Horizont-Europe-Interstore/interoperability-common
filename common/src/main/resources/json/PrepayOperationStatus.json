@@ -1,0 +1,21 @@
+{
+  "creditTypeChange": {
+    "newType": {
+      "value": 6
+    },
+    "startTime": 10
+  },
+  "creditTypeInUse": {
+    "value": 6
+  },
+  "serviceChange": {
+    "newStatus": {
+      "value": 6
+    },
+    "startTime": 10
+  },
+  "serviceStatus": {
+    "value": 6
+  },
+  "href": "http://www.sample.org/premere/auras"
+}

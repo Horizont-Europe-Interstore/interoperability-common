@@ -1,0 +1,41 @@
+{
+  "tariffProfile": [
+    {
+      "currency": {
+        "value": 5
+      },
+      "pricePowerOfTenMultiplier": {
+        "value": 2
+      },
+      "primacy": {
+        "value": 6
+      },
+      "rateCode": "string",
+      "rateComponentListLink": {
+        "all": 5,
+        "href": "http://www.test.org/regina/volutans"
+      },
+      "serviceCategoryKind": {
+        "value": 6
+      },
+      "mrid": {
+        "value": [
+          97,
+          114,
+          99,
+          101
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.your.com/auras/verrantque"
+    }
+  ],
+  "pollRate": 900,
+  "all": 5,
+  "results": 6,
+  "subscribable": 0,
+  "href": "http://www.any.gov/cum/hic"
+}

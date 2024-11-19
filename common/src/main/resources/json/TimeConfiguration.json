@@ -1,0 +1,24 @@
+{
+  "dstEndRule": {
+    "value": [
+      102,
+      114,
+      101,
+      109
+    ]
+  },
+  "dstOffset": {
+    "value": 3
+  },
+  "dstStartRule": {
+    "value": [
+      116,
+      114,
+      97,
+      110
+    ]
+  },
+  "tzOffset": {
+    "value": 3
+  }
+}

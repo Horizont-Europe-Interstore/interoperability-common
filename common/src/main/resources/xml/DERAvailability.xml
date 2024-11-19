@@ -1,0 +1,21 @@
+<DERAvailability href="http://www.company.com/nubibus/acuto" subscribable="0" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <availabilityDuration>7</availabilityDuration>
+  <!--Optional:-->
+  <maxChargeDuration>7</maxChargeDuration>
+  <readingTime>10</readingTime>
+  <!--Optional:-->
+  <reserveChargePercent>5</reserveChargePercent>
+  <!--Optional:-->
+  <reservePercent>5</reservePercent>
+  <!--Optional:-->
+  <statVarAvail>
+    <multiplier>2</multiplier>
+    <value>1</value>
+  </statVarAvail>
+  <!--Optional:-->
+  <statWAvail>
+    <multiplier>2</multiplier>
+    <value>1</value>
+  </statWAvail>
+</DERAvailability>

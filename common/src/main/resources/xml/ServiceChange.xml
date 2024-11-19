@@ -1,0 +1,4 @@
+<ServiceChange xmlns="urn:ieee:std:2030.5:ns">
+  <newStatus>6</newStatus>
+  <startTime>10</startTime>
+</ServiceChange>

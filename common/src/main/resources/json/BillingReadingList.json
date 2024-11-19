@@ -1,0 +1,34 @@
+{
+  "billingReading": [
+    {
+      "charge": [
+        {
+          "description": "string",
+          "kind": {
+            "value": 6
+          },
+          "value": 3
+        }
+      ],
+      "consumptionBlock": {
+        "value": 6
+      },
+      "qualityFlags": [
+        100,
+        101
+      ],
+      "timePeriod": {
+        "duration": 7,
+        "start": 10
+      },
+      "touTier": {
+        "value": 6
+      },
+      "value": 10,
+      "href": "http://www.any.gov/et/rapidum"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "href": "http://www.any.com/supplex/loca"
+}

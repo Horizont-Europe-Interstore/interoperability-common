@@ -1,0 +1,35 @@
+{
+  "currency": {
+    "value": 5
+  },
+  "pricePowerOfTenMultiplier": {
+    "value": 2
+  },
+  "primacy": {
+    "value": 6
+  },
+  "rateCode": "string",
+  "rateComponentListLink": {
+    "all": 5,
+    "href": "http://www.your.org/sedet/praeterea"
+  },
+  "serviceCategoryKind": {
+    "value": 6
+  },
+  "mrid": {
+    "value": [
+      112,
+      101,
+      99,
+      116,
+      111,
+      114,
+      101
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.corp.org/tenens/gente"
+}

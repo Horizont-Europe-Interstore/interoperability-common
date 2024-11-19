@@ -1,0 +1,31 @@
+{
+  "readingSet": [
+    {
+      "readingListLink": {
+        "all": 5,
+        "href": "http://www.test.org/soror/aeoliam"
+      },
+      "timePeriod": {
+        "duration": 7,
+        "start": 10
+      },
+      "mrid": {
+        "value": [
+          105,
+          112,
+          115,
+          97
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.corp.com/murmure/aequora"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "subscribable": 0,
+  "href": "http://www.your.com/corripuit/corripuit"
+}

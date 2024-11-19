@@ -1,0 +1,12 @@
+<BillingPeriod href="http://www.test.gov/animos/flammato" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <billLastPeriod>10</billLastPeriod>
+  <!--Optional:-->
+  <billToDate>10</billToDate>
+  <interval>
+    <duration>7</duration>
+    <start>10</start>
+  </interval>
+  <!--Optional:-->
+  <statusTimeStamp>10</statusTimeStamp>
+</BillingPeriod>

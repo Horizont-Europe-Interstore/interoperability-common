@@ -1,0 +1,60 @@
+{
+  "rateComponent": [
+    {
+      "activeTimeTariffIntervalListLink": {
+        "all": 5,
+        "href": "http://www.my.edu/fremunt/sceptra"
+      },
+      "flowRateEndLimit": {
+        "multiplier": {
+          "value": 2
+        },
+        "unit": {
+          "value": 6
+        },
+        "value": 3
+      },
+      "flowRateStartLimit": {
+        "multiplier": {
+          "value": 2
+        },
+        "unit": {
+          "value": 6
+        },
+        "value": 3
+      },
+      "readingTypeLink": {
+        "href": "http://www.corp.com/bella/pater"
+      },
+      "roleFlags": {
+        "value": [
+          115,
+          117
+        ]
+      },
+      "timeTariffIntervalListLink": {
+        "all": 5,
+        "href": "http://www.company.com/corripuit/omnipotens"
+      },
+      "mrid": {
+        "value": [
+          114,
+          97,
+          112,
+          105,
+          100,
+          117,
+          109
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.corp.edu/praeterea/volutans"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "href": "http://www.sample.org/praeterea/habenas"
+}

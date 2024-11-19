@@ -1,0 +1,59 @@
+{
+  "activeBillingPeriodListLink": {
+    "all": 5,
+    "href": "http://www.corp.com/quisquam/montis"
+  },
+  "activeProjectionReadingListLink": {
+    "all": 5,
+    "href": "http://www.your.org/divum/aeolus"
+  },
+  "activeTargetReadingListLink": {
+    "all": 5,
+    "href": "http://www.any.org/vinclis/scopuloque"
+  },
+  "billingPeriodListLink": {
+    "all": 5,
+    "href": "http://www.sample.gov/corripuit/per"
+  },
+  "historicalReadingListLink": {
+    "all": 5,
+    "href": "http://www.company.org/ventos/ventos"
+  },
+  "prepaymentLink": {
+    "href": "http://www.company.edu/patriam/auras"
+  },
+  "projectionReadingListLink": {
+    "all": 5,
+    "href": "http://www.sample.org/murmure/hoc"
+  },
+  "serviceAccount": "string",
+  "serviceLocation": "string",
+  "targetReadingListLink": {
+    "all": 5,
+    "href": "http://www.your.com/imposuit/altos"
+  },
+  "tariffProfileLink": {
+    "href": "http://www.my.edu/ast/caelumque"
+  },
+  "usagePointLink": {
+    "href": "http://www.your.gov/sedet/habenas"
+  },
+  "mrid": {
+    "value": [
+      109,
+      111,
+      108,
+      108,
+      105,
+      116,
+      113,
+      117,
+      101
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.sample.org/altos/omnipotens"
+}

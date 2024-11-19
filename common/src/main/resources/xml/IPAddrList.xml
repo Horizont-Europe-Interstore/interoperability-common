@@ -1,0 +1,8 @@
+<IPAddrList href="http://www.any.gov/verrantque/qui" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <IPAddr href="http://www.corp.gov/patriam/montis">
+    <address>617374</address>
+    <!--Optional:-->
+    <RPLInstanceListLink href="http://www.my.com/et/nubibus" all="5"/>
+  </IPAddr>
+</IPAddrList>

@@ -1,0 +1,39 @@
+{
+  "availableCredit": {
+    "energyUnit": {
+      "multiplier": {
+        "value": 2
+      },
+      "value": 11
+    },
+    "monetaryUnit": {
+      "value": 5
+    },
+    "multiplier": {
+      "value": 2
+    },
+    "value": 3
+  },
+  "creditStatus": {
+    "value": 6
+  },
+  "emergencyCredit": {
+    "energyUnit": {
+      "multiplier": {
+        "value": 2
+      },
+      "value": 11
+    },
+    "monetaryUnit": {
+      "value": 5
+    },
+    "multiplier": {
+      "value": 2
+    },
+    "value": 3
+  },
+  "emergencyCreditStatus": {
+    "value": 6
+  },
+  "href": "http://www.my.org/regina/furentibus"
+}

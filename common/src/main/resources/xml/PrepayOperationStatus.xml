@@ -1,0 +1,15 @@
+<PrepayOperationStatus href="http://www.sample.org/premere/auras" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <creditTypeChange>
+    <newType>6</newType>
+    <startTime>10</startTime>
+  </creditTypeChange>
+  <!--Optional:-->
+  <creditTypeInUse>6</creditTypeInUse>
+  <!--Optional:-->
+  <serviceChange>
+    <newStatus>6</newStatus>
+    <startTime>10</startTime>
+  </serviceChange>
+  <serviceStatus>6</serviceStatus>
+</PrepayOperationStatus>

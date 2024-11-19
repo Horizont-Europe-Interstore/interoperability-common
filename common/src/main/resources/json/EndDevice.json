@@ -1,0 +1,73 @@
+{
+  "changedTime": 10,
+  "enabled": true,
+  "flowReservationRequestListLink": {
+    "all": 5,
+    "href": "http://www.my.com/corde/secum"
+  },
+  "flowReservationResponseListLink": {
+    "all": 5,
+    "href": "http://www.sample.org/et/tempestatesque"
+  },
+  "functionSetAssignmentsListLink": {
+    "all": 5,
+    "href": "http://www.corp.edu/sciret/abdidit"
+  },
+  "registrationLink": {
+    "href": "http://www.company.gov/hoc/indignantes"
+  },
+  "subscriptionListLink": {
+    "all": 5,
+    "href": "http://www.company.edu/quisquam/regemque"
+  },
+  "configurationLink": {
+    "href": "http://www.my.com/dare/numen"
+  },
+  "derListLink": {
+    "all": 5,
+    "href": "http://www.company.com/rex/dea"
+  },
+  "deviceInformationLink": {
+    "href": "http://www.any.org/dea/nubibus"
+  },
+  "deviceStatusLink": {
+    "href": "http://www.your.edu/arce/corde"
+  },
+  "fileStatusLink": {
+    "href": "http://www.sample.com/austris/circum"
+  },
+  "ipInterfaceListLink": {
+    "all": 5,
+    "href": "http://www.sample.com/ac/qui"
+  },
+  "lfdi": [
+    113,
+    117,
+    97,
+    101
+  ],
+  "loadShedAvailabilityListLink": {
+    "all": 5,
+    "href": "http://www.any.com/animos/pater"
+  },
+  "loadShedDeviceCategory": {
+    "value": [
+      104,
+      97,
+      98,
+      101
+    ]
+  },
+  "logEventListLink": {
+    "all": 5,
+    "href": "http://www.test.com/omnipotens/gero"
+  },
+  "powerStatusLink": {
+    "href": "http://www.my.gov/dedit/et"
+  },
+  "sfdi": {
+    "value": 11
+  },
+  "subscribable": 0,
+  "href": "http://www.my.com/ac/incedo"
+}

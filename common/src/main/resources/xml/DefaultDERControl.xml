@@ -1,0 +1,85 @@
+<DefaultDERControl href="http://www.company.com/frenat/iaculata" subscribable="0" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>69726173</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <DERControlBase>
+    <!--Optional:-->
+    <opModConnect>false</opModConnect>
+    <!--Optional:-->
+    <opModEnergize>false</opModEnergize>
+    <!--Optional:-->
+    <opModFixedPF>
+      <displacement>1</displacement>
+      <multiplier>2</multiplier>
+    </opModFixedPF>
+    <!--Optional:-->
+    <opModFixedVar>
+      <refType>6</refType>
+      <value>1</value>
+    </opModFixedVar>
+    <!--Optional:-->
+    <opModFixedW>1</opModFixedW>
+    <!--Optional:-->
+    <opModFreqDroop>
+      <dBOF>7</dBOF>
+      <dBUF>7</dBUF>
+      <kOF>5</kOF>
+      <kUF>5</kUF>
+      <openLoopTms>5</openLoopTms>
+    </opModFreqDroop>
+    <!--Optional:-->
+    <opModFreqWatt href="http://www.your.gov/sonoras/atris"/>
+    <!--Optional:-->
+    <opModHFRTMustTrip href="http://www.sample.com/per/ni"/>
+    <!--Optional:-->
+    <opModHVRTMomentaryCessation href="http://www.test.com/claustra/imposuit"/>
+    <!--Optional:-->
+    <opModHVRTMustTrip href="http://www.test.com/in/faciat"/>
+    <!--Optional:-->
+    <opModLFRTMustTrip href="http://www.sample.org/animos/rates"/>
+    <!--Optional:-->
+    <opModLVRTMomentaryCessation href="http://www.corp.org/rapidi/et"/>
+    <!--Optional:-->
+    <opModLVRTMustTrip href="http://www.sample.com/dea/talia"/>
+    <!--Optional:-->
+    <opModMaxLimW>5</opModMaxLimW>
+    <!--Optional:-->
+    <opModTargetVar>
+      <multiplier>2</multiplier>
+      <value>1</value>
+    </opModTargetVar>
+    <!--Optional:-->
+    <opModTargetW>
+      <multiplier>2</multiplier>
+      <value>1</value>
+    </opModTargetW>
+    <!--Optional:-->
+    <opModVoltVar href="http://www.your.com/et/venit"/>
+    <!--Optional:-->
+    <opModVoltWatt href="http://www.company.com/corde/aut"/>
+    <!--Optional:-->
+    <opModWattPF href="http://www.corp.org/luctantis/imponet"/>
+    <!--Optional:-->
+    <opModWattVar href="http://www.sample.edu/claustra/honorem"/>
+    <!--Optional:-->
+    <rampTms>5</rampTms>
+  </DERControlBase>
+  <!--Optional:-->
+  <setESDelay>5</setESDelay>
+  <!--Optional:-->
+  <setESHighFreq>5</setESHighFreq>
+  <!--Optional:-->
+  <setESHighVolt>1</setESHighVolt>
+  <!--Optional:-->
+  <setESLowFreq>5</setESLowFreq>
+  <!--Optional:-->
+  <setESLowVolt>1</setESLowVolt>
+  <!--Optional:-->
+  <setESRandomDelay>5</setESRandomDelay>
+  <!--Optional:-->
+  <setGradW>5</setGradW>
+  <!--Optional:-->
+  <setSoftGradW>5</setSoftGradW>
+</DefaultDERControl>

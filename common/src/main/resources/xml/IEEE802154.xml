@@ -1,0 +1,6 @@
+<IEEE_802_15_4 xmlns="urn:ieee:std:2030.5:ns">
+  <capabilityInfo>69</capabilityInfo>
+  <!--Optional:-->
+  <NeighborListLink href="http://www.company.gov/nubibus/ipsa" all="5"/>
+  <shortAddress>5</shortAddress>
+</IEEE_802_15_4>

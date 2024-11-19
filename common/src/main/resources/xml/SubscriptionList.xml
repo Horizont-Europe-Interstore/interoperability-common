@@ -1,0 +1,16 @@
+<SubscriptionList href="http://www.your.com/loca/secum" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <Subscription href="http://www.my.com/terras/claustra">
+    <subscribedResource>http://www.my.edu/disiecitque/premere</subscribedResource>
+    <!--Optional:-->
+    <Condition>
+      <attributeIdentifier>6</attributeIdentifier>
+      <lowerThreshold>10</lowerThreshold>
+      <upperThreshold>10</upperThreshold>
+    </Condition>
+    <encoding>6</encoding>
+    <level>string</level>
+    <limit>5</limit>
+    <notificationURI>http://www.my.com/in/premit</notificationURI>
+  </Subscription>
+</SubscriptionList>

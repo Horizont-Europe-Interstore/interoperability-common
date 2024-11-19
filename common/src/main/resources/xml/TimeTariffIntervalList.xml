@@ -1,0 +1,31 @@
+<TimeTariffIntervalList href="http://www.your.com/animos/et" subscribable="0" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <TimeTariffInterval href="http://www.your.edu/secum/imposuit" replyTo="http://www.corp.org/claustra/numen" responseRequired="00" subscribable="0">
+    <mRID>736563756D</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <creationTime>10</creationTime>
+    <EventStatus>
+      <currentStatus>6</currentStatus>
+      <dateTime>10</dateTime>
+      <potentiallySuperseded>false</potentiallySuperseded>
+      <!--Optional:-->
+      <potentiallySupersededTime>10</potentiallySupersededTime>
+      <!--Optional:-->
+      <reason>string</reason>
+    </EventStatus>
+    <interval>
+      <duration>7</duration>
+      <start>10</start>
+    </interval>
+    <!--Optional:-->
+    <randomizeDuration>1</randomizeDuration>
+    <!--Optional:-->
+    <randomizeStart>1</randomizeStart>
+    <!--Optional:-->
+    <ConsumptionTariffIntervalListLink href="http://www.test.org/sedet/quisquam" all="5"/>
+    <touTier>6</touTier>
+  </TimeTariffInterval>
+</TimeTariffIntervalList>

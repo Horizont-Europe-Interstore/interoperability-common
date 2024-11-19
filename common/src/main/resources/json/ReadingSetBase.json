@@ -1,0 +1,18 @@
+{
+  "timePeriod": {
+    "duration": 7,
+    "start": 10
+  },
+  "mrid": {
+    "value": [
+      112,
+      101,
+      114
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.sample.org/in/infixit"
+}

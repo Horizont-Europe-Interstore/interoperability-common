@@ -1,0 +1,16 @@
+<RPLInstanceList href="http://www.your.org/maria/sedet" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <RPLInstance href="http://www.your.gov/frenat/iunonis">
+    <DODAGid>6</DODAGid>
+    <DODAGroot>false</DODAGroot>
+    <flags>6</flags>
+    <groundedFlag>false</groundedFlag>
+    <MOP>6</MOP>
+    <PRF>6</PRF>
+    <rank>5</rank>
+    <RPLInstanceID>6</RPLInstanceID>
+    <!--Optional:-->
+    <RPLSourceRoutesListLink href="http://www.company.com/gero/volutans" all="5"/>
+    <versionNumber>6</versionNumber>
+  </RPLInstance>
+</RPLInstanceList>

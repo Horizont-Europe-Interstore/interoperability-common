@@ -1,0 +1,118 @@
+{
+  "derControlBase": {
+    "opModConnect": false,
+    "opModEnergize": false,
+    "opModFixedPF": {
+      "displacement": 1,
+      "multiplier": {
+        "value": 2
+      }
+    },
+    "opModFixedVar": {
+      "refType": {
+        "value": 6
+      },
+      "value": {
+        "value": 1
+      }
+    },
+    "opModFixedW": {
+      "value": 1
+    },
+    "opModFreqDroop": {
+      "dbof": 7,
+      "dbuf": 7,
+      "kof": 5,
+      "kuf": 5,
+      "openLoopTms": 5
+    },
+    "opModFreqWatt": {
+      "href": "http://www.your.com/regemque/talia"
+    },
+    "opModHFRTMustTrip": {
+      "href": "http://www.company.com/montis/e"
+    },
+    "opModHVRTMomentaryCessation": {
+      "href": "http://www.company.org/sedet/infixit"
+    },
+    "opModHVRTMustTrip": {
+      "href": "http://www.sample.org/qui/imperio"
+    },
+    "opModLFRTMustTrip": {
+      "href": "http://www.company.gov/infixit/evertitque"
+    },
+    "opModLVRTMomentaryCessation": {
+      "href": "http://www.sample.com/dare/infixit"
+    },
+    "opModLVRTMustTrip": {
+      "href": "http://www.test.org/flammato/faciat"
+    },
+    "opModMaxLimW": {
+      "value": 5
+    },
+    "opModTargetVar": {
+      "multiplier": {
+        "value": 2
+      },
+      "value": 1
+    },
+    "opModTargetW": {
+      "multiplier": {
+        "value": 2
+      },
+      "value": 1
+    },
+    "opModVoltVar": {
+      "href": "http://www.my.org/bella/frenat"
+    },
+    "opModVoltWatt": {
+      "href": "http://www.any.org/numen/incedo"
+    },
+    "opModWattPF": {
+      "href": "http://www.sample.edu/pectore/laxas"
+    },
+    "opModWattVar": {
+      "href": "http://www.your.org/rapidum/iaculata"
+    },
+    "rampTms": 5
+  },
+  "randomizeDuration": {
+    "value": 1
+  },
+  "randomizeStart": {
+    "value": 1
+  },
+  "creationTime": 10,
+  "eventStatus": {
+    "currentStatus": 6,
+    "dateTime": 10,
+    "potentiallySuperseded": true,
+    "potentiallySupersededTime": 10,
+    "reason": "string"
+  },
+  "interval": {
+    "duration": 7,
+    "start": 10
+  },
+  "mrid": {
+    "value": [
+      110,
+      117,
+      98,
+      105,
+      98,
+      117,
+      115
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "subscribable": 0,
+  "replyTo": "http://www.company.gov/terras/hic",
+  "responseRequired": [
+    0
+  ],
+  "href": "http://www.corp.com/maria/profundum"
+}

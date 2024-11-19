@@ -1,0 +1,29 @@
+<MirrorReadingSet href="http://www.any.com/scopuloque/gero" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>62656C6C61</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <timePeriod>
+    <duration>7</duration>
+    <start>10</start>
+  </timePeriod>
+  <!--Zero or more repetitio-->
+  <Reading href="http://www.test.edu/volutans/mollitque" subscribable="0">
+    <!--Optional:-->
+    <consumptionBlock>6</consumptionBlock>
+    <!--Optional:-->
+    <qualityFlags>6D6F</qualityFlags>
+    <!--Optional:-->
+    <timePeriod>
+      <duration>7</duration>
+      <start>10</start>
+    </timePeriod>
+    <!--Optional:-->
+    <touTier>6</touTier>
+    <!--Optional:-->
+    <value>10</value>
+    <!--Optional:-->
+    <localID>636F</localID>
+  </Reading>
+</MirrorReadingSet>

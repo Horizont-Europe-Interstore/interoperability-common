@@ -1,0 +1,57 @@
+<IPInterfaceList href="http://www.any.com/iunonis/austris" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <IPInterface href="http://www.company.com/austris/una">
+    <!--Optional:-->
+    <ifDescr>string</ifDescr>
+    <!--Optional:-->
+    <ifHighSpeed>7</ifHighSpeed>
+    <!--Optional:-->
+    <ifInBroadcastPkts>7</ifInBroadcastPkts>
+    <!--Optional:-->
+    <ifIndex>7</ifIndex>
+    <!--Optional:-->
+    <ifInDiscards>7</ifInDiscards>
+    <!--Optional:-->
+    <ifInErrors>7</ifInErrors>
+    <!--Optional:-->
+    <ifInMulticastPkts>7</ifInMulticastPkts>
+    <!--Optional:-->
+    <ifInOctets>7</ifInOctets>
+    <!--Optional:-->
+    <ifInUcastPkts>7</ifInUcastPkts>
+    <!--Optional:-->
+    <ifInUnknownProtos>7</ifInUnknownProtos>
+    <!--Optional:-->
+    <ifMtu>7</ifMtu>
+    <!--Optional:-->
+    <ifName>string</ifName>
+    <!--Optional:-->
+    <ifOperStatus>6</ifOperStatus>
+    <!--Optional:-->
+    <ifOutBroadcastPkts>7</ifOutBroadcastPkts>
+    <!--Optional:-->
+    <ifOutDiscards>7</ifOutDiscards>
+    <!--Optional:-->
+    <ifOutErrors>7</ifOutErrors>
+    <!--Optional:-->
+    <ifOutMulticastPkts>7</ifOutMulticastPkts>
+    <!--Optional:-->
+    <ifOutOctets>7</ifOutOctets>
+    <!--Optional:-->
+    <ifOutUcastPkts>7</ifOutUcastPkts>
+    <!--Optional:-->
+    <ifPromiscuousMode>false</ifPromiscuousMode>
+    <!--Optional:-->
+    <ifSpeed>7</ifSpeed>
+    <!--Optional:-->
+    <ifType>5</ifType>
+    <!--Optional:-->
+    <IPAddrListLink href="http://www.test.edu/transfixo/patriam" all="5"/>
+    <!--Optional:-->
+    <lastResetTime>10</lastResetTime>
+    <!--Optional:-->
+    <lastUpdatedTime>10</lastUpdatedTime>
+    <!--Optional:-->
+    <LLInterfaceListLink href="http://www.any.com/hoc/hic" all="5"/>
+  </IPInterface>
+</IPInterfaceList>

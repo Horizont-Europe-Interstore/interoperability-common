@@ -1,0 +1,16 @@
+{
+  "availabilityDuration": 7,
+  "demandResponseProgramLink": {
+    "href": "http://www.company.edu/austris/corde"
+  },
+  "sheddablePercent": {
+    "value": 5
+  },
+  "sheddablePower": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "href": "http://www.corp.edu/una/aequora"
+}

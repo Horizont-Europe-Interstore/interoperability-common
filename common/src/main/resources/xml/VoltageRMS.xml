@@ -1,0 +1,4 @@
+<VoltageRMS xmlns="urn:ieee:std:2030.5:ns">
+  <multiplier>2</multiplier>
+  <value>5</value>
+</VoltageRMS>

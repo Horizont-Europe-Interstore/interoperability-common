@@ -1,0 +1,11 @@
+<ProjectionReading href="http://www.my.org/laxas/rex" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>74656D7065726174</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <!--Optional:-->
+  <BillingReadingSetListLink href="http://www.any.org/in/qui" all="5"/>
+  <!--Optional:-->
+  <ReadingTypeLink href="http://www.any.gov/profundum/speluncis"/>
+</ProjectionReading>

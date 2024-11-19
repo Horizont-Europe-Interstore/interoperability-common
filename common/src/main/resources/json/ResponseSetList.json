@@ -1,0 +1,32 @@
+{
+  "responseSet": [
+    {
+      "responseListLink": {
+        "all": 5,
+        "href": "http://www.sample.org/nimborum/furentibus"
+      },
+      "mrid": {
+        "value": [
+          112,
+          114,
+          111,
+          102,
+          117,
+          110,
+          100,
+          117,
+          109
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.your.com/venit/regemque"
+    }
+  ],
+  "pollRate": 900,
+  "all": 5,
+  "results": 6,
+  "href": "http://www.company.com/e/aeolus"
+}

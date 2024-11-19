@@ -1,0 +1,7 @@
+<IdentifiedObject href="http://www.my.com/per/murmure" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>736F726F72</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+</IdentifiedObject>

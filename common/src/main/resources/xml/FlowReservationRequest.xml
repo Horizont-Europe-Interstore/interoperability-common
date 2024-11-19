@@ -1,0 +1,26 @@
+<FlowReservationRequest href="http://www.any.com/feta/disiecitque" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>686F63</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <creationTime>10</creationTime>
+  <!--Optional:-->
+  <durationRequested>5</durationRequested>
+  <energyRequested>
+    <multiplier>2</multiplier>
+    <value>10</value>
+  </energyRequested>
+  <intervalRequested>
+    <duration>7</duration>
+    <start>10</start>
+  </intervalRequested>
+  <powerRequested>
+    <multiplier>2</multiplier>
+    <value>1</value>
+  </powerRequested>
+  <RequestStatus>
+    <dateTime>10</dateTime>
+    <requestStatus>6</requestStatus>
+  </RequestStatus>
+</FlowReservationRequest>

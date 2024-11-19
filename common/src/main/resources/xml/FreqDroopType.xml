@@ -1,0 +1,7 @@
+<FreqDroopType xmlns="urn:ieee:std:2030.5:ns">
+  <dBOF>7</dBOF>
+  <dBUF>7</dBUF>
+  <kOF>5</kOF>
+  <kUF>5</kUF>
+  <openLoopTms>5</openLoopTms>
+</FreqDroopType>

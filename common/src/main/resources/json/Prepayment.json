@@ -1,0 +1,130 @@
+{
+  "accountBalanceLink": {
+    "href": "http://www.test.com/aeolus/patriam"
+  },
+  "activeCreditRegisterListLink": {
+    "all": 5,
+    "href": "http://www.my.org/furentibus/aut"
+  },
+  "activeSupplyInterruptionOverrideListLink": {
+    "all": 5,
+    "href": "http://www.company.edu/luctantis/sciret"
+  },
+  "creditExpiryLevel": {
+    "energyUnit": {
+      "multiplier": {
+        "value": 2
+      },
+      "value": 11
+    },
+    "monetaryUnit": {
+      "value": 5
+    },
+    "multiplier": {
+      "value": 2
+    },
+    "value": 3
+  },
+  "creditRegisterListLink": {
+    "all": 5,
+    "href": "http://www.sample.gov/cum/ignem"
+  },
+  "lowCreditWarningLevel": {
+    "energyUnit": {
+      "multiplier": {
+        "value": 2
+      },
+      "value": 11
+    },
+    "monetaryUnit": {
+      "value": 5
+    },
+    "multiplier": {
+      "value": 2
+    },
+    "value": 3
+  },
+  "lowEmergencyCreditWarningLevel": {
+    "energyUnit": {
+      "multiplier": {
+        "value": 2
+      },
+      "value": 11
+    },
+    "monetaryUnit": {
+      "value": 5
+    },
+    "multiplier": {
+      "value": 2
+    },
+    "value": 3
+  },
+  "prepayMode": {
+    "value": 6
+  },
+  "prepayOperationStatusLink": {
+    "href": "http://www.company.org/patriam/montis"
+  },
+  "supplyInterruptionOverrideListLink": {
+    "all": 5,
+    "href": "http://www.test.org/rapidi/rex"
+  },
+  "usagePoint": [
+    {
+      "deviceLFDI": [
+        101,
+        116
+      ],
+      "meterReadingListLink": {
+        "all": 5,
+        "href": "http://www.your.org/turbine/tempestatesque"
+      },
+      "roleFlags": {
+        "value": [
+          108,
+          111
+        ]
+      },
+      "serviceCategoryKind": {
+        "value": 6
+      },
+      "status": 6,
+      "mrid": {
+        "value": [
+          112,
+          114,
+          97,
+          101,
+          116,
+          101,
+          114,
+          101,
+          97
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.company.com/animos/disiecitque"
+    }
+  ],
+  "usagePointLink": {
+    "href": "http://www.my.com/dea/auras"
+  },
+  "mrid": {
+    "value": [
+      99,
+      105,
+      114,
+      99,
+      117,
+      109
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.my.edu/in/animos"
+}

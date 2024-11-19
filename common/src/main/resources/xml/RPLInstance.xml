@@ -1,0 +1,13 @@
+<RPLInstance href="http://www.any.gov/adorat/speluncis" xmlns="urn:ieee:std:2030.5:ns">
+  <DODAGid>6</DODAGid>
+  <DODAGroot>false</DODAGroot>
+  <flags>6</flags>
+  <groundedFlag>false</groundedFlag>
+  <MOP>6</MOP>
+  <PRF>6</PRF>
+  <rank>5</rank>
+  <RPLInstanceID>6</RPLInstanceID>
+  <!--Optional:-->
+  <RPLSourceRoutesListLink href="http://www.your.com/ast/talia" all="5"/>
+  <versionNumber>6</versionNumber>
+</RPLInstance>

@@ -1,0 +1,41 @@
+{
+  "demandResponseProgram": [
+    {
+      "activeEndDeviceControlListLink": {
+        "all": 5,
+        "href": "http://www.sample.org/secum/magno"
+      },
+      "availabilityUpdatePercentChangeThreshold": {
+        "value": 5
+      },
+      "availabilityUpdatePowerChangeThreshold": {
+        "multiplier": {
+          "value": 2
+        },
+        "value": 1
+      },
+      "endDeviceControlListLink": {
+        "all": 5,
+        "href": "http://www.corp.com/habenas/quippe"
+      },
+      "primacy": {
+        "value": 6
+      },
+      "mrid": {
+        "value": [
+          101
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.your.com/celsa/ac"
+    }
+  ],
+  "pollRate": 900,
+  "all": 5,
+  "results": 6,
+  "subscribable": 0,
+  "href": "http://www.sample.org/supplex/habenas"
+}

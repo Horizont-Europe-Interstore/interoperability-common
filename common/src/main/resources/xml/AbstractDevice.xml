@@ -1,0 +1,25 @@
+<AbstractDevice href="http://www.sample.com/supplex/divum" subscribable="0" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <ConfigurationLink href="http://www.sample.com/celsa/iovis"/>
+  <!--Optional:-->
+  <DERListLink href="http://www.test.com/montis/antro" all="7"/>
+  <!--Optional:-->
+  <deviceCategory>73656375</deviceCategory>
+  <!--Optional:-->
+  <DeviceInformationLink href="http://www.sample.com/rapidum/vasto"/>
+  <!--Optional:-->
+  <DeviceStatusLink href="http://www.company.org/in/ast"/>
+  <!--Optional:-->
+  <FileStatusLink href="http://www.your.com/sed/patriam"/>
+  <!--Optional:-->
+  <IPInterfaceListLink href="http://www.company.org/rapidum/flammato" all="7"/>
+  <!--Optional:-->
+  <lFDI>666C616D6D61746F</lFDI>
+  <!--Optional:-->
+  <LoadShedAvailabilityListLink href="http://www.company.edu/faciat/antro" all="7"/>
+  <!--Optional:-->
+  <LogEventListLink href="http://www.sample.org/atris/exspirantem" all="7"/>
+  <!--Optional:-->
+  <PowerStatusLink href="http://www.any.org/dedit/secum"/>
+  <sFDI>11</sFDI>
+</AbstractDevice>

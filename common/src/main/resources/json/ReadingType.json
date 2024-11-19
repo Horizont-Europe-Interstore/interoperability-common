@@ -1,0 +1,52 @@
+{
+  "accumulationBehaviour": {
+    "value": 6
+  },
+  "calorificValue": {
+    "multiplier": {
+      "value": 2
+    },
+    "unit": {
+      "value": 6
+    },
+    "value": 3
+  },
+  "commodity": {
+    "value": 6
+  },
+  "conversionFactor": {
+    "multiplier": {
+      "value": 2
+    },
+    "unit": {
+      "value": 6
+    },
+    "value": 3
+  },
+  "dataQualifier": {
+    "value": 6
+  },
+  "flowDirection": {
+    "value": 6
+  },
+  "intervalLength": 7,
+  "kind": {
+    "value": 6
+  },
+  "maxNumberOfIntervals": 6,
+  "numberOfConsumptionBlocks": 6,
+  "numberOfTouTiers": 6,
+  "phase": {
+    "value": 6
+  },
+  "powerOfTenMultiplier": {
+    "value": 2
+  },
+  "subIntervalLength": 7,
+  "supplyLimit": 11,
+  "tieredConsumptionBlocks": false,
+  "uom": {
+    "value": 6
+  },
+  "href": "http://www.your.com/verrantque/volutans"
+}

@@ -1,0 +1,35 @@
+{
+  "activeTextMessageListLink": {
+    "all": 5,
+    "href": "http://www.your.org/montis/sed"
+  },
+  "locale": {
+    "value": "string"
+  },
+  "primacy": {
+    "value": 6
+  },
+  "textMessageListLink": {
+    "all": 5,
+    "href": "http://www.sample.gov/luctantis/disiecitque"
+  },
+  "mrid": {
+    "value": [
+      112,
+      114,
+      97,
+      101,
+      116,
+      101,
+      114,
+      101,
+      97
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "subscribable": 0,
+  "href": "http://www.sample.edu/in/pater"
+}

@@ -1,0 +1,21 @@
+<CreditRegister href="http://www.company.org/caelumque/sonoras" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>64617265</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <creditAmount>
+    <!--Optional:-->
+    <energyUnit>
+      <multiplier>2</multiplier>
+      <value>11</value>
+    </energyUnit>
+    <monetaryUnit>5</monetaryUnit>
+    <multiplier>2</multiplier>
+    <value>3</value>
+  </creditAmount>
+  <!--Optional:-->
+  <creditType>6</creditType>
+  <effectiveTime>10</effectiveTime>
+  <token>string</token>
+</CreditRegister>

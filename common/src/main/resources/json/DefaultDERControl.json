@@ -1,0 +1,101 @@
+{
+  "derControlBase": {
+    "opModConnect": false,
+    "opModEnergize": false,
+    "opModFixedPF": {
+      "displacement": 1,
+      "multiplier": {
+        "value": 2
+      }
+    },
+    "opModFixedVar": {
+      "refType": {
+        "value": 6
+      },
+      "value": {
+        "value": 1
+      }
+    },
+    "opModFixedW": {
+      "value": 1
+    },
+    "opModFreqDroop": {
+      "dbof": 7,
+      "dbuf": 7,
+      "kof": 5,
+      "kuf": 5,
+      "openLoopTms": 5
+    },
+    "opModFreqWatt": {
+      "href": "http://www.your.gov/sonoras/atris"
+    },
+    "opModHFRTMustTrip": {
+      "href": "http://www.sample.com/per/ni"
+    },
+    "opModHVRTMomentaryCessation": {
+      "href": "http://www.test.com/claustra/imposuit"
+    },
+    "opModHVRTMustTrip": {
+      "href": "http://www.test.com/in/faciat"
+    },
+    "opModLFRTMustTrip": {
+      "href": "http://www.sample.org/animos/rates"
+    },
+    "opModLVRTMomentaryCessation": {
+      "href": "http://www.corp.org/rapidi/et"
+    },
+    "opModLVRTMustTrip": {
+      "href": "http://www.sample.com/dea/talia"
+    },
+    "opModMaxLimW": {
+      "value": 5
+    },
+    "opModTargetVar": {
+      "multiplier": {
+        "value": 2
+      },
+      "value": 1
+    },
+    "opModTargetW": {
+      "multiplier": {
+        "value": 2
+      },
+      "value": 1
+    },
+    "opModVoltVar": {
+      "href": "http://www.your.com/et/venit"
+    },
+    "opModVoltWatt": {
+      "href": "http://www.company.com/corde/aut"
+    },
+    "opModWattPF": {
+      "href": "http://www.corp.org/luctantis/imponet"
+    },
+    "opModWattVar": {
+      "href": "http://www.sample.edu/claustra/honorem"
+    },
+    "rampTms": 5
+  },
+  "setESDelay": 5,
+  "setESHighFreq": 5,
+  "setESHighVolt": 1,
+  "setESLowFreq": 5,
+  "setESLowVolt": 1,
+  "setESRandomDelay": 5,
+  "setGradW": 5,
+  "setSoftGradW": 5,
+  "mrid": {
+    "value": [
+      105,
+      114,
+      97,
+      115
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "subscribable": 0,
+  "href": "http://www.company.com/frenat/iaculata"
+}

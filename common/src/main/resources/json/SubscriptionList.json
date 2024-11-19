@@ -1,0 +1,21 @@
+{
+  "subscription": [
+    {
+      "condition": {
+        "attributeIdentifier": 6,
+        "lowerThreshold": 10,
+        "upperThreshold": 10
+      },
+      "encoding": 6,
+      "level": "string",
+      "limit": 5,
+      "notificationURI": "http://www.my.com/in/premit",
+      "subscribedResource": "http://www.my.edu/disiecitque/premere",
+      "href": "http://www.my.com/terras/claustra"
+    }
+  ],
+  "pollRate": 900,
+  "all": 5,
+  "results": 6,
+  "href": "http://www.your.com/loca/secum"
+}

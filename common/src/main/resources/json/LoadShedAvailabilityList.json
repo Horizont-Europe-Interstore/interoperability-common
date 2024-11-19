@@ -1,0 +1,24 @@
+{
+  "loadShedAvailability": [
+    {
+      "availabilityDuration": 7,
+      "demandResponseProgramLink": {
+        "href": "http://www.any.com/disiecitque/quisquam"
+      },
+      "sheddablePercent": {
+        "value": 5
+      },
+      "sheddablePower": {
+        "multiplier": {
+          "value": 2
+        },
+        "value": 1
+      },
+      "href": "http://www.any.edu/sceptra/iussus"
+    }
+  ],
+  "pollRate": 900,
+  "all": 5,
+  "results": 6,
+  "href": "http://www.test.org/praeterea/secum"
+}

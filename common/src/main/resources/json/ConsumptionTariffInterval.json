@@ -1,0 +1,18 @@
+{
+  "consumptionBlock": {
+    "value": 6
+  },
+  "environmentalCost": [
+    {
+      "amount": 7,
+      "costKind": {
+        "value": 6
+      },
+      "costLevel": 6,
+      "numCostLevels": 6
+    }
+  ],
+  "price": 3,
+  "startValue": 11,
+  "href": "http://www.any.org/imposuit/abdidit"
+}

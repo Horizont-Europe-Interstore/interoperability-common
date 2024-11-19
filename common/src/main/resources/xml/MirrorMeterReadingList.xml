@@ -1,0 +1,107 @@
+<MirrorMeterReadingList href="http://www.company.com/et/rapidi" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <MirrorMeterReading href="http://www.test.com/murmure/qui">
+    <mRID>667572656E7469627573</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <!--Optional:-->
+    <lastUpdateTime>10</lastUpdateTime>
+    <!--Zero or more repetitio-->
+    <MirrorReadingSet href="http://www.test.com/profundum/terras">
+      <mRID>76696E636C6973</mRID>
+      <!--Optional:-->
+      <description>string</description>
+      <!--Optional:-->
+      <version>5</version>
+      <timePeriod>
+        <duration>7</duration>
+        <start>10</start>
+      </timePeriod>
+      <!--Zero or more repetitio-->
+      <Reading href="http://www.any.com/et/scopuloque" subscribable="0">
+        <!--Optional:-->
+        <consumptionBlock>6</consumptionBlock>
+        <!--Optional:-->
+        <qualityFlags>6175</qualityFlags>
+        <!--Optional:-->
+        <timePeriod>
+          <duration>7</duration>
+          <start>10</start>
+        </timePeriod>
+        <!--Optional:-->
+        <touTier>6</touTier>
+        <!--Optional:-->
+        <value>10</value>
+        <!--Optional:-->
+        <localID>6175</localID>
+      </Reading>
+    </MirrorReadingSet>
+    <!--Optional:-->
+    <nextUpdateTime>10</nextUpdateTime>
+    <!--Optional:-->
+    <Reading href="http://www.test.com/magno/cum" subscribable="0">
+      <!--Optional:-->
+      <consumptionBlock>6</consumptionBlock>
+      <!--Optional:-->
+      <qualityFlags>7370</qualityFlags>
+      <!--Optional:-->
+      <timePeriod>
+        <duration>7</duration>
+        <start>10</start>
+      </timePeriod>
+      <!--Optional:-->
+      <touTier>6</touTier>
+      <!--Optional:-->
+      <value>10</value>
+      <!--Optional:-->
+      <localID>666C</localID>
+    </Reading>
+    <!--Optional:-->
+    <ReadingType href="http://www.sample.edu/ast/tenens">
+      <!--Optional:-->
+      <accumulationBehaviour>6</accumulationBehaviour>
+      <!--Optional:-->
+      <calorificValue>
+        <multiplier>2</multiplier>
+        <unit>6</unit>
+        <value>3</value>
+      </calorificValue>
+      <!--Optional:-->
+      <commodity>6</commodity>
+      <!--Optional:-->
+      <conversionFactor>
+        <multiplier>2</multiplier>
+        <unit>6</unit>
+        <value>3</value>
+      </conversionFactor>
+      <!--Optional:-->
+      <dataQualifier>6</dataQualifier>
+      <!--Optional:-->
+      <flowDirection>6</flowDirection>
+      <!--Optional:-->
+      <intervalLength>7</intervalLength>
+      <!--Optional:-->
+      <kind>6</kind>
+      <!--Optional:-->
+      <maxNumberOfIntervals>6</maxNumberOfIntervals>
+      <!--Optional:-->
+      <numberOfConsumptionBlocks>6</numberOfConsumptionBlocks>
+      <!--Optional:-->
+      <numberOfTouTiers>6</numberOfTouTiers>
+      <!--Optional:-->
+      <phase>6</phase>
+      <!--Optional:-->
+      <powerOfTenMultiplier>2</powerOfTenMultiplier>
+      <!--Optional:-->
+      <subIntervalLength>7</subIntervalLength>
+      <!--Optional:-->
+      <supplyLimit>11</supplyLimit>
+      <!--Optional:-->
+      <tieredConsumptionBlocks>true</tieredConsumptionBlocks>
+      <!--Optional:-->
+      <uom>6</uom>
+    </ReadingType>
+  </MirrorMeterReading>
+</MirrorMeterReadingList>

@@ -1,0 +1,13 @@
+<LoadShedAvailability href="http://www.corp.edu/una/aequora" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <availabilityDuration>7</availabilityDuration>
+  <!--Optional:-->
+  <DemandResponseProgramLink href="http://www.company.edu/austris/corde"/>
+  <!--Optional:-->
+  <sheddablePercent>5</sheddablePercent>
+  <!--Optional:-->
+  <sheddablePower>
+    <multiplier>2</multiplier>
+    <value>1</value>
+  </sheddablePower>
+</LoadShedAvailability>

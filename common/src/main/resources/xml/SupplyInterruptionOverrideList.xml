@@ -1,0 +1,11 @@
+<SupplyInterruptionOverrideList href="http://www.company.edu/ignem/iovis" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <SupplyInterruptionOverride href="http://www.any.gov/et/hic">
+    <!--Optional:-->
+    <description>string</description>
+    <interval>
+      <duration>7</duration>
+      <start>10</start>
+    </interval>
+  </SupplyInterruptionOverride>
+</SupplyInterruptionOverrideList>

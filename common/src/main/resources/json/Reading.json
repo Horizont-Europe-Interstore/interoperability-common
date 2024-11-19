@@ -1,0 +1,23 @@
+{
+  "localID": [
+    102,
+    101
+  ],
+  "subscribable": 0,
+  "consumptionBlock": {
+    "value": 6
+  },
+  "qualityFlags": [
+    116,
+    101
+  ],
+  "timePeriod": {
+    "duration": 7,
+    "start": 10
+  },
+  "touTier": {
+    "value": 6
+  },
+  "value": 10,
+  "href": "http://www.any.org/regina/montis"
+}

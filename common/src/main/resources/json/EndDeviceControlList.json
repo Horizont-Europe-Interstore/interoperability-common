@@ -1,0 +1,80 @@
+{
+  "endDeviceControl": [
+    {
+      "applianceLoadReduction": {
+        "type": {
+          "value": 6
+        }
+      },
+      "deviceCategory": {
+        "value": [
+          101,
+          103,
+          111
+        ]
+      },
+      "drProgramMandatory": false,
+      "dutyCycle": {
+        "normalValue": 6
+      },
+      "loadShiftForward": true,
+      "offset": {
+        "coolingOffset": 6,
+        "heatingOffset": 6,
+        "loadAdjustmentPercentageOffset": {
+          "value": 5
+        }
+      },
+      "overrideDuration": 5,
+      "setPoint": {
+        "coolingSetpoint": 1,
+        "heatingSetpoint": 1
+      },
+      "targetReduction": {
+        "type": {
+          "value": 6
+        },
+        "value": 5
+      },
+      "randomizeDuration": {
+        "value": 1
+      },
+      "randomizeStart": {
+        "value": 1
+      },
+      "creationTime": 10,
+      "eventStatus": {
+        "currentStatus": 6,
+        "dateTime": 10,
+        "potentiallySuperseded": false,
+        "potentiallySupersededTime": 10,
+        "reason": "string"
+      },
+      "interval": {
+        "duration": 7,
+        "start": 10
+      },
+      "mrid": {
+        "value": [
+          117,
+          110,
+          97
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "subscribable": 0,
+      "replyTo": "http://www.sample.org/metuens/indignantes",
+      "responseRequired": [
+        0
+      ],
+      "href": "http://www.your.org/iovisque/foedere"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "subscribable": 0,
+  "href": "http://www.my.com/secum/metuens"
+}

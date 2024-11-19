@@ -1,0 +1,43 @@
+{
+  "ipInterface": [
+    {
+      "ifDescr": "string",
+      "ifHighSpeed": 7,
+      "ifInBroadcastPkts": 7,
+      "ifIndex": 7,
+      "ifInDiscards": 7,
+      "ifInErrors": 7,
+      "ifInMulticastPkts": 7,
+      "ifInOctets": 7,
+      "ifInUcastPkts": 7,
+      "ifInUnknownProtos": 7,
+      "ifMtu": 7,
+      "ifName": "string",
+      "ifOperStatus": 6,
+      "ifOutBroadcastPkts": 7,
+      "ifOutDiscards": 7,
+      "ifOutErrors": 7,
+      "ifOutMulticastPkts": 7,
+      "ifOutOctets": 7,
+      "ifOutUcastPkts": 7,
+      "ifPromiscuousMode": false,
+      "ifSpeed": 7,
+      "ifType": 5,
+      "ipAddrListLink": {
+        "all": 5,
+        "href": "http://www.test.edu/transfixo/patriam"
+      },
+      "lastResetTime": 10,
+      "lastUpdatedTime": 10,
+      "llInterfaceListLink": {
+        "all": 5,
+        "href": "http://www.any.com/hoc/hic"
+      },
+      "href": "http://www.company.com/austris/una"
+    }
+  ],
+  "pollRate": 900,
+  "all": 5,
+  "results": 6,
+  "href": "http://www.any.com/iunonis/austris"
+}

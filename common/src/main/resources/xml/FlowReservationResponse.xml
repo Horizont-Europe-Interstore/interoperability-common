@@ -1,0 +1,30 @@
+<FlowReservationResponse href="http://www.test.edu/molemque/exspirantem" replyTo="http://www.company.edu/vasto/celsa" responseRequired="00" subscribable="0" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>636C617573747261</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <creationTime>10</creationTime>
+  <EventStatus>
+    <currentStatus>6</currentStatus>
+    <dateTime>10</dateTime>
+    <potentiallySuperseded>false</potentiallySuperseded>
+    <!--Optional:-->
+    <potentiallySupersededTime>10</potentiallySupersededTime>
+    <!--Optional:-->
+    <reason>string</reason>
+  </EventStatus>
+  <interval>
+    <duration>7</duration>
+    <start>10</start>
+  </interval>
+  <energyAvailable>
+    <multiplier>2</multiplier>
+    <value>10</value>
+  </energyAvailable>
+  <powerAvailable>
+    <multiplier>2</multiplier>
+    <value>1</value>
+  </powerAvailable>
+  <subject>6163</subject>
+</FlowReservationResponse>

@@ -1,0 +1,17 @@
+<DeviceStatus href="http://www.corp.gov/atris/molemque" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <changedTime>10</changedTime>
+  <!--Optional:-->
+  <onCount>5</onCount>
+  <!--Optional:-->
+  <opState>6</opState>
+  <!--Optional:-->
+  <opTime>7</opTime>
+  <!--Zero or more repetitio-->
+  <Temperature>
+    <multiplier>2</multiplier>
+    <subject>6</subject>
+    <value>1</value>
+  </Temperature>
+  <!--Optional:-->
+  <TimeLink href="http://www.my.org/et/terras"/>
+</DeviceStatus>

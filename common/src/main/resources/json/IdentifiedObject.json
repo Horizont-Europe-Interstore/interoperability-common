@@ -1,0 +1,16 @@
+{
+  "mrid": {
+    "value": [
+      115,
+      111,
+      114,
+      111,
+      114
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.my.com/per/murmure"
+}

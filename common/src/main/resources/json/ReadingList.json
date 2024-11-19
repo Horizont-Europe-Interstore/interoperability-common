@@ -1,0 +1,31 @@
+{
+  "reading": [
+    {
+      "localID": [
+        114,
+        101
+      ],
+      "subscribable": 0,
+      "consumptionBlock": {
+        "value": 6
+      },
+      "qualityFlags": [
+        116,
+        101
+      ],
+      "timePeriod": {
+        "duration": 7,
+        "start": 10
+      },
+      "touTier": {
+        "value": 6
+      },
+      "value": 10,
+      "href": "http://www.my.com/tempestatesque/rex"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "subscribable": 0,
+  "href": "http://www.corp.com/molemque/rates"
+}

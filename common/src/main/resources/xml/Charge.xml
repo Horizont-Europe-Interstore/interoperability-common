@@ -1,0 +1,7 @@
+<Charge xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <kind>6</kind>
+  <value>3</value>
+</Charge>

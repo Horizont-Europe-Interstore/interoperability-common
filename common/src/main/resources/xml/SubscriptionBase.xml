@@ -1,0 +1,3 @@
+<SubscriptionBase href="http://www.corp.org/et/iunonis" xmlns="urn:ieee:std:2030.5:ns">
+  <subscribedResource>http://www.any.com/habenas/imperio</subscribedResource>
+</SubscriptionBase>

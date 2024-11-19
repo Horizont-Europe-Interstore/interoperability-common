@@ -1,0 +1,47 @@
+{
+  "usagePoint": [
+    {
+      "deviceLFDI": [
+        97,
+        108,
+        116,
+        111,
+        115
+      ],
+      "meterReadingListLink": {
+        "all": 5,
+        "href": "http://www.your.gov/rates/volutans"
+      },
+      "roleFlags": {
+        "value": [
+          101
+        ]
+      },
+      "serviceCategoryKind": {
+        "value": 6
+      },
+      "status": 6,
+      "mrid": {
+        "value": [
+          118,
+          105,
+          110,
+          99,
+          108,
+          105,
+          115
+        ]
+      },
+      "description": "string",
+      "version": {
+        "value": 5
+      },
+      "href": "http://www.sample.org/frenat/et"
+    }
+  ],
+  "pollRate": 900,
+  "all": 5,
+  "results": 6,
+  "subscribable": 0,
+  "href": "http://www.any.com/hic/aeolus"
+}

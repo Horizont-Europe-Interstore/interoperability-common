@@ -1,0 +1,13 @@
+{
+  "neighbor": [
+    {
+      "isChild": true,
+      "linkQuality": 6,
+      "shortAddress": 5,
+      "href": "http://www.corp.com/rex/aeolus"
+    }
+  ],
+  "all": 5,
+  "results": 6,
+  "href": "http://www.your.edu/circum/montis"
+}

@@ -1,0 +1,28 @@
+<TextMessageList href="http://www.any.edu/gero/indignantes" subscribable="0" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <TextMessage href="http://www.your.org/pater/coniunx" replyTo="http://www.corp.com/montis/divum" responseRequired="00" subscribable="0">
+    <mRID>6672656D756E74</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <creationTime>10</creationTime>
+    <EventStatus>
+      <currentStatus>6</currentStatus>
+      <dateTime>10</dateTime>
+      <potentiallySuperseded>true</potentiallySuperseded>
+      <!--Optional:-->
+      <potentiallySupersededTime>10</potentiallySupersededTime>
+      <!--Optional:-->
+      <reason>string</reason>
+    </EventStatus>
+    <interval>
+      <duration>7</duration>
+      <start>10</start>
+    </interval>
+    <!--Optional:-->
+    <originator>string</originator>
+    <priority>6</priority>
+    <textMessage>string</textMessage>
+  </TextMessage>
+</TextMessageList>

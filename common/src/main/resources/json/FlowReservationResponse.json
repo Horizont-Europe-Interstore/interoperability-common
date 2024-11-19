@@ -1,0 +1,54 @@
+{
+  "energyAvailable": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 10
+  },
+  "powerAvailable": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "subject": {
+    "value": [
+      97,
+      99
+    ]
+  },
+  "creationTime": 10,
+  "eventStatus": {
+    "currentStatus": 6,
+    "dateTime": 10,
+    "potentiallySuperseded": false,
+    "potentiallySupersededTime": 10,
+    "reason": "string"
+  },
+  "interval": {
+    "duration": 7,
+    "start": 10
+  },
+  "mrid": {
+    "value": [
+      99,
+      108,
+      97,
+      117,
+      115,
+      116,
+      114,
+      97
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "subscribable": 0,
+  "replyTo": "http://www.company.edu/vasto/celsa",
+  "responseRequired": [
+    0
+  ],
+  "href": "http://www.test.edu/molemque/exspirantem"
+}

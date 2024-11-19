@@ -1,0 +1,14 @@
+<ProjectionReadingList href="http://www.sample.gov/evertitque/qui" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <ProjectionReading href="http://www.your.com/regemque/gero">
+    <mRID>7261706964756D</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <!--Optional:-->
+    <BillingReadingSetListLink href="http://www.sample.edu/et/aeolus" all="5"/>
+    <!--Optional:-->
+    <ReadingTypeLink href="http://www.corp.com/molemque/iaculata"/>
+  </ProjectionReading>
+</ProjectionReadingList>

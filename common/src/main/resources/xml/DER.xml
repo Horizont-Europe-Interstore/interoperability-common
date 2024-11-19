@@ -1,0 +1,16 @@
+<DER href="http://www.my.com/acuto/maria" subscribable="0" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <AssociatedDERProgramListLink href="http://www.sample.gov/circum/premere" all="5"/>
+  <!--Optional:-->
+  <AssociatedUsagePointLink href="http://www.corp.edu/divum/annos"/>
+  <!--Optional:-->
+  <CurrentDERProgramLink href="http://www.any.org/molemque/infixit"/>
+  <!--Optional:-->
+  <DERAvailabilityLink href="http://www.your.com/austris/pater"/>
+  <!--Optional:-->
+  <DERCapabilityLink href="http://www.your.com/loca/certo"/>
+  <!--Optional:-->
+  <DERSettingsLink href="http://www.corp.com/per/secum"/>
+  <!--Optional:-->
+  <DERStatusLink href="http://www.corp.com/aeolus/aut"/>
+</DER>

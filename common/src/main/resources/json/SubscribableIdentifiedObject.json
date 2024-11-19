@@ -1,0 +1,17 @@
+{
+  "mrid": {
+    "value": [
+      109,
+      97,
+      114,
+      105,
+      97
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "subscribable": 0,
+  "href": "http://www.company.com/divum/una"
+}

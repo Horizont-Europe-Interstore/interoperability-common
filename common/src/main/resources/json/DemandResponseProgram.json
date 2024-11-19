@@ -1,0 +1,34 @@
+{
+  "activeEndDeviceControlListLink": {
+    "all": 5,
+    "href": "http://www.my.org/fremunt/e"
+  },
+  "availabilityUpdatePercentChangeThreshold": {
+    "value": 5
+  },
+  "availabilityUpdatePowerChangeThreshold": {
+    "multiplier": {
+      "value": 2
+    },
+    "value": 1
+  },
+  "endDeviceControlListLink": {
+    "all": 5,
+    "href": "http://www.test.com/ferant/certo"
+  },
+  "primacy": {
+    "value": 6
+  },
+  "mrid": {
+    "value": [
+      104,
+      111,
+      99
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.test.com/ni/adorat"
+}

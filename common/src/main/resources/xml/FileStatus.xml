@@ -1,0 +1,12 @@
+<FileStatus href="http://www.company.com/flammas/ipsa" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <activateTime>10</activateTime>
+  <!--Optional:-->
+  <FileLink href="http://www.my.com/profundum/omnipotens"/>
+  <loadPercent>6</loadPercent>
+  <nextRequestAttempt>10</nextRequestAttempt>
+  <request503Count>5</request503Count>
+  <requestFailCount>5</requestFailCount>
+  <status>6</status>
+  <statusTime>10</statusTime>
+</FileStatus>

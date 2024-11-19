@@ -1,0 +1,8 @@
+<Offset xmlns="urn:ieee:std:2030.5:ns">
+  <!--Optional:-->
+  <coolingOffset>6</coolingOffset>
+  <!--Optional:-->
+  <heatingOffset>6</heatingOffset>
+  <!--Optional:-->
+  <loadAdjustmentPercentageOffset>5</loadAdjustmentPercentageOffset>
+</Offset>

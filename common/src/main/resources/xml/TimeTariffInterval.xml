@@ -1,0 +1,28 @@
+<TimeTariffInterval href="http://www.your.com/rates/ac" replyTo="http://www.my.org/iussus/soror" responseRequired="00" subscribable="0" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>6672656E6174</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <creationTime>10</creationTime>
+  <EventStatus>
+    <currentStatus>6</currentStatus>
+    <dateTime>10</dateTime>
+    <potentiallySuperseded>true</potentiallySuperseded>
+    <!--Optional:-->
+    <potentiallySupersededTime>10</potentiallySupersededTime>
+    <!--Optional:-->
+    <reason>string</reason>
+  </EventStatus>
+  <interval>
+    <duration>7</duration>
+    <start>10</start>
+  </interval>
+  <!--Optional:-->
+  <randomizeDuration>1</randomizeDuration>
+  <!--Optional:-->
+  <randomizeStart>1</randomizeStart>
+  <!--Optional:-->
+  <ConsumptionTariffIntervalListLink href="http://www.sample.edu/sciret/aeolus" all="5"/>
+  <touTier>6</touTier>
+</TimeTariffInterval>

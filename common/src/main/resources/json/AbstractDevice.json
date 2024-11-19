@@ -1,0 +1,55 @@
+{
+  "configurationLink": {
+    "href": "http://www.your.gov/annos/illi"
+  },
+  "derListLink": {
+    "all": 5,
+    "href": "http://www.company.com/molemque/furentibus"
+  },
+  "deviceInformationLink": {
+    "href": "http://www.company.gov/animos/et"
+  },
+  "deviceStatusLink": {
+    "href": "http://www.my.com/dare/profundum"
+  },
+  "fileStatusLink": {
+    "href": "http://www.any.org/iaculata/flammas"
+  },
+  "ipInterfaceListLink": {
+    "all": 5,
+    "href": "http://www.sample.org/premere/supplex"
+  },
+  "lfdi": [
+    105,
+    109,
+    112,
+    111,
+    110,
+    101,
+    116
+  ],
+  "loadShedAvailabilityListLink": {
+    "all": 5,
+    "href": "http://www.my.org/venit/per"
+  },
+  "loadShedDeviceCategory": {
+    "value": [
+      108,
+      111,
+      99,
+      97
+    ]
+  },
+  "logEventListLink": {
+    "all": 5,
+    "href": "http://www.corp.org/habenas/aeolus"
+  },
+  "powerStatusLink": {
+    "href": "http://www.any.edu/iunonis/altos"
+  },
+  "sfdi": {
+    "value": 11
+  },
+  "subscribable": 0,
+  "href": "http://www.corp.com/gente/ast"
+}

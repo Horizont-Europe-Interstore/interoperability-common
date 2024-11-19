@@ -1,0 +1,4 @@
+<RequestStatus xmlns="urn:ieee:std:2030.5:ns">
+  <dateTime>10</dateTime>
+  <requestStatus>6</requestStatus>
+</RequestStatus>

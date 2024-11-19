@@ -1,0 +1,11 @@
+<ResponseList href="http://www.corp.com/illi/foedere" all="5" results="6" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <Response href="http://www.corp.edu/in/certo">
+    <!--Optional:-->
+    <createdDateTime>10</createdDateTime>
+    <endDeviceLFDI>6574</endDeviceLFDI>
+    <!--Optional:-->
+    <status>6</status>
+    <subject>736564</subject>
+  </Response>
+</ResponseList>

@@ -1,0 +1,121 @@
+<MirrorUsagePointList href="http://www.corp.com/ni/sed" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <MirrorUsagePoint href="http://www.corp.com/premere/disiecitque">
+    <mRID>69676E656D</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <roleFlags>686F</roleFlags>
+    <serviceCategoryKind>6</serviceCategoryKind>
+    <status>6</status>
+    <deviceLFDI>736F6E6F726173</deviceLFDI>
+    <!--Zero or more repetitio-->
+    <MirrorMeterReading href="http://www.my.org/habenas/iunonis">
+      <mRID>7072656D657265</mRID>
+      <!--Optional:-->
+      <description>string</description>
+      <!--Optional:-->
+      <version>5</version>
+      <!--Optional:-->
+      <lastUpdateTime>10</lastUpdateTime>
+      <!--Zero or more repetitio-->
+      <MirrorReadingSet href="http://www.my.gov/supplex/temperat">
+        <mRID>616E6E6F73</mRID>
+        <!--Optional:-->
+        <description>string</description>
+        <!--Optional:-->
+        <version>5</version>
+        <timePeriod>
+          <duration>7</duration>
+          <start>10</start>
+        </timePeriod>
+        <!--Zero or more repetitio-->
+        <Reading href="http://www.test.com/premit/austris" subscribable="0">
+          <!--Optional:-->
+          <consumptionBlock>6</consumptionBlock>
+          <!--Optional:-->
+          <qualityFlags>7365</qualityFlags>
+          <!--Optional:-->
+          <timePeriod>
+            <duration>7</duration>
+            <start>10</start>
+          </timePeriod>
+          <!--Optional:-->
+          <touTier>6</touTier>
+          <!--Optional:-->
+          <value>10</value>
+          <!--Optional:-->
+          <localID>6361</localID>
+        </Reading>
+      </MirrorReadingSet>
+      <!--Optional:-->
+      <nextUpdateTime>10</nextUpdateTime>
+      <!--Optional:-->
+      <Reading href="http://www.any.org/ni/divum" subscribable="0">
+        <!--Optional:-->
+        <consumptionBlock>6</consumptionBlock>
+        <!--Optional:-->
+        <qualityFlags>6173</qualityFlags>
+        <!--Optional:-->
+        <timePeriod>
+          <duration>7</duration>
+          <start>10</start>
+        </timePeriod>
+        <!--Optional:-->
+        <touTier>6</touTier>
+        <!--Optional:-->
+        <value>10</value>
+        <!--Optional:-->
+        <localID>7669</localID>
+      </Reading>
+      <!--Optional:-->
+      <ReadingType href="http://www.my.org/claustra/sceptra">
+        <!--Optional:-->
+        <accumulationBehaviour>6</accumulationBehaviour>
+        <!--Optional:-->
+        <calorificValue>
+          <multiplier>2</multiplier>
+          <unit>6</unit>
+          <value>3</value>
+        </calorificValue>
+        <!--Optional:-->
+        <commodity>6</commodity>
+        <!--Optional:-->
+        <conversionFactor>
+          <multiplier>2</multiplier>
+          <unit>6</unit>
+          <value>3</value>
+        </conversionFactor>
+        <!--Optional:-->
+        <dataQualifier>6</dataQualifier>
+        <!--Optional:-->
+        <flowDirection>6</flowDirection>
+        <!--Optional:-->
+        <intervalLength>7</intervalLength>
+        <!--Optional:-->
+        <kind>6</kind>
+        <!--Optional:-->
+        <maxNumberOfIntervals>6</maxNumberOfIntervals>
+        <!--Optional:-->
+        <numberOfConsumptionBlocks>6</numberOfConsumptionBlocks>
+        <!--Optional:-->
+        <numberOfTouTiers>6</numberOfTouTiers>
+        <!--Optional:-->
+        <phase>6</phase>
+        <!--Optional:-->
+        <powerOfTenMultiplier>2</powerOfTenMultiplier>
+        <!--Optional:-->
+        <subIntervalLength>7</subIntervalLength>
+        <!--Optional:-->
+        <supplyLimit>11</supplyLimit>
+        <!--Optional:-->
+        <tieredConsumptionBlocks>false</tieredConsumptionBlocks>
+        <!--Optional:-->
+        <uom>6</uom>
+      </ReadingType>
+    </MirrorMeterReading>
+    <!--Optional:-->
+    <postRate>7</postRate>
+  </MirrorUsagePoint>
+</MirrorUsagePointList>

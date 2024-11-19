@@ -1,0 +1,10 @@
+{
+  "billLastPeriod": 10,
+  "billToDate": 10,
+  "interval": {
+    "duration": 7,
+    "start": 10
+  },
+  "statusTimeStamp": 10,
+  "href": "http://www.test.gov/animos/flammato"
+}

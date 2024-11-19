@@ -1,0 +1,24 @@
+{
+  "activateTime": 10,
+  "fileURI": "http://www.sample.edu/rapidi/et",
+  "lfdi": [
+    105,
+    103,
+    110,
+    101,
+    109
+  ],
+  "mfHwVer": "string",
+  "mfID": {
+    "value": 7
+  },
+  "mfModel": "string",
+  "mfSerNum": "string",
+  "mfVer": "string",
+  "size": 7,
+  "type": [
+    105,
+    111
+  ],
+  "href": "http://www.your.gov/divum/feta"
+}

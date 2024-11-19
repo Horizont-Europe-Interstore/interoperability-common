@@ -1,0 +1,16 @@
+<LoadShedAvailabilityList href="http://www.test.org/praeterea/secum" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <LoadShedAvailability href="http://www.any.edu/sceptra/iussus">
+    <!--Optional:-->
+    <availabilityDuration>7</availabilityDuration>
+    <!--Optional:-->
+    <DemandResponseProgramLink href="http://www.any.com/disiecitque/quisquam"/>
+    <!--Optional:-->
+    <sheddablePercent>5</sheddablePercent>
+    <!--Optional:-->
+    <sheddablePower>
+      <multiplier>2</multiplier>
+      <value>1</value>
+    </sheddablePower>
+  </LoadShedAvailability>
+</LoadShedAvailabilityList>

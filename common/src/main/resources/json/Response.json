@@ -1,0 +1,22 @@
+{
+  "createdDateTime": 10,
+  "endDeviceLFDI": [
+    99,
+    117,
+    109
+  ],
+  "status": 6,
+  "subject": {
+    "value": [
+      116,
+      101,
+      109,
+      112,
+      101,
+      114,
+      97,
+      116
+    ]
+  },
+  "href": "http://www.test.org/ast/tenens"
+}

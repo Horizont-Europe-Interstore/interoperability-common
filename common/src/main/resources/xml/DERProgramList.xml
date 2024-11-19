@@ -1,0 +1,19 @@
+<DERProgramList href="http://www.test.org/et/cum" subscribable="0" all="5" results="6" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <!--Zero or more repetitio-->
+  <DERProgram href="http://www.test.com/infixit/illum" subscribable="0">
+    <mRID>636C617573747261</mRID>
+    <!--Optional:-->
+    <description>string</description>
+    <!--Optional:-->
+    <version>5</version>
+    <!--Optional:-->
+    <ActiveDERControlListLink href="http://www.sample.com/coniunx/flammato" all="5"/>
+    <!--Optional:-->
+    <DefaultDERControlLink href="http://www.corp.com/patriam/aequora"/>
+    <!--Optional:-->
+    <DERControlListLink href="http://www.your.com/et/annos" all="5"/>
+    <!--Optional:-->
+    <DERCurveListLink href="http://www.sample.com/regina/aequora" all="5"/>
+    <primacy>6</primacy>
+  </DERProgram>
+</DERProgramList>

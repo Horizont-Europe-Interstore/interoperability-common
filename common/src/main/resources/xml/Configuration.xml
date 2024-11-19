@@ -1,0 +1,20 @@
+<Configuration href="http://www.your.org/dare/ac" subscribable="0" pollRate="900" xmlns="urn:ieee:std:2030.5:ns">
+  <currentLocale>string</currentLocale>
+  <!--Optional:-->
+  <PowerConfiguration>
+    <!--Optional:-->
+    <batteryInstallTime>10</batteryInstallTime>
+    <!--Optional:-->
+    <lowChargeThreshold>7</lowChargeThreshold>
+  </PowerConfiguration>
+  <!--Optional:-->
+  <PriceResponseCfgListLink href="http://www.corp.org/sonoras/ferant" all="5"/>
+  <!--Optional:-->
+  <TimeConfiguration>
+    <dstEndRule>61656F6C</dstEndRule>
+    <dstOffset>3</dstOffset>
+    <dstStartRule>726578</dstStartRule>
+    <tzOffset>3</tzOffset>
+  </TimeConfiguration>
+  <userDeviceName>string</userDeviceName>
+</Configuration>

@@ -1,0 +1,25 @@
+<RandomizableEvent href="http://www.test.com/bella/furentibus" replyTo="http://www.corp.gov/turbine/numen" responseRequired="00" subscribable="0" xmlns="urn:ieee:std:2030.5:ns">
+  <mRID>69707361</mRID>
+  <!--Optional:-->
+  <description>string</description>
+  <!--Optional:-->
+  <version>5</version>
+  <creationTime>10</creationTime>
+  <EventStatus>
+    <currentStatus>6</currentStatus>
+    <dateTime>10</dateTime>
+    <potentiallySuperseded>false</potentiallySuperseded>
+    <!--Optional:-->
+    <potentiallySupersededTime>10</potentiallySupersededTime>
+    <!--Optional:-->
+    <reason>string</reason>
+  </EventStatus>
+  <interval>
+    <duration>7</duration>
+    <start>10</start>
+  </interval>
+  <!--Optional:-->
+  <randomizeDuration>1</randomizeDuration>
+  <!--Optional:-->
+  <randomizeStart>1</randomizeStart>
+</RandomizableEvent>

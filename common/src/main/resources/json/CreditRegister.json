@@ -1,0 +1,35 @@
+{
+  "creditAmount": {
+    "energyUnit": {
+      "multiplier": {
+        "value": 2
+      },
+      "value": 11
+    },
+    "monetaryUnit": {
+      "value": 5
+    },
+    "multiplier": {
+      "value": 2
+    },
+    "value": 3
+  },
+  "creditType": {
+    "value": 6
+  },
+  "effectiveTime": 10,
+  "token": "string",
+  "mrid": {
+    "value": [
+      100,
+      97,
+      114,
+      101
+    ]
+  },
+  "description": "string",
+  "version": {
+    "value": 5
+  },
+  "href": "http://www.company.org/caelumque/sonoras"
+}

@@ -1,0 +1,42 @@
+{
+  "customerAccountListLink": {
+    "all": 5,
+    "href": "http://www.any.com/volutans/montis"
+  },
+  "demandResponseProgramListLink": {
+    "all": 5,
+    "href": "http://www.test.com/profundum/supplex"
+  },
+  "derProgramListLink": {
+    "all": 5,
+    "href": "http://www.corp.com/atris/austris"
+  },
+  "fileListLink": {
+    "all": 5,
+    "href": "http://www.any.org/ast/omnipotens"
+  },
+  "messagingProgramListLink": {
+    "all": 5,
+    "href": "http://www.company.com/nimborum/et"
+  },
+  "prepaymentListLink": {
+    "all": 5,
+    "href": "http://www.sample.com/soror/adorat"
+  },
+  "responseSetListLink": {
+    "all": 5,
+    "href": "http://www.your.com/quisquam/rex"
+  },
+  "tariffProfileListLink": {
+    "all": 5,
+    "href": "http://www.your.com/ferant/feta"
+  },
+  "timeLink": {
+    "href": "http://www.my.edu/furentibus/imposuit"
+  },
+  "usagePointListLink": {
+    "all": 5,
+    "href": "http://www.my.com/sedet/antro"
+  },
+  "href": "http://www.sample.org/altos/annos"
+}
