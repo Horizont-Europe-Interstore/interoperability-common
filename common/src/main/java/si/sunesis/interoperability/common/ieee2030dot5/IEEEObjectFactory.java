@@ -39,6 +39,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.w3c.dom.Document;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
+import si.sunesis.interoperability.common.exceptions.HandlerException;
 
 import javax.xml.XMLConstants;
 import javax.xml.namespace.QName;
@@ -122,29 +123,24 @@ public class IEEEObjectFactory {
                 .registerTypeHierarchyAdapter(TimeType.class, new TimeTypeAdapter())
                 .create();
 
-        Type type = new TypeToken<Map<String, Object>>() {
-        }.getType();
-        Map<String, Object> originalMap = gson.fromJson(json, type);
+        String className = objectClass.getSimpleName();
+        className = className.substring(0, 1).toLowerCase() + className.substring(1);
 
-        if (originalMap.containsKey(objectClass.getSimpleName().toLowerCase())) {
-            originalMap = (Map<String, Object>) originalMap.get(objectClass.getSimpleName().toLowerCase());
+        JsonNode jsonNode = isValidJson(json);
+
+        // Skip root node if equal to class name
+        if (jsonNode.fieldNames().hasNext() && jsonNode.fieldNames().next().equalsIgnoreCase(className)) {
+            json = jsonNode.get(className).toString();
         }
 
-        Map<String, Object> newMap = new HashMap<>();
-        for (Map.Entry<String, Object> entry : originalMap.entrySet()) {
-            newMap.put(entry.getKey().substring(0, 1).toLowerCase() + entry.getKey().substring(1), entry.getValue());
-        }
-
-        String newJsonInput = gson.toJson(newMap);
-
-        return gson.fromJson(newJsonInput, objectClass);
+        return gson.fromJson(json, objectClass);
     }
 
-    public static String fromIEEEToJSON(Object object) {
+    public static <T> String fromIEEEToJSON(T object) {
         return fromIEEEToJSON(object, false);
     }
 
-    public static String fromIEEEToJSON(Object object, boolean excludeOptionals) {
+    public static <T> String fromIEEEToJSON(T object, boolean excludeOptionals) {
         GsonBuilder gsonBuilder = new GsonBuilder()
                 .registerTypeHierarchyAdapter(TimeType.class, new TimeTypeAdapter())
                 .setPrettyPrinting();
@@ -158,9 +154,15 @@ public class IEEEObjectFactory {
         // Serialize the object to a JSON string
         String json = gson.toJson(object);
 
-        // Wrap the serialized JSON in an "event" key
-        Map<String, Object> wrappedMap = new HashMap<>();
-        wrappedMap.put(object.getClass().getSimpleName().toLowerCase(), gson.fromJson(json, Object.class));
+        Type type = new TypeToken<T>() {
+        }.getType();
+
+        String className = object.getClass().getSimpleName();
+        className = className.substring(0, 1).toLowerCase() + className.substring(1);
+
+        // Wrap the serialized JSON
+        Map<String, T> wrappedMap = new HashMap<>();
+        wrappedMap.put(className, gson.fromJson(json, type));
 
         // Convert the wrapped map back to a JSON string
         return gson.toJson(wrappedMap);
@@ -182,11 +184,11 @@ public class IEEEObjectFactory {
         return null;
     }
 
-    public static Boolean validateIEEE2030dot5(String input) throws IOException, SAXException {
+    public static Boolean validateIEEE2030dot5(String input) throws IOException, SAXException, HandlerException {
         JsonNode jsonNode = isValidJson(input);
 
         if (jsonNode != null) {
-            return validateJSONForIEEE2030dot5(input, jsonNode);
+            return validateJSONForIEEE2030dot5(jsonNode);
         }
 
         Document document = isValidXml(input);
@@ -198,7 +200,7 @@ public class IEEEObjectFactory {
         return false;
     }
 
-    private static Boolean validateXMLForIEEE2030dot5(String xml, Document document) throws IOException, SAXException {
+    private static Boolean validateXMLForIEEE2030dot5(String xml, Document document) throws IOException, HandlerException {
         // Get root element
         String rootName = document.getDocumentElement().getNodeName();
         rootName = rootName.substring(0, 1).toUpperCase() + rootName.substring(1);
@@ -216,7 +218,7 @@ public class IEEEObjectFactory {
         } catch (SAXException e) {
             log.error("Exception: {}", e.getMessage());
 
-            String path = "/xml/" + rootName + ".xml";
+            String path = "/xml/" + clazz.getSimpleName() + ".xml";
 
             InputStream fileStream = IEEEObjectFactory.class.getResourceAsStream(path);
 
@@ -228,22 +230,25 @@ public class IEEEObjectFactory {
 
             log.info("Correct XML example:\n{}", lines);
 
-            throw new IllegalArgumentException("Invalid IEEE2030.5 XML structure");
+            throw new HandlerException("Invalid IEEE2030.5 XML structure");
         }
 
         return true;
     }
 
-    private static Boolean validateJSONForIEEE2030dot5(String json, JsonNode jsonNode) throws IOException, SAXException {
+    private static Boolean validateJSONForIEEE2030dot5(JsonNode jsonNode) throws IOException, HandlerException {
         //Get name of root element
-        String rootName = jsonNode.fieldNames().next();
-        rootName = rootName.substring(0, 1).toUpperCase() + rootName.substring(1);
+        String orgRootName = jsonNode.fieldNames().next();
+        String rootName = orgRootName.substring(0, 1).toUpperCase() + orgRootName.substring(1);
 
         Class clazz = IEEEObjectFactory.getClass(rootName, "ieee.std._2030_5.ns");
 
         if (clazz == null) {
             throw new IllegalArgumentException("Invalid root element name");
         }
+
+        // Skip root element
+        String json = jsonNode.get(orgRootName).toString();
 
         String output = IEEEObjectFactory.fromIEEEToXML(IEEEObjectFactory.fromJSONToIEEE(json, clazz), clazz);
 
@@ -252,7 +257,7 @@ public class IEEEObjectFactory {
         } catch (SAXException e) {
             log.error("Exception: {}", e.getMessage());
 
-            String path = "/xml/" + rootName + ".xml";
+            String path = "/xml/" + clazz.getSimpleName() + ".xml";
 
             InputStream fileStream = IEEEObjectFactory.class.getResourceAsStream(path);
 
@@ -262,13 +267,14 @@ public class IEEEObjectFactory {
             // Join the lines to a single string
             String lines = String.join("\n", bufferedReader.lines().toList());
 
-            clazz = getClass(rootName, "ieee.std._2030_5.ns");
+            clazz = getClass(clazz.getSimpleName(), "ieee.std._2030_5.ns");
 
-            json = IEEEObjectFactory.fromIEEEToJSON(IEEEObjectFactory.fromXMLToIEEE(lines, clazz), true);
+            Object struct = IEEEObjectFactory.fromXMLToIEEE(lines, clazz);
 
-            log.error("Correct JSON example:\n{}", json);
+            log.error("Correct minimal JSON example without optional values:\n{}", IEEEObjectFactory.fromIEEEToJSON(struct, true));
+            log.error("Correct full JSON example with optional values:\n{}", IEEEObjectFactory.fromIEEEToJSON(struct, false));
 
-            throw new IllegalArgumentException("Invalid IEEE2030.5 JSON structure");
+            throw new HandlerException("Invalid IEEE2030.5 JSON structure");
         }
 
         return true;

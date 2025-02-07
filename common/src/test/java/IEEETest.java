@@ -5,6 +5,7 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.xml.sax.SAXException;
+import si.sunesis.interoperability.common.exceptions.HandlerException;
 import si.sunesis.interoperability.common.ieee2030dot5.IEEEObjectFactory;
 
 import java.io.IOException;
@@ -159,6 +160,9 @@ public class IEEETest {
             e.printStackTrace();
             log.error("XML is not valid: {}", e.getMessage());
             Assert.fail(e.getMessage());
+        } catch (HandlerException e) {
+            log.error("Handler exception: {}", e.getMessage());
+            Assert.fail(e.getMessage());
         }
 
         log.info("Validation successful");
@@ -173,6 +177,9 @@ public class IEEETest {
             Assert.fail(e.getMessage());
         } catch (SAXException e) {
             log.error("XML is not valid: {}", e.getMessage());
+            Assert.fail(e.getMessage());
+        } catch (HandlerException e) {
+            log.error("Handler exception: {}", e.getMessage());
             Assert.fail(e.getMessage());
         }
 
