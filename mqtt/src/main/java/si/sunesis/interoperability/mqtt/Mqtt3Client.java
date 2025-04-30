@@ -24,21 +24,45 @@ import com.hivemq.client.mqtt.mqtt3.Mqtt3AsyncClient;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * Implementation of MQTT 3.1.1 client for handling MQTT communications.
+ * Extends the abstract MQTT 3.1.1 request handler to provide concrete functionality.
+ *
  * @author David Trafela, Sunesis
  * @since 1.0.0
  */
 @Slf4j
 public class Mqtt3Client extends AbstractMqtt3RequestHandler {
 
+    /**
+     * Constructs a new MQTT 3.1.1 client with the specified async client.
+     *
+     * @param client the MQTT 3.1.1 async client to use for communications
+     */
     public Mqtt3Client(Mqtt3AsyncClient client) {
         super(client);
     }
 
+    /**
+     * Processes a reply request from the specified topic.
+     * This implementation simply returns a constant string.
+     *
+     * @param fromTopic the topic from which the request was received
+     * @param data the request data as bytes
+     * @return a constant string "processReplyRequest"
+     */
     @Override
     public String processReplyRequest(String fromTopic, byte[] data) {
         return "processReplyRequest";
     }
 
+    /**
+     * Processes a stream request from the specified topic.
+     * This implementation simply returns a constant string.
+     *
+     * @param fromTopic the topic from which the request was received
+     * @param data the request data as bytes
+     * @return a constant string "processStreamRequest"
+     */
     @Override
     public String processStreamRequest(String fromTopic, byte[] data) {
         return "processStreamRequest";

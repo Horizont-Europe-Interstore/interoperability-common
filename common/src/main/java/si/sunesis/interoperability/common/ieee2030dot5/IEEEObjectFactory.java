@@ -23,7 +23,6 @@ package si.sunesis.interoperability.common.ieee2030dot5;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.*;
-import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import ieee.std._2030_5.ns.ObjectFactory;
@@ -50,7 +49,6 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 import java.io.*;
-import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
@@ -61,6 +59,8 @@ import java.util.Map;
  */
 @Slf4j
 public class IEEEObjectFactory {
+
+    private final static String IEEE_NAMESPACE = "ieee.std._2030_5.ns";
 
     private static ExclusionStrategy exclusionStrategy = new ExclusionStrategy() {
         @Override
@@ -82,10 +82,21 @@ public class IEEEObjectFactory {
         }
     };
 
+    /**
+     * Private constructor to prevent instantiation of utility class.
+     */
     private IEEEObjectFactory() {
         throw new IllegalStateException("Utility class");
     }
 
+    /**
+     * Converts XML string to an IEEE2030.5 object.
+     *
+     * @param xml the XML string to convert
+     * @param type the class of the IEEE object to create
+     * @param <T> the type of the IEEE object
+     * @return the created IEEE object
+     */
     @SneakyThrows
     public static <T> T fromXMLToIEEE(String xml, Class<T> type) {
         if (!xml.contains("xmlns")) {
@@ -99,6 +110,14 @@ public class IEEEObjectFactory {
                 .getValue();
     }
 
+    /**
+     * Converts an IEEE2030.5 object to an XML string.
+     *
+     * @param element the IEEE object to convert
+     * @param objectClass the class of the IEEE object
+     * @param <T> the type of the IEEE object
+     * @return the XML string representation
+     */
     @SneakyThrows
     public static <T> String fromIEEEToXML(T element, Class<T> objectClass) {
         StringWriter stringWriter = new StringWriter();
@@ -117,6 +136,14 @@ public class IEEEObjectFactory {
         return stringWriter.toString();
     }
 
+    /**
+     * Converts a JSON string to an IEEE2030.5 object.
+     *
+     * @param json the JSON string to convert
+     * @param objectClass the class of the IEEE object to create
+     * @param <T> the type of the IEEE object
+     * @return the created IEEE object
+     */
     @SneakyThrows
     public static <T> T fromJSONToIEEE(String json, Class<T> objectClass) {
         Gson gson = new GsonBuilder()
@@ -128,6 +155,10 @@ public class IEEEObjectFactory {
 
         JsonNode jsonNode = isValidJson(json);
 
+        if (jsonNode == null) {
+            throw new IllegalArgumentException("Invalid JSON input");
+        }
+
         // Skip root node if equal to class name
         if (jsonNode.fieldNames().hasNext() && jsonNode.fieldNames().next().equalsIgnoreCase(className)) {
             json = jsonNode.get(className).toString();
@@ -136,38 +167,52 @@ public class IEEEObjectFactory {
         return gson.fromJson(json, objectClass);
     }
 
+    /**
+     * Converts an IEEE2030.5 object to a JSON string, including all fields.
+     *
+     * @param object the IEEE object to convert
+     * @param <T> the type of the IEEE object
+     * @return the JSON string representation
+     */
     public static <T> String fromIEEEToJSON(T object) {
         return fromIEEEToJSON(object, false);
     }
 
+    /**
+     * Converts an IEEE2030.5 object to a JSON string with optional exclusion of optional fields.
+     *
+     * @param object the IEEE object to convert
+     * @param excludeOptionals whether to exclude optional fields
+     * @param <T> the type of the IEEE object
+     * @return the JSON string representation
+     */
     public static <T> String fromIEEEToJSON(T object, boolean excludeOptionals) {
         GsonBuilder gsonBuilder = new GsonBuilder()
                 .registerTypeHierarchyAdapter(TimeType.class, new TimeTypeAdapter())
                 .setPrettyPrinting();
 
         if (excludeOptionals) {
-            gsonBuilder.addSerializationExclusionStrategy(excludeOptionals ? exclusionStrategy : null);
+            gsonBuilder.addSerializationExclusionStrategy(exclusionStrategy);
         }
 
         Gson gson = gsonBuilder.create();
 
-        // Serialize the object to a JSON string
-        String json = gson.toJson(object);
-
-        Type type = new TypeToken<T>() {
-        }.getType();
-
         String className = object.getClass().getSimpleName();
-        className = className.substring(0, 1).toLowerCase() + className.substring(1);
+        className = Character.toLowerCase(className.charAt(0)) + className.substring(1);
 
-        // Wrap the serialized JSON
         Map<String, T> wrappedMap = new HashMap<>();
-        wrappedMap.put(className, gson.fromJson(json, type));
+        wrappedMap.put(className, object);  // No need to serialize and deserialize again
 
-        // Convert the wrapped map back to a JSON string
         return gson.toJson(wrappedMap);
     }
 
+    /**
+     * Gets a class by name from a specified package.
+     *
+     * @param className the name of the class
+     * @param packageName the package containing the class
+     * @return the Class object or null if not found
+     */
     public static Class getClass(String className, String packageName) {
         try {
             if (className.contains(".")) {
@@ -184,7 +229,15 @@ public class IEEEObjectFactory {
         return null;
     }
 
-    public static Boolean validateIEEE2030dot5(String input) throws IOException, SAXException, HandlerException {
+    /**
+     * Validates if the input conforms to IEEE2030.5 standard, detecting if it's JSON or XML.
+     *
+     * @param input the input string to validate
+     * @return true if valid, false otherwise
+     * @throws IOException if an I/O error occurs
+     * @throws HandlerException if validation fails
+     */
+    public static Boolean validateIEEE2030dot5(String input) throws IOException, HandlerException {
         JsonNode jsonNode = isValidJson(input);
 
         if (jsonNode != null) {
@@ -200,12 +253,21 @@ public class IEEEObjectFactory {
         return false;
     }
 
+    /**
+     * Validates XML input against IEEE2030.5 schema.
+     *
+     * @param xml the XML string to validate
+     * @param document the parsed XML document
+     * @return true if valid, false otherwise
+     * @throws IOException if an I/O error occurs
+     * @throws HandlerException if validation fails
+     */
     private static Boolean validateXMLForIEEE2030dot5(String xml, Document document) throws IOException, HandlerException {
         // Get root element
         String rootName = document.getDocumentElement().getNodeName();
         rootName = rootName.substring(0, 1).toUpperCase() + rootName.substring(1);
 
-        Class clazz = IEEEObjectFactory.getClass(rootName, "ieee.std._2030_5.ns");
+        Class clazz = IEEEObjectFactory.getClass(rootName, IEEE_NAMESPACE);
 
         if (clazz == null) {
             throw new IllegalArgumentException("Invalid root element name");
@@ -236,12 +298,20 @@ public class IEEEObjectFactory {
         return true;
     }
 
+    /**
+     * Validates JSON input against IEEE2030.5 schema by converting to XML and validating.
+     *
+     * @param jsonNode the parsed JSON node
+     * @return true if valid, false otherwise
+     * @throws IOException if an I/O error occurs
+     * @throws HandlerException if validation fails
+     */
     private static Boolean validateJSONForIEEE2030dot5(JsonNode jsonNode) throws IOException, HandlerException {
         //Get name of root element
         String orgRootName = jsonNode.fieldNames().next();
         String rootName = orgRootName.substring(0, 1).toUpperCase() + orgRootName.substring(1);
 
-        Class clazz = IEEEObjectFactory.getClass(rootName, "ieee.std._2030_5.ns");
+        Class clazz = IEEEObjectFactory.getClass(rootName, IEEE_NAMESPACE);
 
         if (clazz == null) {
             throw new IllegalArgumentException("Invalid root element name");
@@ -267,7 +337,7 @@ public class IEEEObjectFactory {
             // Join the lines to a single string
             String lines = String.join("\n", bufferedReader.lines().toList());
 
-            clazz = getClass(clazz.getSimpleName(), "ieee.std._2030_5.ns");
+            clazz = getClass(clazz.getSimpleName(), IEEE_NAMESPACE);
 
             Object struct = IEEEObjectFactory.fromXMLToIEEE(lines, clazz);
 
@@ -280,10 +350,19 @@ public class IEEEObjectFactory {
         return true;
     }
 
+    /**
+     * Validates XML against the IEEE2030.5 XSD schema.
+     *
+     * @param xml the XML string to validate
+     * @throws SAXException if the XML is not valid according to the schema
+     * @throws IOException if an I/O error occurs
+     */
     private static void validateAgainstSchema(String xml) throws SAXException, IOException {
         String xsdFile = "/xml/sep.xsd";
 
         SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+        factory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
+
         // Load the XSD from resources
         InputStream xsdStream = IEEEObjectFactory.class.getResourceAsStream(xsdFile);
         Schema schema = factory.newSchema(new StreamSource(xsdStream));
@@ -292,8 +371,18 @@ public class IEEEObjectFactory {
         validator.validate(new StreamSource(new StringReader(xml)));
     }
 
+    /**
+     * Custom Gson TypeAdapter for handling IEEE2030.5 TimeType objects.
+     */
     private static class TimeTypeAdapter extends TypeAdapter<TimeType> {
 
+        /**
+         * Writes a TimeType object as a JSON value.
+         *
+         * @param jsonWriter the JSON writer
+         * @param timeType the TimeType object to write
+         * @throws IOException if an I/O error occurs
+         */
         @Override
         public void write(JsonWriter jsonWriter, TimeType timeType) throws IOException {
             if (timeType == null) {
@@ -303,6 +392,13 @@ public class IEEEObjectFactory {
             }
         }
 
+        /**
+         * Reads a TimeType object from a JSON value.
+         *
+         * @param jsonReader the JSON reader
+         * @return the created TimeType object
+         * @throws IOException if an I/O error occurs
+         */
         @Override
         public TimeType read(JsonReader jsonReader) throws IOException {
             if (jsonReader != null) {
@@ -315,6 +411,12 @@ public class IEEEObjectFactory {
         }
     }
 
+    /**
+     * Checks if a string is valid JSON and returns the parsed JsonNode.
+     *
+     * @param jsonString the string to check
+     * @return the parsed JsonNode or null if not valid JSON
+     */
     private static JsonNode isValidJson(String jsonString) {
         try {
             return new ObjectMapper().readTree(jsonString);
@@ -323,6 +425,12 @@ public class IEEEObjectFactory {
         }
     }
 
+    /**
+     * Checks if a string is valid XML and returns the parsed Document.
+     *
+     * @param xmlString the string to check
+     * @return the parsed Document or null if not valid XML
+     */
     private static Document isValidXml(String xmlString) {
         try {
             if (!xmlString.startsWith("<?xml")) {

@@ -21,22 +21,48 @@
 package si.sunesis.interoperability.modbus;
 
 import com.intelligt.modbus.jlibmodbus.master.ModbusMaster;
+import lombok.extern.slf4j.Slf4j;
 
 /**
+ * Implementation of the Modbus client for communication with Modbus devices.
+ * Provides methods for processing requests and replies over the Modbus protocol.
+ *
  * @author David Trafela, Sunesis
  * @since 1.0.0
  */
+@Slf4j
 public class ModbusClient extends AbstractModbusRequestHandler {
 
+    /**
+     * Constructs a new ModbusClient with the specified Modbus master.
+     *
+     * @param master the Modbus master to use for communication
+     */
     public ModbusClient(ModbusMaster master) {
         super(master);
     }
 
+    /**
+     * Processes a stream request from the specified topic.
+     * Not implemented for Modbus as it does not support streaming.
+     *
+     * @param fromTopic the topic from which the request was received
+     * @param data the request data as bytes
+     * @return null as streaming is not supported in Modbus
+     */
     @Override
     public String processStreamRequest(String fromTopic, byte[] data) {
         return null;
     }
 
+    /**
+     * Processes a reply request from the specified topic.
+     * Not implemented for this basic Modbus client implementation.
+     *
+     * @param fromTopic the topic from which the request was received
+     * @param data the request data as bytes
+     * @return null as this functionality is not implemented
+     */
     @Override
     public String processReplyRequest(String fromTopic, byte[] data) {
         return null;

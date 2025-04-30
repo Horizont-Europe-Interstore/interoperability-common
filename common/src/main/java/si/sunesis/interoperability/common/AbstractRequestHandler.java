@@ -20,26 +20,67 @@
  */
 package si.sunesis.interoperability.common;
 
-import si.sunesis.interoperability.common.exceptions.HandlerException;
-
 /**
+ * Abstract base class for request handlers that implements common functionality.
+ *
+ * @param <E> The type of client used by the handler
+ * @param <M> The type of messages handled by the implementation
+ *
  * @author David Trafela, Sunesis
  * @since 1.0.0
  */
 public abstract class AbstractRequestHandler<E, M> {
 
+    /**
+     * The client instance used for communication.
+     */
     protected E client;
 
+    /**
+     * Gets the client instance used by this handler.
+     *
+     * @return the client instance
+     */
     public abstract E getClient();
 
-    public abstract String processStreamRequest(String fromTopic, byte[] data);
+    /**
+     * Processes a stream request received from a topic.
+     *
+     * @param fromTopic the topic from which the request was received
+     * @param data the raw request data as bytes
+     * @return the processed result or null if not handled
+     */
+    public String processStreamRequest(String fromTopic, byte[] data) {
+        return null;
+    }
 
-    public abstract String processReplyRequest(String fromTopic, byte[] data);
+    /**
+     * Processes a reply request received from a topic.
+     *
+     * @param fromTopic the topic from which the request was received
+     * @param data the raw request data as bytes
+     * @return the processed result or null if not handled
+     */
+    public String processReplyRequest(String fromTopic, byte[] data) {
+        return null;
+    }
 
+    /**
+     * Handles a request-reply pattern.
+     *
+     * @param subject the subject/topic for the request
+     * @param message the message to be handled
+     */
     protected void handleRequestReply(String subject, M message) {
         // Modbus does not support this pattern
     }
 
+    /**
+     * Handles a stream communication pattern.
+     *
+     * @param subject the subject/topic for the stream
+     * @param message the message to be streamed
+     */
     protected void handleStream(String subject, M message) {
         // Modbus does not support this pattern
     }

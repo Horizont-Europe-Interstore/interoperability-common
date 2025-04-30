@@ -41,19 +41,19 @@ public class IEEETest {
     private static final String serverJsonInput = """
             {
               "event": {
-                "creationTime": 1.702909917932E12,
+                "creationTime": 1702909917932,
                 "eventStatus": {
-                  "currentStatus": 1.0,
-                  "dateTime": 1.693216835E12,
+                  "currentStatus": 1,
+                  "dateTime": 1693216835000,
                   "potentiallySuperseded": false
                 },
                 "interval": {
-                  "duration": 900.0,
-                  "start": 1.693216835E12
+                  "duration": 900,
+                  "start": 1693216835000
                 },
                 "mrid": {
                   "value": [
-                    16.0
+                    16
                   ]
                 }
               }
@@ -156,10 +156,6 @@ public class IEEETest {
         } catch (IOException e) {
             log.error("JSON is not valid: {}", e.getMessage());
             Assert.fail(e.getMessage());
-        } catch (SAXException e) {
-            e.printStackTrace();
-            log.error("XML is not valid: {}", e.getMessage());
-            Assert.fail(e.getMessage());
         } catch (HandlerException e) {
             log.error("Handler exception: {}", e.getMessage());
             Assert.fail(e.getMessage());
@@ -174,9 +170,6 @@ public class IEEETest {
             IEEEObjectFactory.validateIEEE2030dot5(serverXMLInput);
         } catch (IOException e) {
             log.error("JSON is not valid: {}", e.getMessage());
-            Assert.fail(e.getMessage());
-        } catch (SAXException e) {
-            log.error("XML is not valid: {}", e.getMessage());
             Assert.fail(e.getMessage());
         } catch (HandlerException e) {
             log.error("Handler exception: {}", e.getMessage());

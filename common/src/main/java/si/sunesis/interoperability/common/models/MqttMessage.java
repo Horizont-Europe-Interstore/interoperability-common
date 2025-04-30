@@ -43,16 +43,35 @@ public class MqttMessage {
     private String replyTo;
     private Duration duration;
 
+    /**
+     * Private constructor used by the builder.
+     *
+     * @param content the message content
+     * @param replyTo the reply-to topic
+     * @param duration the duration for stream requests
+     */
     private MqttMessage(String content, String replyTo, Duration duration) {
         this.content = content;
         this.replyTo = replyTo;
         this.duration = duration;
     }
 
+    /**
+     * Creates an MqttMessage from a JSON string.
+     *
+     * @param jsonString the JSON string to parse
+     * @return the created MqttMessage
+     */
     public static MqttMessage fromJson(String jsonString) {
         return fromJson(jsonString.getBytes(StandardCharsets.UTF_8));
     }
 
+    /**
+     * Creates an MqttMessage from JSON bytes.
+     *
+     * @param jsonBytes the JSON bytes to parse
+     * @return the created MqttMessage
+     */
     public static MqttMessage fromJson(byte[] jsonBytes) {
         JsonObject json;
 
@@ -85,6 +104,11 @@ public class MqttMessage {
                 .build();
     }
 
+    /**
+     * Converts this MqttMessage to a JSON string representation.
+     *
+     * @return the JSON string
+     */
     public String toJsonString() {
         JsonObjectBuilder builder = Json.createObjectBuilder();
 
@@ -105,30 +129,61 @@ public class MqttMessage {
         return jsonObject.toString();
     }
 
+    /**
+     * Builder class for creating MqttMessage instances.
+     */
     public static class MqttMessageBuilder {
         private String content;
         private String replyTo;
         private Duration duration;
 
+        /**
+         * Creates a new MqttMessageBuilder instance.
+         *
+         * @return a new builder instance
+         */
         public static MqttMessageBuilder builder() {
             return new MqttMessageBuilder();
         }
 
+        /**
+         * Sets the content of the message.
+         *
+         * @param content the content to set
+         * @return this builder instance
+         */
         public MqttMessageBuilder content(String content) {
             this.content = content;
             return this;
         }
 
+        /**
+         * Sets the reply-to topic.
+         *
+         * @param replyTo the reply-to topic
+         * @return this builder instance
+         */
         public MqttMessageBuilder replyTo(String replyTo) {
             this.replyTo = replyTo;
             return this;
         }
 
+        /**
+         * Sets the duration for stream requests.
+         *
+         * @param duration the duration to set
+         * @return this builder instance
+         */
         public MqttMessageBuilder duration(Duration duration) {
             this.duration = duration;
             return this;
         }
 
+        /**
+         * Builds an MqttMessage with the configured values.
+         *
+         * @return the built MqttMessage
+         */
         public MqttMessage build() {
             return new MqttMessage(content, replyTo, duration);
         }

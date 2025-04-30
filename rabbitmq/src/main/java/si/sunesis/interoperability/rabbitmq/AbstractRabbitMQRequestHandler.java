@@ -35,21 +35,43 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 /**
+ * Abstract base class for RabbitMQ request handlers.
+ * Provides implementation of the request-response and publish-subscribe patterns for RabbitMQ.
+ * Extends the common AbstractRequestHandler and implements RequestHandler interface for RabbitMQ protocol.
+ *
  * @author David Trafela, Sunesis
  * @since 1.0.0
  */
 @Slf4j
 public abstract class AbstractRabbitMQRequestHandler extends AbstractRequestHandler<ChannelHandler, Delivery> implements RequestHandler<String, byte[]> {
 
+    /**
+     * Constructs a new AbstractRabbitMQRequestHandler with the specified channel handler.
+     *
+     * @param client the channel handler to use for communication
+     */
     protected AbstractRabbitMQRequestHandler(ChannelHandler client) {
         this.client = client;
     }
 
+    /**
+     * Gets the channel handler used by this handler.
+     *
+     * @return the channel handler
+     */
     @Override
     public ChannelHandler getClient() {
         return this.client;
     }
 
+    /**
+     * Publishes data to a specific queue.
+     * Delegates to the channel handler for the actual publishing.
+     *
+     * @param data the data to publish
+     * @param queueName the queue to publish to
+     * @throws HandlerException if an error occurs during publishing
+     */
     @Override
     public void publish(String data, String queueName) throws HandlerException {
         log.debug("Publishing message: {} to queue: {}", data, queueName);
@@ -57,6 +79,13 @@ public abstract class AbstractRabbitMQRequestHandler extends AbstractRequestHand
         client.publish(data, queueName);
     }
 
+    /**
+     * Subscribes to a queue to receive messages.
+     * When messages are received, they are processed based on their content and type.
+     *
+     * @param queueName the queue to subscribe to
+     * @param callback the callback to handle received messages
+     */
     @Override
     public void subscribe(String queueName, Callback<byte[]> callback) {
         log.debug("Subscribing to queue: {}", queueName);
@@ -84,6 +113,18 @@ public abstract class AbstractRabbitMQRequestHandler extends AbstractRequestHand
         }
     }
 
+    /**
+     * Sends a request and establishes a stream of responses.
+     * Subscribes to the reply queue and then publishes a message with the request data.
+     * Duration is included in the message to indicate the length of the stream.
+     *
+     * @param data the request data
+     * @param queueName the queue to send the request to
+     * @param replyTo the queue where responses should be sent
+     * @param duration the duration for which to maintain the stream
+     * @param callback the callback to handle received responses
+     * @throws HandlerException if an error occurs during the request
+     */
     @Override
     public void requestStream(String data, String queueName, String replyTo, Duration duration, Callback<byte[]> callback) throws HandlerException {
         DeliverCallback deliverCallback = (consumerTag, delivery) -> {
@@ -103,6 +144,16 @@ public abstract class AbstractRabbitMQRequestHandler extends AbstractRequestHand
         client.publish(mqttMessage.toJsonString(), queueName);
     }
 
+    /**
+     * Sends a request that can receive multiple responses on a specified reply queue.
+     * Subscribes to the reply queue and then publishes a message with the request data.
+     *
+     * @param data the request data
+     * @param queueName the queue to send the request to
+     * @param replyTo the queue where responses should be sent
+     * @param callback the callback to handle received responses
+     * @throws HandlerException if an error occurs during the request
+     */
     @Override
     public void requestReplyToMultiple(String data, String queueName, String replyTo, Callback<byte[]> callback) throws HandlerException {
         DeliverCallback deliverCallback = (consumerTag, delivery) -> {
@@ -121,6 +172,15 @@ public abstract class AbstractRabbitMQRequestHandler extends AbstractRequestHand
         client.publish(mqttMessage.toJsonString(), queueName);
     }
 
+    /**
+     * Sends a request and expects a single reply.
+     * Creates a unique reply queue name and uses requestReplyToMultiple to handle the request-reply pattern.
+     *
+     * @param data the request data
+     * @param queueName the queue to send the request to
+     * @param callback the callback to handle the response
+     * @throws HandlerException if an error occurs during the request
+     */
     @Override
     public void requestReply(String data, String queueName, Callback<byte[]> callback) throws HandlerException {
         String replyTopic = queueName + System.currentTimeMillis() + client.getChannel().getChannelNumber();
@@ -128,6 +188,13 @@ public abstract class AbstractRabbitMQRequestHandler extends AbstractRequestHand
         requestReplyToMultiple(data, queueName, replyTopic, callback);
     }
 
+    /**
+     * Handles a request-reply pattern for RabbitMQ messages.
+     * Processes the received message and sends a reply to the specified reply queue.
+     *
+     * @param queueName the queue from which the request was received
+     * @param message the received RabbitMQ delivery
+     */
     @Override
     protected void handleRequestReply(String queueName, Delivery message) {
         MqttMessage mqttMessage = MqttMessage.fromJson(message.getBody());
@@ -146,6 +213,14 @@ public abstract class AbstractRabbitMQRequestHandler extends AbstractRequestHand
         }
     }
 
+    /**
+     * Handles a stream communication pattern for RabbitMQ messages.
+     * Processes the received message and sends multiple replies at a regular interval.
+     *
+     * @param queueName the queue from which the request was received
+     * @param message the received RabbitMQ delivery
+     * @throws IllegalStateException if the Duration header is missing in the message
+     */
     @Override
     protected void handleStream(String queueName, Delivery message) {
         MqttMessage mqttMessage = MqttMessage.fromJson(message.getBody());
@@ -176,7 +251,7 @@ public abstract class AbstractRabbitMQRequestHandler extends AbstractRequestHand
                 TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException e) {
                 log.error("Error while sleeping", e);
-                throw new IllegalStateException(e.getMessage());
+                Thread.currentThread().interrupt();
             } catch (HandlerException e) {
                 log.error("Error while publishing stream", e);
             }
@@ -185,6 +260,10 @@ public abstract class AbstractRabbitMQRequestHandler extends AbstractRequestHand
         log.debug("Finished sending {} messages", numOfMessages);
     }
 
+    /**
+     * Disconnects the RabbitMQ client if it is connected.
+     * Safely closes the channel and connection to the RabbitMQ broker.
+     */
     @Override
     public void disconnect() {
         if (client != null) {

@@ -30,6 +30,10 @@ import si.sunesis.interoperability.common.exceptions.HandlerException;
 import java.io.IOException;
 
 /**
+ * Handler class for managing RabbitMQ channel operations.
+ * Handles queue and exchange declarations, message publishing, and subscription.
+ * Uses the builder pattern for construction with various RabbitMQ configurations.
+ *
  * @author David Trafela, Sunesis
  * @since 1.0.0
  */
@@ -45,6 +49,16 @@ public class ChannelHandler {
 
     private final Channel channel;
 
+    /**
+     * Private constructor used by the builder.
+     * Creates a new channel from the connection and initializes exchange settings.
+     *
+     * @param connection the RabbitMQ connection
+     * @param exchangeName the name of the exchange to use
+     * @param exchangeType the type of exchange (direct, fanout, topic, headers)
+     * @param routingKey the routing key for message routing
+     * @throws IOException if an I/O error occurs
+     */
     private ChannelHandler(Connection connection, String exchangeName, String exchangeType, String routingKey) throws IOException {
         this.connection = connection;
         this.channel = connection.createChannel();
@@ -53,6 +67,15 @@ public class ChannelHandler {
         this.routingKey = routingKey;
     }
 
+    /**
+     * Publishes a message to a queue.
+     * If an exchange is specified, it will publish to the exchange with the routing key.
+     * Otherwise, it will publish directly to the queue.
+     *
+     * @param data the message data to publish
+     * @param queueName the name of the queue
+     * @throws HandlerException if an error occurs during publishing
+     */
     public void publish(String data, String queueName) throws HandlerException {
         try {
             log.debug("Publishing message to queue: {}", queueName);
@@ -71,6 +94,14 @@ public class ChannelHandler {
         }
     }
 
+    /**
+     * Subscribes to a queue to receive messages.
+     * If an exchange is specified, it will bind the queue to the exchange with the routing key.
+     *
+     * @param queueName the name of the queue to subscribe to
+     * @param callback the callback to handle received messages
+     * @throws HandlerException if an error occurs during subscription
+     */
     public void subscribe(String queueName, DeliverCallback callback) throws HandlerException {
         try {
             if (exchangeName != null) {
@@ -90,32 +121,68 @@ public class ChannelHandler {
         }
     }
 
+    /**
+     * Builder class for creating ChannelHandler instances with custom configurations.
+     */
     public static class ChannelHandlerBuilder {
         private String exchangeName;
         private String exchangeType = "direct";
         private String routingKey = "";
         private Connection connection;
 
+        /**
+         * Sets the exchange name for the channel handler.
+         *
+         * @param exchangeName the name of the exchange
+         * @return this builder instance
+         */
         public ChannelHandlerBuilder setExchangeName(String exchangeName) {
             this.exchangeName = exchangeName;
             return this;
         }
 
+        /**
+         * Sets the exchange type for the channel handler.
+         * Default is "direct" if not specified.
+         *
+         * @param exchangeType the type of exchange (direct, fanout, topic, headers)
+         * @return this builder instance
+         */
         public ChannelHandlerBuilder setExchangeType(String exchangeType) {
             this.exchangeType = exchangeType;
             return this;
         }
 
+        /**
+         * Sets the routing key for the channel handler.
+         * Default is empty string if not specified.
+         *
+         * @param routingKey the routing key for message routing
+         * @return this builder instance
+         */
         public ChannelHandlerBuilder setRoutingKey(String routingKey) {
             this.routingKey = routingKey;
             return this;
         }
 
+        /**
+         * Sets the RabbitMQ connection for the channel handler.
+         * This is a required parameter.
+         *
+         * @param connection the RabbitMQ connection
+         * @return this builder instance
+         */
         public ChannelHandlerBuilder setConnection(Connection connection) {
             this.connection = connection;
             return this;
         }
 
+        /**
+         * Builds a new ChannelHandler with the configured settings.
+         *
+         * @return the created ChannelHandler
+         * @throws IOException if an I/O error occurs during channel creation
+         */
         public ChannelHandler build() throws IOException {
             return new ChannelHandler(connection, exchangeName, exchangeType, routingKey);
         }

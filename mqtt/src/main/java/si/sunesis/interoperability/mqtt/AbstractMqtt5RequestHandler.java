@@ -30,32 +30,54 @@ import si.sunesis.interoperability.common.AbstractRequestHandler;
 import si.sunesis.interoperability.common.interfaces.RequestHandler;
 import si.sunesis.interoperability.common.models.MqttMessage;
 
-import javax.annotation.PreDestroy;
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * Abstract base class for MQTT 5.0 request handlers.
+ * Provides implementation of the request-response and publish-subscribe patterns for MQTT 5.0.
+ * Extends the common AbstractRequestHandler and implements RequestHandler interface for MQTT 5.0 protocol.
+ *
  * @author David Trafela, Sunesis
  * @since 1.0.0
  */
 @Slf4j
 public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler<Mqtt5AsyncClient, Mqtt5Publish> implements RequestHandler<String, byte[]> {
 
+    /**
+     * Constructs a new AbstractMqtt5RequestHandler with the specified MQTT 5.0 async client.
+     *
+     * @param client the MQTT 5.0 async client to use for communication
+     */
     protected AbstractMqtt5RequestHandler(Mqtt5AsyncClient client) {
         this.client = client;
     }
 
+    /**
+     * Gets the MQTT 5.0 async client used by this handler.
+     *
+     * @return the MQTT 5.0 async client
+     */
     @Override
     public Mqtt5AsyncClient getClient() {
         return this.client;
     }
 
+    /**
+     * Connects to the MQTT 5.0 broker asynchronously.
+     *
+     * @return a CompletableFuture with the connection acknowledgment
+     */
     public CompletableFuture<Mqtt5ConnAck> connect() {
         return client.connect();
     }
 
+    /**
+     * Disconnects the MQTT 5.0 client if it is connected.
+     * Safely closes the connection to the MQTT broker.
+     */
     @Override
     public void disconnect() {
         if (client.getState().isConnected()) {
@@ -64,6 +86,13 @@ public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler
         }
     }
 
+    /**
+     * Publishes data to a specific subject/topic.
+     * The data is published as-is to the specified MQTT topic.
+     *
+     * @param data the data to publish
+     * @param subject the MQTT topic to publish to
+     */
     @Override
     public void publish(String data, String subject) {
         log.debug("Publishing message: {} to topic: {}", data, subject);
@@ -83,6 +112,13 @@ public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler
         log.debug("Published message: {}", publishResult);
     }
 
+    /**
+     * Subscribes to an MQTT topic to receive messages.
+     * When messages are received, they are processed based on their content and type.
+     *
+     * @param subject the MQTT topic to subscribe to
+     * @param callback the callback to handle received messages
+     */
     @Override
     public void subscribe(String subject, Callback<byte[]> callback) {
         log.debug("Subscribing to topic: {}", subject);
@@ -108,6 +144,16 @@ public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler
         log.debug("Subscribed to topic: {}", ack);
     }
 
+    /**
+     * Sends a request and establishes a stream of responses.
+     * Subscribes to the reply topic and then publishes a message with the request data.
+     *
+     * @param data the request data
+     * @param subject the MQTT topic to send the request to
+     * @param replyTo the MQTT topic where responses should be sent
+     * @param duration the duration for which to maintain the stream
+     * @param callback the callback to handle received responses
+     */
     @Override
     public void requestStream(String data, String subject, String replyTo, Duration duration, Callback<byte[]> callback) {
         Mqtt5SubAck ack = client.subscribeWith()
@@ -131,9 +177,18 @@ public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler
                 .payload(mqttMessage.toJsonString().getBytes())
                 .send().join();
 
-        log.debug("Published message: {}", publishResult);
+        log.debug("Published stream message: {}", publishResult);
     }
 
+    /**
+     * Sends a request that can receive multiple responses on a specified reply topic.
+     * Subscribes to the reply topic and then publishes a message with the request data.
+     *
+     * @param data the request data
+     * @param subject the MQTT topic to send the request to
+     * @param replyTo the MQTT topic where responses should be sent
+     * @param callback the callback to handle received responses
+     */
     @Override
     public void requestReplyToMultiple(String data, String subject, String replyTo, Callback<byte[]> callback) {
         Mqtt5SubAck ack = client.subscribeWith()
@@ -155,9 +210,17 @@ public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler
                 .payload(mqttMessage.toJsonString().getBytes())
                 .send().join();
 
-        log.debug("Published message: {}", publishResult);
+        log.debug("Published reply message: {}", publishResult);
     }
 
+    /**
+     * Sends a request and expects a single reply.
+     * Creates a unique reply topic and uses requestReplyToMultiple to handle the request-reply pattern.
+     *
+     * @param data the request data
+     * @param subject the MQTT topic to send the request to
+     * @param callback the callback to handle the response
+     */
     @Override
     public void requestReply(String data, String subject, Callback<byte[]> callback) {
         String replyTopic = subject + System.currentTimeMillis() + client.getConfig().getClientIdentifier().orElse(null);
@@ -165,6 +228,13 @@ public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler
         requestReplyToMultiple(data, subject, replyTopic, callback);
     }
 
+    /**
+     * Handles a request-reply pattern for MQTT 5.0 messages.
+     * Processes the received message and sends a reply to the specified reply topic.
+     *
+     * @param subject the MQTT topic from which the request was received
+     * @param mqtt5Publish the received MQTT 5.0 publish message
+     */
     @Override
     protected void handleRequestReply(String subject, Mqtt5Publish mqtt5Publish) {
         MqttMessage mqttMessage = MqttMessage.fromJson(mqtt5Publish.getPayloadAsBytes());
@@ -182,6 +252,14 @@ public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler
                 .send().join();
     }
 
+    /**
+     * Handles a stream communication pattern for MQTT 5.0 messages.
+     * Processes the received message and sends multiple replies at a regular interval.
+     *
+     * @param subject the MQTT topic from which the request was received
+     * @param mqtt5Publish the received MQTT 5.0 publish message
+     * @throws IllegalStateException if the Duration header is missing in the message
+     */
     @Override
     protected void handleStream(String subject, Mqtt5Publish mqtt5Publish) {
         MqttMessage mqttMessage = MqttMessage.fromJson(mqtt5Publish.getPayloadAsBytes());
@@ -215,6 +293,7 @@ public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler
                 TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException e) {
                 log.error("Error while sleeping", e);
+                Thread.currentThread().interrupt();
             }
         }
 

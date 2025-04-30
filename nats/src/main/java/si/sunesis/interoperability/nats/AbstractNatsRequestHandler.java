@@ -34,21 +34,43 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * Abstract base class for NATS request handlers.
+ * Provides implementation of the request-response and publish-subscribe patterns for NATS.
+ * Extends the common AbstractRequestHandler and implements RequestHandler interface for NATS protocol.
+ *
  * @author David Trafela, Sunesis
  * @since 1.0.0
  */
 @Slf4j
 public abstract class AbstractNatsRequestHandler extends AbstractRequestHandler<NatsConnection, Message> implements RequestHandler<String, byte[]> {
 
+    /**
+     * Constructs a new AbstractNatsRequestHandler with the specified NATS connection.
+     *
+     * @param client the NATS connection to use for communication
+     */
     protected AbstractNatsRequestHandler(NatsConnection client) {
         this.client = client;
     }
 
+    /**
+     * Gets the NATS connection used by this handler.
+     *
+     * @return the NATS connection
+     */
     @Override
     public NatsConnection getClient() {
         return this.client;
     }
 
+    /**
+     * Publishes data to a specific subject.
+     * The data is published as-is to the specified NATS subject.
+     *
+     * @param data    the data to publish
+     * @param subject the NATS subject to publish to
+     * @throws HandlerException if an error occurs during publishing
+     */
     @Override
     public void publish(String data, String subject) throws HandlerException {
         log.debug("Publishing message: {} to topic: {}", data, subject);
@@ -66,6 +88,13 @@ public abstract class AbstractNatsRequestHandler extends AbstractRequestHandler<
         client.publish(msg);
     }
 
+    /**
+     * Subscribes to a NATS subject to receive messages.
+     * When messages are received, they are processed based on their content and type.
+     *
+     * @param subject  the NATS subject to subscribe to
+     * @param callback the callback to handle received messages
+     */
     @Override
     public void subscribe(String subject, Callback<byte[]> callback) {
         log.debug("Subscribing to subject: {}", subject);
@@ -85,6 +114,18 @@ public abstract class AbstractNatsRequestHandler extends AbstractRequestHandler<
         });
     }
 
+    /**
+     * Sends a request and establishes a stream of responses.
+     * Subscribes to the reply subject and then publishes a message with the request data.
+     * Duration is included in the headers of the message to indicate the length of the stream.
+     *
+     * @param request  the request data
+     * @param subject  the NATS subject to send the request to
+     * @param replyTo  the NATS subject where responses should be sent
+     * @param duration the duration for which to maintain the stream
+     * @param callback the callback to handle received responses
+     * @throws HandlerException if an error occurs during the request
+     */
     @Override
     public void requestStream(String request, String subject, String replyTo, Duration duration, Callback<byte[]> callback) throws HandlerException {
         client.subscribe(replyTo, message -> callback.onNext(message.getData()));
@@ -102,6 +143,16 @@ public abstract class AbstractNatsRequestHandler extends AbstractRequestHandler<
         client.requestReplyToMultiple(message);
     }
 
+    /**
+     * Sends a request that can receive multiple responses on a specified reply subject.
+     * Subscribes to the reply subject and then publishes a message with the request data.
+     *
+     * @param request  the request data
+     * @param subject  the NATS subject to send the request to
+     * @param replyTo  the NATS subject where responses should be sent
+     * @param callback the callback to handle received responses
+     * @throws HandlerException if an error occurs during the request
+     */
     @Override
     public void requestReplyToMultiple(String request, String subject, String replyTo, Callback<byte[]> callback) throws HandlerException {
         client.subscribe(replyTo, message -> callback.onNext(message.getData()));
@@ -115,6 +166,15 @@ public abstract class AbstractNatsRequestHandler extends AbstractRequestHandler<
         client.requestReplyToMultiple(msg);
     }
 
+    /**
+     * Sends a request and expects a single reply.
+     * Uses the NATS request-reply pattern to get a synchronous response.
+     *
+     * @param request  the request data
+     * @param subject  the NATS subject to send the request to
+     * @param callback the callback to handle the response
+     * @throws HandlerException if an error occurs during the request
+     */
     @Override
     public void requestReply(String request, String subject, Callback<byte[]> callback) throws HandlerException {
         Message msg = NatsMessage.builder()
@@ -125,6 +185,13 @@ public abstract class AbstractNatsRequestHandler extends AbstractRequestHandler<
         callback.onNext(client.requestReply(msg).join().getData());
     }
 
+    /**
+     * Handles a request-reply pattern for NATS messages.
+     * Processes the received message and sends a reply to the specified reply subject.
+     *
+     * @param subject the NATS subject from which the request was received
+     * @param message the received NATS message
+     */
     @Override
     protected void handleRequestReply(String subject, Message message) {
         String reply = processReplyRequest(subject, message.getData());
@@ -141,6 +208,13 @@ public abstract class AbstractNatsRequestHandler extends AbstractRequestHandler<
         }
     }
 
+    /**
+     * Handles a stream communication pattern for NATS messages.
+     * Processes the received message and sends multiple replies at a regular interval.
+     *
+     * @param subject the NATS subject from which the request was received
+     * @param message the received NATS message
+     */
     @Override
     protected void handleStream(String subject, Message message) {
         try {
@@ -163,11 +237,18 @@ public abstract class AbstractNatsRequestHandler extends AbstractRequestHandler<
 
                 TimeUnit.SECONDS.sleep(1);
             }
+        } catch (InterruptedException ie) {
+            log.error("Error while sleeping", ie);
+            Thread.currentThread().interrupt();
         } catch (Exception e) {
             log.error("Error while publishing stream", e);
         }
     }
 
+    /**
+     * Disconnects the NATS client if it is connected.
+     * Safely closes the connection to the NATS server.
+     */
     @Override
     public void disconnect() {
         if (client != null) {

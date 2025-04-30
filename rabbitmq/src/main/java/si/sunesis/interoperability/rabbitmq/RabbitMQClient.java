@@ -21,20 +21,44 @@
 package si.sunesis.interoperability.rabbitmq;
 
 /**
+ * Implementation of the RabbitMQ client for communication with RabbitMQ message brokers.
+ * Provides methods for processing stream and reply requests over the RabbitMQ protocol.
+ *
  * @author David Trafela, Sunesis
  * @since 1.0.0
  */
 public class RabbitMQClient extends AbstractRabbitMQRequestHandler {
 
+    /**
+     * Constructs a new RabbitMQClient with the specified channel handler.
+     *
+     * @param client the channel handler to use for communication
+     */
     public RabbitMQClient(ChannelHandler client) {
         super(client);
     }
 
+    /**
+     * Processes a stream request from the specified queue.
+     * This implementation returns null as it's not implemented.
+     *
+     * @param fromTopic the queue from which the request was received
+     * @param data the request data as bytes
+     * @return null as this functionality is not implemented
+     */
     @Override
     public String processStreamRequest(String fromTopic, byte[] data) {
         return null;
     }
 
+    /**
+     * Processes a reply request from the specified queue.
+     * This implementation returns null as it's not implemented.
+     *
+     * @param fromTopic the queue from which the request was received
+     * @param data the request data as bytes
+     * @return null as this functionality is not implemented
+     */
     @Override
     public String processReplyRequest(String fromTopic, byte[] data) {
         return null;
