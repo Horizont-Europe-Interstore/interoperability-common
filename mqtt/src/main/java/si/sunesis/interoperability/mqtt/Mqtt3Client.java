@@ -20,8 +20,8 @@
  */
 package si.sunesis.interoperability.mqtt;
 
-import com.hivemq.client.mqtt.mqtt3.Mqtt3AsyncClient;
 import lombok.extern.slf4j.Slf4j;
+import org.eclipse.paho.client.mqttv3.MqttAsyncClient;
 
 /**
  * Implementation of MQTT 3.1.1 client for handling MQTT communications.
@@ -38,7 +38,7 @@ public class Mqtt3Client extends AbstractMqtt3RequestHandler {
      *
      * @param client the MQTT 3.1.1 async client to use for communications
      */
-    public Mqtt3Client(Mqtt3AsyncClient client) {
+    public Mqtt3Client(MqttAsyncClient client) {
         super(client);
     }
 

@@ -6,7 +6,7 @@
     <parent>
         <groupId>si.sunesis.interoperability.common</groupId>
         <artifactId>interoperability-common</artifactId>
-        <version>1.3.0</version>
+        <version>1.4.0</version>
     </parent>
 
     <artifactId>rabbitmq</artifactId>
@@ -36,7 +36,6 @@
             <plugin>
                 <groupId>com.kumuluz.ee</groupId>
                 <artifactId>kumuluzee-maven-plugin</artifactId>
-                <version>${kumuluzee.version}</version>
                 <executions>
                     <execution>
                         <id>package</id>

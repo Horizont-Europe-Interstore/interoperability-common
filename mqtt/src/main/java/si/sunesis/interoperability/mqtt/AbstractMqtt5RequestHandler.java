@@ -20,19 +20,20 @@
  */
 package si.sunesis.interoperability.mqtt;
 
-import com.hivemq.client.mqtt.mqtt5.Mqtt5AsyncClient;
-import com.hivemq.client.mqtt.mqtt5.message.connect.connack.Mqtt5ConnAck;
-import com.hivemq.client.mqtt.mqtt5.message.publish.Mqtt5Publish;
-import com.hivemq.client.mqtt.mqtt5.message.publish.Mqtt5PublishResult;
-import com.hivemq.client.mqtt.mqtt5.message.subscribe.suback.Mqtt5SubAck;
 import lombok.extern.slf4j.Slf4j;
+import org.eclipse.paho.mqttv5.client.MqttAsyncClient;
+import org.eclipse.paho.mqttv5.common.MqttException;
+import org.eclipse.paho.mqttv5.common.MqttSubscription;
+import org.eclipse.paho.mqttv5.common.packet.MqttProperties;
 import si.sunesis.interoperability.common.AbstractRequestHandler;
 import si.sunesis.interoperability.common.interfaces.RequestHandler;
 import si.sunesis.interoperability.common.models.MqttMessage;
 
 import java.nio.charset.StandardCharsets;
+import java.security.SecureRandom;
 import java.time.Duration;
-import java.util.concurrent.CompletableFuture;
+import java.util.HashMap;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -44,14 +45,16 @@ import java.util.concurrent.TimeUnit;
  * @since 1.0.0
  */
 @Slf4j
-public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler<Mqtt5AsyncClient, Mqtt5Publish> implements RequestHandler<String, byte[]> {
+public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler<MqttAsyncClient, org.eclipse.paho.mqttv5.common.MqttMessage> implements RequestHandler<String, byte[]> {
+
+    HashMap<String, Callback<byte[]>> callbacks = new HashMap<>();
 
     /**
      * Constructs a new AbstractMqtt5RequestHandler with the specified MQTT 5.0 async client.
      *
      * @param client the MQTT 5.0 async client to use for communication
      */
-    protected AbstractMqtt5RequestHandler(Mqtt5AsyncClient client) {
+    protected AbstractMqtt5RequestHandler(MqttAsyncClient client) {
         this.client = client;
     }
 
@@ -61,17 +64,8 @@ public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler
      * @return the MQTT 5.0 async client
      */
     @Override
-    public Mqtt5AsyncClient getClient() {
+    public MqttAsyncClient getClient() {
         return this.client;
-    }
-
-    /**
-     * Connects to the MQTT 5.0 broker asynchronously.
-     *
-     * @return a CompletableFuture with the connection acknowledgment
-     */
-    public CompletableFuture<Mqtt5ConnAck> connect() {
-        return client.connect();
     }
 
     /**
@@ -80,9 +74,13 @@ public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler
      */
     @Override
     public void disconnect() {
-        if (client.getState().isConnected()) {
+        if (client.isConnected()) {
             log.debug("Disconnecting MQTT client");
-            client.disconnect();
+            try {
+                client.disconnect();
+            } catch (MqttException e) {
+                log.error("Failed to disconnect MQTT client", e);
+            }
         }
     }
 
@@ -90,7 +88,7 @@ public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler
      * Publishes data to a specific subject/topic.
      * The data is published as-is to the specified MQTT topic.
      *
-     * @param data the data to publish
+     * @param data    the data to publish
      * @param subject the MQTT topic to publish to
      */
     @Override
@@ -102,128 +100,121 @@ public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler
             return;
         }
 
-        Mqtt5Publish publish = Mqtt5Publish.builder()
-                .topic(subject)
-                .payload(data.getBytes())
-                .build();
-
-        Mqtt5PublishResult publishResult = client.publish(publish).join();
-
-        log.debug("Published message: {}", publishResult);
+        try {
+            client.publish(subject, new org.eclipse.paho.mqttv5.common.MqttMessage(data.getBytes()));
+            log.debug("Published message: {} to topic: {}", data, subject);
+        } catch (MqttException e) {
+            log.error("Failed to publish message: {} to topic: {}", data, subject, e);
+        }
     }
 
     /**
      * Subscribes to an MQTT topic to receive messages.
      * When messages are received, they are processed based on their content and type.
      *
-     * @param subject the MQTT topic to subscribe to
+     * @param subject  the MQTT topic to subscribe to
      * @param callback the callback to handle received messages
      */
     @Override
     public void subscribe(String subject, Callback<byte[]> callback) {
         log.debug("Subscribing to topic: {}", subject);
 
-        Mqtt5SubAck ack = client.subscribeWith()
-                .topicFilter(subject)
-                .callback(message -> {
-                    MqttMessage mqttMessage = MqttMessage.fromJson(message.getPayloadAsBytes());
+        try {
+            client.subscribe(new MqttSubscription(subject, 0), null, null, (s, receivedMessage) -> {
+                MqttMessage mqttMessage = MqttMessage.fromJson(receivedMessage.getPayload());
 
-                    if (mqttMessage.getReplyTo() != null) {
-                        if (mqttMessage.getDuration() != null) {
-                            handleStream(subject, message);
-                            callback.onNext("Handled stream".getBytes(StandardCharsets.UTF_8));
-                        } else {
-                            handleRequestReply(subject, message);
-                            callback.onNext("Handled request".getBytes(StandardCharsets.UTF_8));
-                        }
+                if (mqttMessage.getReplyTo() != null) {
+                    if (mqttMessage.getDuration() != null) {
+                        handleStream(s, receivedMessage);
+                        callback.onNext("Handled stream".getBytes(StandardCharsets.UTF_8));
                     } else {
-                        callback.onNext(mqttMessage.getContent().getBytes());
+                        handleRequestReply(s, receivedMessage);
+                        callback.onNext("Handled request".getBytes(StandardCharsets.UTF_8));
                     }
-                }).send().join();
+                } else {
+                    callback.onNext(mqttMessage.getContent().getBytes());
+                }
+            }, getProps());
 
-        log.debug("Subscribed to topic: {}", ack);
+            log.debug("Subscribed to topic: {}", subject);
+        } catch (MqttException e) {
+            log.error("Failed to subscribe to topic: {}", subject, e);
+        }
     }
 
     /**
      * Sends a request and establishes a stream of responses.
      * Subscribes to the reply topic and then publishes a message with the request data.
      *
-     * @param data the request data
-     * @param subject the MQTT topic to send the request to
-     * @param replyTo the MQTT topic where responses should be sent
+     * @param data     the request data
+     * @param subject  the MQTT topic to send the request to
+     * @param replyTo  the MQTT topic where responses should be sent
      * @param duration the duration for which to maintain the stream
      * @param callback the callback to handle received responses
      */
     @Override
     public void requestStream(String data, String subject, String replyTo, Duration duration, Callback<byte[]> callback) {
-        Mqtt5SubAck ack = client.subscribeWith()
-                .topicFilter(replyTo)
-                .callback(message -> {
-                    MqttMessage mqttMessage = MqttMessage.fromJson(message.getPayloadAsBytes());
-                    callback.onNext(mqttMessage.getContent().getBytes());
-                }).send().join();
+        try {
+            client.subscribe(new MqttSubscription(replyTo, 0), null, null, (s, receivedMessage) -> {
+                MqttMessage mqttMessage = MqttMessage.fromJson(receivedMessage.getPayload());
+                callback.onNext(mqttMessage.getContent().getBytes());
+            }, getProps());
 
-        log.debug("Subscribed to stream topic: {}", ack);
+            log.debug("Subscribed to stream topic: {}", subject);
 
-        MqttMessage mqttMessage = MqttMessage.MqttMessageBuilder.builder()
-                .content(data)
-                .replyTo(replyTo)
-                .duration(duration)
-                .build();
+            MqttMessage mqttMessage = MqttMessage.MqttMessageBuilder.builder()
+                    .content(data)
+                    .replyTo(replyTo)
+                    .duration(duration)
+                    .build();
 
-        Mqtt5PublishResult publishResult = client.publishWith()
-                .topic(subject)
-
-                .payload(mqttMessage.toJsonString().getBytes())
-                .send().join();
-
-        log.debug("Published stream message: {}", publishResult);
+            publish(mqttMessage.toJsonString(), subject);
+        } catch (MqttException e) {
+            log.error("Failed to subscribe to stream topic: {}", replyTo, e);
+        }
     }
 
     /**
      * Sends a request that can receive multiple responses on a specified reply topic.
      * Subscribes to the reply topic and then publishes a message with the request data.
      *
-     * @param data the request data
-     * @param subject the MQTT topic to send the request to
-     * @param replyTo the MQTT topic where responses should be sent
+     * @param data     the request data
+     * @param subject  the MQTT topic to send the request to
+     * @param replyTo  the MQTT topic where responses should be sent
      * @param callback the callback to handle received responses
      */
     @Override
     public void requestReplyToMultiple(String data, String subject, String replyTo, Callback<byte[]> callback) {
-        Mqtt5SubAck ack = client.subscribeWith()
-                .topicFilter(replyTo)
-                .callback(message -> {
-                    MqttMessage mqttMessage = MqttMessage.fromJson(message.getPayloadAsBytes());
-                    callback.onNext(mqttMessage.getContent().getBytes());
-                }).send().join();
+        try {
+            client.subscribe(new MqttSubscription(replyTo, 0), null, null, (s, receivedMessage) -> {
+                MqttMessage mqttMessage = MqttMessage.fromJson(receivedMessage.getPayload());
+                callback.onNext(mqttMessage.getContent().getBytes());
+            }, getProps());
 
-        log.debug("Subscribed to reply topic: {}", ack);
+            log.debug("Subscribed to reply to topic: {}", subject);
 
-        MqttMessage mqttMessage = MqttMessage.MqttMessageBuilder.builder()
-                .content(data)
-                .replyTo(replyTo)
-                .build();
+            MqttMessage mqttMessage = MqttMessage.MqttMessageBuilder.builder()
+                    .content(data)
+                    .replyTo(replyTo)
+                    .build();
 
-        Mqtt5PublishResult publishResult = client.publishWith()
-                .topic(subject)
-                .payload(mqttMessage.toJsonString().getBytes())
-                .send().join();
-
-        log.debug("Published reply message: {}", publishResult);
+            publish(mqttMessage.toJsonString(), subject);
+        } catch (MqttException e) {
+            log.error("Failed to subscribe to reply to topic: {}", replyTo, e);
+        }
     }
 
     /**
      * Sends a request and expects a single reply.
      * Creates a unique reply topic and uses requestReplyToMultiple to handle the request-reply pattern.
      *
-     * @param data the request data
-     * @param subject the MQTT topic to send the request to
+     * @param data     the request data
+     * @param subject  the MQTT topic to send the request to
      * @param callback the callback to handle the response
      */
     @Override
     public void requestReply(String data, String subject, Callback<byte[]> callback) {
-        String replyTopic = subject + System.currentTimeMillis() + client.getConfig().getClientIdentifier().orElse(null);
+        String replyTopic = subject + System.currentTimeMillis() + client.getClientId();
 
         requestReplyToMultiple(data, subject, replyTopic, callback);
     }
@@ -232,12 +223,12 @@ public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler
      * Handles a request-reply pattern for MQTT 5.0 messages.
      * Processes the received message and sends a reply to the specified reply topic.
      *
-     * @param subject the MQTT topic from which the request was received
+     * @param subject      the MQTT topic from which the request was received
      * @param mqtt5Publish the received MQTT 5.0 publish message
      */
     @Override
-    protected void handleRequestReply(String subject, Mqtt5Publish mqtt5Publish) {
-        MqttMessage mqttMessage = MqttMessage.fromJson(mqtt5Publish.getPayloadAsBytes());
+    protected void handleRequestReply(String subject, org.eclipse.paho.mqttv5.common.MqttMessage mqtt5Publish) {
+        MqttMessage mqttMessage = MqttMessage.fromJson(mqtt5Publish.getPayload());
 
         String replyTo = mqttMessage.getReplyTo();
         String reply = processReplyRequest(subject, mqttMessage.getContent().getBytes());
@@ -246,23 +237,20 @@ public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler
                 .content(reply)
                 .build();
 
-        client.publishWith()
-                .topic(replyTo)
-                .payload(mqttMessage.toJsonString().getBytes())
-                .send().join();
+        publish(mqttMessage.toJsonString(), replyTo);
     }
 
     /**
      * Handles a stream communication pattern for MQTT 5.0 messages.
      * Processes the received message and sends multiple replies at a regular interval.
      *
-     * @param subject the MQTT topic from which the request was received
+     * @param subject      the MQTT topic from which the request was received
      * @param mqtt5Publish the received MQTT 5.0 publish message
      * @throws IllegalStateException if the Duration header is missing in the message
      */
     @Override
-    protected void handleStream(String subject, Mqtt5Publish mqtt5Publish) {
-        MqttMessage mqttMessage = MqttMessage.fromJson(mqtt5Publish.getPayloadAsBytes());
+    protected void handleStream(String subject, org.eclipse.paho.mqttv5.common.MqttMessage mqtt5Publish) {
+        MqttMessage mqttMessage = MqttMessage.fromJson(mqtt5Publish.getPayload());
         if (mqttMessage == null || mqttMessage.getDuration() == null) {
             throw new IllegalStateException("Duration header is missing");
         }
@@ -282,10 +270,8 @@ public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler
                     .content(reply)
                     .build();
 
-            client.publishWith()
-                    .topic(replyTo)
-                    .payload(mqttMessage.toJsonString().getBytes())
-                    .send().join();
+
+            publish(mqttMessage.toJsonString(), replyTo);
 
             log.debug("Sent message {} of {}", iii + 1, numOfMessages);
 
@@ -298,6 +284,24 @@ public abstract class AbstractMqtt5RequestHandler extends AbstractRequestHandler
         }
 
         log.debug("Finished sending {} messages", numOfMessages);
+    }
+
+    /**
+     * Generates MQTT properties for subscription identifiers.
+     *
+     * @return MqttProperties with a random subscription identifier.
+     */
+    private MqttProperties getProps() {
+        // Create subscription properties, to fix bug in paho library
+        final MqttProperties props = new MqttProperties();
+        SecureRandom r = new SecureRandom();
+        int randomInt = r.nextInt(268435454);
+        if (randomInt == 0) {
+            randomInt = 1; // Ensure subscription identifier is not zero
+        }
+        props.setSubscriptionIdentifiers(List.of(randomInt));
+
+        return props;
     }
 }
 

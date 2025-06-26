@@ -20,11 +20,9 @@
  */
 package si.sunesis.interoperability.mqtt;
 
-import com.hivemq.client.mqtt.datatypes.MqttQos;
-import com.hivemq.client.mqtt.mqtt3.Mqtt3AsyncClient;
-import com.hivemq.client.mqtt.mqtt3.message.publish.Mqtt3Publish;
-import com.hivemq.client.mqtt.mqtt3.message.subscribe.suback.Mqtt3SubAck;
 import lombok.extern.slf4j.Slf4j;
+import org.eclipse.paho.client.mqttv3.MqttAsyncClient;
+import org.eclipse.paho.client.mqttv3.MqttException;
 import si.sunesis.interoperability.common.AbstractRequestHandler;
 import si.sunesis.interoperability.common.constants.Constants;
 import si.sunesis.interoperability.common.interfaces.RequestHandler;
@@ -45,14 +43,14 @@ import java.util.concurrent.TimeUnit;
  * @since 1.0.0
  */
 @Slf4j
-public abstract class AbstractMqtt3RequestHandler extends AbstractRequestHandler<Mqtt3AsyncClient, Mqtt3Publish> implements RequestHandler<String, byte[]> {
+public abstract class AbstractMqtt3RequestHandler extends AbstractRequestHandler<MqttAsyncClient, org.eclipse.paho.client.mqttv3.MqttMessage> implements RequestHandler<String, byte[]> {
 
     /**
      * Constructs a new AbstractMqtt3RequestHandler with the specified MQTT 3.1.1 async client.
      *
      * @param client the MQTT 3.1.1 async client to use for communication
      */
-    protected AbstractMqtt3RequestHandler(Mqtt3AsyncClient client) {
+    protected AbstractMqtt3RequestHandler(MqttAsyncClient client) {
         this.client = client;
     }
 
@@ -62,7 +60,7 @@ public abstract class AbstractMqtt3RequestHandler extends AbstractRequestHandler
      * @return the MQTT 3.1.1 async client
      */
     @Override
-    public Mqtt3AsyncClient getClient() {
+    public MqttAsyncClient getClient() {
         return this.client;
     }
 
@@ -72,9 +70,13 @@ public abstract class AbstractMqtt3RequestHandler extends AbstractRequestHandler
      */
     @Override
     public void disconnect() {
-        if (client.getState().isConnected()) {
+        if (client.isConnected()) {
             log.debug("Disconnecting MQTT client");
-            client.disconnect();
+            try {
+                client.disconnect();
+            } catch (MqttException e) {
+                log.error("Failed to disconnect MQTT client", e);
+            }
         }
     }
 
@@ -82,7 +84,7 @@ public abstract class AbstractMqtt3RequestHandler extends AbstractRequestHandler
      * Publishes data to a specific subject/topic.
      * The data is published as-is to the specified MQTT topic.
      *
-     * @param data the data to publish
+     * @param data    the data to publish
      * @param subject the MQTT topic to publish to
      */
     @Override
@@ -94,126 +96,121 @@ public abstract class AbstractMqtt3RequestHandler extends AbstractRequestHandler
             return;
         }
 
-        Mqtt3Publish publish = client.publishWith()
-                .topic(subject)
-                .payload(data.getBytes())
-                .send().join();
-
-        log.debug("Published message: {}", publish);
+        try {
+            client.publish(subject, new org.eclipse.paho.client.mqttv3.MqttMessage(data.getBytes()));
+            log.debug("Published message: {} to topic: {}", data, subject);
+        } catch (MqttException e) {
+            log.error("Failed to publish message: {} to topic: {}", data, subject, e);
+        }
     }
 
     /**
      * Subscribes to an MQTT topic to receive messages.
      * When messages are received, they are processed based on their content and type.
      *
-     * @param subject the MQTT topic to subscribe to
+     * @param subject  the MQTT topic to subscribe to
      * @param callback the callback to handle received messages
      */
     @Override
     public void subscribe(String subject, Callback<byte[]> callback) {
         log.debug("Subscribing to topic: {}", subject);
 
-        Mqtt3SubAck ack = client.subscribeWith()
-                .topicFilter(subject)
-                .callback(message -> {
-                    MqttMessage mqttMessage = MqttMessage.fromJson(message.getPayloadAsBytes());
+        try {
+            client.subscribe(subject, 0, (s, receivedMessage) -> {
+                MqttMessage mqttMessage = MqttMessage.fromJson(receivedMessage.getPayload());
 
-                    if (mqttMessage.getReplyTo() != null) {
-                        if (mqttMessage.getDuration() != null) {
-                            handleStream(subject, message);
-                            callback.onNext("Handled stream".getBytes(StandardCharsets.UTF_8));
-                        } else {
-                            handleRequestReply(subject, message);
-                            callback.onNext("Handled request".getBytes(StandardCharsets.UTF_8));
-                        }
+                if (mqttMessage.getReplyTo() != null) {
+                    if (mqttMessage.getDuration() != null) {
+                        handleStream(subject, receivedMessage);
+                        callback.onNext("Handled stream".getBytes(StandardCharsets.UTF_8));
                     } else {
-                        callback.onNext(mqttMessage.getContent().getBytes());
+                        handleRequestReply(subject, receivedMessage);
+                        callback.onNext("Handled request".getBytes(StandardCharsets.UTF_8));
                     }
-                }).send().join();
+                } else {
+                    callback.onNext(mqttMessage.getContent().getBytes());
+                }
+            });
 
-        log.debug("Subscribed to topic: {}", ack);
+            log.debug("Subscribed to topic: {}", subject);
+        } catch (MqttException e) {
+            log.error("Failed to subscribe to topic: {}", subject, e);
+        }
     }
 
     /**
      * Sends a request and establishes a stream of responses.
      * Subscribes to the reply topic and then publishes a message with the request data.
      *
-     * @param data the request data
-     * @param subject the MQTT topic to send the request to
-     * @param replyTo the MQTT topic where responses should be sent
+     * @param data     the request data
+     * @param subject  the MQTT topic to send the request to
+     * @param replyTo  the MQTT topic where responses should be sent
      * @param duration the duration for which to maintain the stream
      * @param callback the callback to handle received responses
      */
     @Override
     public void requestStream(String data, String subject, String replyTo, Duration duration, Callback<byte[]> callback) {
-        Mqtt3SubAck ack = client.subscribeWith()
-                .topicFilter(replyTo)
-                .qos(MqttQos.EXACTLY_ONCE)
-                .callback(message -> {
-                    MqttMessage mqttMessage = MqttMessage.fromJson(message.getPayloadAsBytes());
-                    callback.onNext(mqttMessage.getContent().getBytes());
-                }).send().join();
+        try {
+            client.subscribe(replyTo, 0, (s, receivedMessage) -> {
+                MqttMessage mqttMessage = MqttMessage.fromJson(receivedMessage.getPayload());
+                callback.onNext(mqttMessage.getContent().getBytes());
+            });
 
-        log.debug("Subscribed to stream topic: {}", ack);
+            log.debug("Subscribed to stream topic: {}", subject);
 
-        JsonObject json = Json.createObjectBuilder()
-                .add(Constants.DURATION, duration.toMillis())
-                .add(Constants.CONTENT, data)
-                .add(Constants.REPLY_TO, replyTo)
-                .build();
+            JsonObject json = Json.createObjectBuilder()
+                    .add(Constants.DURATION, duration.toMillis())
+                    .add(Constants.CONTENT, data)
+                    .add(Constants.REPLY_TO, replyTo)
+                    .build();
 
-        Mqtt3Publish result = client.publishWith()
-                .topic(subject)
-                .payload(json.toString().getBytes())
-                .send().join();
-
-        log.debug("Published stream message: {}", result);
+            publish(json.toString(), subject);
+        } catch (MqttException e) {
+            log.error("Failed to subscribe to stream topic: {}", replyTo, e);
+        }
     }
 
     /**
      * Sends a request that can receive multiple responses on a specified reply topic.
      * Subscribes to the reply topic and then publishes a message with the request data.
      *
-     * @param data the request data
-     * @param subject the MQTT topic to send the request to
-     * @param replyTo the MQTT topic where responses should be sent
+     * @param data     the request data
+     * @param subject  the MQTT topic to send the request to
+     * @param replyTo  the MQTT topic where responses should be sent
      * @param callback the callback to handle received responses
      */
     @Override
     public void requestReplyToMultiple(String data, String subject, String replyTo, Callback<byte[]> callback) {
-        Mqtt3SubAck ack = client.subscribeWith()
-                .topicFilter(replyTo)
-                .callback(message -> {
-                    MqttMessage mqttMessage = MqttMessage.fromJson(message.getPayloadAsBytes());
-                    callback.onNext(mqttMessage.getContent().getBytes());
-                }).send().join();
+        try {
+            client.subscribe(replyTo, 0, (s, receivedMessage) -> {
+                MqttMessage mqttMessage = MqttMessage.fromJson(receivedMessage.getPayload());
+                callback.onNext(mqttMessage.getContent().getBytes());
+            });
 
-        log.debug("Subscribed to reply topic: {}", ack);
+            log.debug("Subscribed to stream topic: {}", subject);
 
-        JsonObject json = Json.createObjectBuilder()
-                .add(Constants.REPLY_TO, replyTo)
-                .add(Constants.CONTENT, data)
-                .build();
+            JsonObject json = Json.createObjectBuilder()
+                    .add(Constants.REPLY_TO, replyTo)
+                    .add(Constants.CONTENT, data)
+                    .build();
 
-        Mqtt3Publish result = client.publishWith()
-                .topic(subject)
-                .payload(json.toString().getBytes())
-                .send().join();
-
-        log.debug("Published reply message: {}", result);
+            publish(json.toString(), subject);
+        } catch (MqttException e) {
+            log.error("Failed to subscribe to reply multiple topic: {}", replyTo, e);
+        }
     }
 
     /**
      * Sends a request and expects a single reply.
      * Creates a unique reply topic and uses requestReplyToMultiple to handle the request-reply pattern.
      *
-     * @param data the request data
-     * @param subject the MQTT topic to send the request to
+     * @param data     the request data
+     * @param subject  the MQTT topic to send the request to
      * @param callback the callback to handle the response
      */
     @Override
     public void requestReply(String data, String subject, Callback<byte[]> callback) {
-        String replyTopic = subject + System.currentTimeMillis() + client.getConfig().getClientIdentifier().orElse(null);
+        String replyTopic = subject + System.currentTimeMillis() + client.getClientId();
 
         requestReplyToMultiple(data, subject, replyTopic, callback);
     }
@@ -222,12 +219,12 @@ public abstract class AbstractMqtt3RequestHandler extends AbstractRequestHandler
      * Handles a request-reply pattern for MQTT 3.1.1 messages.
      * Processes the received message and sends a reply to the specified reply topic.
      *
-     * @param subject the MQTT topic from which the request was received
+     * @param subject      the MQTT topic from which the request was received
      * @param mqtt3Publish the received MQTT 3.1.1 publish message
      */
     @Override
-    protected void handleRequestReply(String subject, Mqtt3Publish mqtt3Publish) {
-        MqttMessage mqttMessage = MqttMessage.fromJson(mqtt3Publish.getPayloadAsBytes());
+    protected void handleRequestReply(String subject, org.eclipse.paho.client.mqttv3.MqttMessage mqtt3Publish) {
+        MqttMessage mqttMessage = MqttMessage.fromJson(mqtt3Publish.getPayload());
 
         String replyTo = mqttMessage.getReplyTo();
         String reply = processReplyRequest(subject, mqttMessage.getContent().getBytes());
@@ -236,25 +233,20 @@ public abstract class AbstractMqtt3RequestHandler extends AbstractRequestHandler
                 .content(reply)
                 .build();
 
-        Mqtt3Publish publish = Mqtt3Publish.builder()
-                .topic(replyTo)
-                .payload(mqttMessage.toJsonString().getBytes())
-                .build();
-
-        client.publish(publish).join();
+        publish(mqttMessage.toJsonString(), replyTo);
     }
 
     /**
      * Handles a stream communication pattern for MQTT 3.1.1 messages.
      * Processes the received message and sends multiple replies at a regular interval.
      *
-     * @param subject the MQTT topic from which the request was received
+     * @param subject      the MQTT topic from which the request was received
      * @param mqtt3Publish the received MQTT 3.1.1 publish message
      * @throws IllegalStateException if the Duration header is missing in the message
      */
     @Override
-    protected void handleStream(String subject, Mqtt3Publish mqtt3Publish) {
-        MqttMessage mqttMessage = MqttMessage.fromJson(mqtt3Publish.getPayloadAsBytes());
+    protected void handleStream(String subject, org.eclipse.paho.client.mqttv3.MqttMessage mqtt3Publish) {
+        MqttMessage mqttMessage = MqttMessage.fromJson(mqtt3Publish.getPayload());
         if (mqttMessage == null || mqttMessage.getDuration() == null) {
             throw new IllegalStateException("Duration header is missing");
         }
@@ -272,12 +264,9 @@ public abstract class AbstractMqtt3RequestHandler extends AbstractRequestHandler
                     .content(reply)
                     .build();
 
-            Mqtt3Publish publish = Mqtt3Publish.builder()
-                    .topic(replyTo)
-                    .payload(mqttMessage.toJsonString().getBytes())
-                    .build();
+            publish(mqttMessage.toJsonString(), replyTo);
 
-            client.publish(publish).join();
+            log.debug("Sent message {} of {}", iii + 1, numOfMessages);
 
             try {
                 TimeUnit.SECONDS.sleep(1);
